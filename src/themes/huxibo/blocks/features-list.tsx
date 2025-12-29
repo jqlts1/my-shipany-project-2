@@ -15,83 +15,85 @@ export function FeaturesList({
   className?: string;
 }) {
   return (
-    // Prevent horizontal scrolling
     <section
       className={cn(
-        'overflow-x-hidden py-16 md:py-24',
+        'overflow-x-hidden py-16 md:py-24 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-slate-900',
         section.className,
         className
       )}
     >
       <div className="container overflow-x-hidden">
-        <div className="flex flex-wrap items-center gap-8 pb-12 md:gap-24">
-          <ScrollAnimation direction="left">
-            <div className="mx-auto w-full max-w-[500px] flex-shrink-0 md:mx-0">
-              <LazyImage
-                src={section.image?.src ?? ''}
-                alt={section.image?.alt ?? ''}
-                className="h-auto w-full rounded-lg object-cover"
-              />
-            </div>
-          </ScrollAnimation>
-          <div className="w-full min-w-0 flex-1">
-            <ScrollAnimation delay={0.1}>
-              <h2 className="text-foreground text-4xl font-semibold text-balance break-words">
-                {section.title}
-              </h2>
-            </ScrollAnimation>
-            <ScrollAnimation delay={0.2}>
-              <p className="text-md text-muted-foreground my-6 text-balance break-words">
-                {section.description}
-              </p>
-            </ScrollAnimation>
+        <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-24 mb-16">
+          <ScrollAnimation direction="right" className="flex-1 order-2 md:order-1">
+             <div className="max-w-xl">
+                <h2 className="text-foreground text-4xl lg:text-5xl font-serif font-bold text-balance leading-tight">
+                  {section.title}
+                </h2>
+                <p className="text-lg text-muted-foreground my-6 leading-relaxed text-balance">
+                  {section.description}
+                </p>
 
-            {section.buttons && section.buttons.length > 0 && (
-              <ScrollAnimation delay={0.3}>
-                <div className="flex flex-wrap items-center justify-start gap-2">
-                  {section.buttons?.map((button, idx) => (
-                    <Button
-                      asChild
-                      key={idx}
-                      variant={button.variant || 'default'}
-                      size={button.size || 'default'}
-                    >
-                      <Link
-                        href={button.url ?? ''}
-                        target={button.target ?? '_self'}
+                {section.buttons && section.buttons.length > 0 && (
+                  <div className="flex flex-wrap gap-4 mt-8">
+                    {section.buttons?.map((button, idx) => (
+                      <Button
+                        asChild
+                        key={idx}
+                        variant={button.variant || 'default'}
+                        size="lg"
                         className={cn(
-                          'focus-visible:ring-ring inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50',
-                          'h-9 px-4 py-2',
-                          'bg-background ring-foreground/10 hover:bg-muted/50 dark:ring-foreground/15 dark:hover:bg-muted/50 border border-transparent shadow-sm ring-1 shadow-black/15 duration-200'
+                             "rounded-full px-8",
+                             button.variant === 'outline' 
+                             ? "border-2 border-slate-200 dark:border-slate-800"
+                             : "bg-teal-600 hover:bg-teal-700 text-white shadow-lg shadow-teal-500/20"
                         )}
                       >
-                        {button.icon && (
-                          <SmartIcon name={button.icon as string} size={24} />
-                        )}
-                        {button.title}
-                      </Link>
-                    </Button>
-                  ))}
-                </div>
-              </ScrollAnimation>
-            )}
-          </div>
+                        <Link
+                          href={button.url ?? ''}
+                          target={button.target ?? '_self'}
+                        >
+                          {button.icon && (
+                            <SmartIcon name={button.icon as string} className="mr-2 size-5" />
+                          )}
+                          {button.title}
+                        </Link>
+                      </Button>
+                    ))}
+                  </div>
+                )}
+             </div>
+          </ScrollAnimation>
+
+          {/* Vertical Phone Mockup */}
+          <ScrollAnimation direction="left" className="w-full md:w-auto flex-shrink-0 order-1 md:order-2 flex justify-center">
+            <div className="relative w-[280px] sm:w-[320px] aspect-[9/19] rounded-[40px] border-[4px] border-slate-200/50 dark:border-slate-700/50 bg-slate-950 shadow-2xl shadow-teal-900/20 overflow-hidden ring-1 ring-black/5 dark:ring-white/10 backdrop-blur-sm">
+                 {/* Glossy Reflection */}
+                 <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-white/20 to-transparent z-40 pointer-events-none opacity-40 rounded-t-[36px]" />
+                 <LazyImage
+                    src={section.image?.src ?? ''}
+                    alt={section.image?.alt ?? ''}
+                    className="size-full object-cover"
+                 />
+            </div>
+          </ScrollAnimation>
         </div>
 
         <ScrollAnimation delay={0.1}>
-          {/* Prevent horizontal scrolling, min-w-0 and break-words */}
-          <div className="relative grid min-w-0 grid-cols-1 gap-x-3 gap-y-6 border-t pt-12 break-words sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {section.items?.map((item, idx) => (
-              <div className="min-w-0 space-y-3 break-words" key={idx}>
-                <div className="flex min-w-0 items-center gap-2">
+              <div 
+                className="group relative p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1" 
+                key={idx}
+              >
+                <div className="size-12 rounded-xl bg-teal-50 dark:bg-teal-900/20 flex items-center justify-center text-teal-600 dark:text-teal-400 mb-4 group-hover:scale-110 transition-transform">
                   {item.icon && (
-                    <SmartIcon name={item.icon as string} size={16} />
+                    <SmartIcon name={item.icon as string} size={24} />
                   )}
-                  <h3 className="min-w-0 text-sm font-medium break-words">
-                    {item.title}
-                  </h3>
                 </div>
-                <p className="text-muted-foreground min-w-0 text-sm break-words">
+                <h3 className="text-lg font-bold mb-2">
+                  {item.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   {item.description ?? ''}
                 </p>
               </div>

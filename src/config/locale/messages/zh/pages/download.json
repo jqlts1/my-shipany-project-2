@@ -29,7 +29,7 @@
         "show_avatars": true,
         "avatars_tip": "超过 10,000 名用户正在使用",
         "image": {
-          "src": "https://picsum.photos/seed/breathwave-hero/1200/630",
+          "src": "/imgs/features/ios-2.jpg",
           "alt": "呼吸波应用截图",
           "width": 1200,
           "height": 630
@@ -45,35 +45,27 @@
           "alt": "背景"
         }
       },
-      "introduce": {
-        "block": "features-list",
-        "title": "两种强大的呼吸技术",
-        "description": "选择经过科学验证的呼吸方法，改善你的健康和身心状态。",
-        "image": {
-          "src": "https://picsum.photos/seed/breath-tech/800/600",
-          "alt": "呼吸技术"
-        },
-        "buttons": [
-          {
-            "title": "了解更多科学原理",
-            "url": "/science",
-            "variant": "outline",
-            "icon": "BookOpen"
-          }
-        ],
+      "logos": {
+        "block": "logos",
+        "title": "被以下机构推荐",
         "items": [
           {
-            "title": "冰人呼吸法",
-            "description": "由\"冰人\" Wim Hof 创立的强大呼吸技术。30-40 次快速深呼吸后屏息，增强免疫力和能量。",
-            "icon": "Wind"
+            "image": { "src": "/imgs/logos/techcrunch.svg", "alt": "TechCrunch" }
           },
           {
-            "title": "4-7-8 呼吸法",
-            "description": "Andrew Weil 博士推广的放松技术。吸气 4 秒，屏息 7 秒，呼气 8 秒。非常适合放松和改善睡眠。",
-            "icon": "Moon"
+            "image": { "src": "/imgs/logos/wired.svg", "alt": "Wired" }
+          },
+          {
+            "image": { "src": "/imgs/logos/theverge.svg", "alt": "The Verge" }
+          },
+          {
+            "image": { "src": "/imgs/logos/healthline.svg", "alt": "Healthline" }
+          },
+          {
+             "image": { "src": "/imgs/logos/apple.svg", "alt": "Apple App Store" }
           }
         ],
-        "className": "bg-muted/50"
+        "className": "opacity-70 grayscale"
       },
       "benefits": {
         "block": "features-accordion",
@@ -108,6 +100,61 @@
             }
           }
         ]
+      },
+       "wim_hof": {
+        "block": "features-media",
+        "title": "冰人呼吸法 (Wim Hof)",
+        "description": "源自古代 Tummo 冥想的现代演绎。通过特定的快速深呼吸和长时间屏息，从细胞层面激活身体潜能。",
+        "image": {
+          "src": "/imgs/features/ios-2.jpg",
+          "alt": "冰人呼吸法界面"
+        },
+        "image_position": "right",
+        "items": [
+          {
+             "title": "增强免疫力",
+             "description": "科学研究表明，该方法可自主调节免疫系统，减少炎症反应。",
+             "icon": "ShieldCheck"
+          },
+          {
+             "title": "提升抗寒能力",
+             "description": "通过控制自主神经系统，提高身体对极端温度的耐受力。",
+             "icon": "Snowflake"
+          },
+          {
+             "title": "自然的能量提升",
+             "description": "增加血氧饱和度，让你无需咖啡因也能精力充沛。",
+             "icon": "Zap"
+          }
+        ]
+      },
+      "breath_478": {
+        "block": "features-media",
+        "title": "4-7-8 呼吸法",
+        "description": "由 Andrew Weil 博士推广的神经系统天然镇静剂。无需任何设备，随时随地都能练习。",
+        "image": {
+          "src": "/imgs/features/ios-2.jpg",
+          "alt": "4-7-8 呼吸法界面"
+        },
+        "image_position": "left",
+        "items": [
+          {
+             "title": "快速入睡",
+             "description": "通过调节呼吸节奏，向大脑发送睡眠信号，缩短入睡时间。",
+             "icon": "Moon"
+          },
+          {
+             "title": "缓解焦虑",
+             "description": "强制副交感神经系统接管身体，迅速平复紧张情绪。",
+             "icon": "Smile"
+          },
+          {
+             "title": "控制冲动",
+             "description": "在渴望产生时，帮助你创造一个反应的缓冲空间。",
+             "icon": "Brain"
+          }
+        ],
+        "className": "bg-slate-50 dark:bg-slate-900/50"
       },
       "features": {
         "block": "features",
@@ -145,6 +192,32 @@
             "icon": "HeartHandshake"
           }
         ]
+      },
+      "testimonials": {
+        "block": "testimonials",
+        "title": "用户心声",
+        "description": "成千上万的用户通过呼吸波改善了他们的生活。",
+        "items": [
+          {
+             "quote": "这也太好用了吧！界面设计非常有品味，动画流畅自然，每天睡前做一组 4-7-8，入睡速度明显变快了。",
+             "name": "Sarah M.",
+             "title": "失眠困扰者",
+             "image": { "src": "https://i.pravatar.cc/150?u=sarah", "alt": "User Sarah" }
+          },
+          {
+             "quote": "作为一名开发者，我非常喜欢它的触觉反馈设计。在 Watch 上闭着眼睛跟着震动呼吸，这种体验真的非常解压。",
+             "name": "David L.",
+             "title": "软件工程师",
+             "image": { "src": "https://i.pravatar.cc/150?u=david", "alt": "User David" }
+          },
+          {
+             "quote": "冰人呼吸法真的能给我能量！早上不再需要咖啡了，做完这组呼吸，感觉整个人都清醒了。",
+             "name": "Michael K.",
+             "title": "健身教练",
+             "image": { "src": "https://i.pravatar.cc/150?u=michael", "alt": "User Michael" }
+          }
+        ],
+        "className": "bg-slate-50/50 dark:bg-slate-900/50"
       },
       "faq": {
         "block": "faq",

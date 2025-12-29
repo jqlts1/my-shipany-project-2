@@ -15,29 +15,32 @@ export function Features({
   return (
     <section
       id={section.id}
-      className={cn('py-16 md:py-24', section.className, className)}
+      className={cn('py-16 md:py-32', section.className, className)}
     >
-      <div className={`container space-y-8 md:space-y-16`}>
+      <div className={`container space-y-12 md:space-y-20`}>
         <ScrollAnimation>
-          <div className="mx-auto max-w-4xl text-center text-balance">
-            <h2 className="text-foreground mb-4 text-3xl font-semibold tracking-tight md:text-4xl">
+          <div className="mx-auto max-w-3xl text-center text-balance">
+            <h2 className="text-foreground mb-6 text-3xl font-serif font-bold tracking-tight md:text-5xl">
               {section.title}
             </h2>
-            <p className="text-muted-foreground mb-6 md:mb-12 lg:mb-16">
+            <p className="text-muted-foreground text-lg leading-relaxed">
               {section.description}
             </p>
           </div>
         </ScrollAnimation>
 
         <ScrollAnimation delay={0.2}>
-          <div className="relative mx-auto grid divide-x divide-y border *:p-12 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {section.items?.map((item, idx) => (
-              <div className="space-y-3" key={idx}>
-                <div className="flex items-center gap-2">
-                  <SmartIcon name={item.icon as string} size={24} />
-                  <h3 className="text-sm font-medium">{item.title}</h3>
+              <div 
+                className="group p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-teal-900/5 transition-all duration-300 hover:-translate-y-1" 
+                key={idx}
+              >
+                <div className="size-14 rounded-2xl bg-teal-50 dark:bg-teal-900/20 flex items-center justify-center text-teal-600 dark:text-teal-400 mb-6 group-hover:scale-110 transition-transform duration-300">
+                   <SmartIcon name={item.icon as string} className="size-6" />
                 </div>
-                <p className="text-sm">{item.description}</p>
+                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>

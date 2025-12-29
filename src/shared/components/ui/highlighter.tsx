@@ -15,6 +15,8 @@ type AnnotationAction =
   | "crossed-off"
   | "bracket"
 
+import { cn } from "@/shared/lib/utils"
+
 interface HighlighterProps {
   children: React.ReactNode
   action?: AnnotationAction
@@ -25,6 +27,7 @@ interface HighlighterProps {
   padding?: number
   multiline?: boolean
   isView?: boolean
+  className?: string
 }
 
 export function Highlighter({
@@ -37,6 +40,7 @@ export function Highlighter({
   padding = 2,
   multiline = true,
   isView = false,
+  className,
 }: HighlighterProps) {
   const elementRef = useRef<HTMLSpanElement>(null)
   const annotationRef = useRef<RoughAnnotation | null>(null)
@@ -96,7 +100,7 @@ export function Highlighter({
   ])
 
   return (
-    <span ref={elementRef} className="relative inline-block bg-transparent">
+    <span ref={elementRef} className={cn("relative inline-block bg-transparent", className)}>
       {children}
     </span>
   )
