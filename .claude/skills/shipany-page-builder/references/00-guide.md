@@ -58,7 +58,9 @@ Use a simple landing-style set of sections:
 - `faq`
 - `cta`
 
-Each section chooses a block by `section.block || section.id || sectionKey`.
+Each section chooses a block by `section.block`.
+
+**IMPORTANT**: Strictly follow `references/02-block-specs.md` for the exact JSON schema and props for each block. Do not guess fields.
 
 ## Script usage
 

@@ -5,6 +5,11 @@
 - For each configured locale in `src/config/locale/index.ts` (`localeNames`):
   - `src/config/locale/messages/<locale>/pages/<slug>.json` created
 
+## Schema Validation
+
+- JSON structure strictly follows `references/02-block-specs.md`
+- All block props match the documented types
+
 ## Registration updated
 
 - `src/config/locale/index.ts` contains exactly one entry:

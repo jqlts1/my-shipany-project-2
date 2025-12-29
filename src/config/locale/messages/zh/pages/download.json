@@ -5,71 +5,78 @@
   },
   "page": {
     "title": "呼吸波 - 专业呼吸训练应用",
-    "show_sections": [
-      "hero",
-      "introduce",
-      "benefits",
-      "features",
-      "faq",
-      "cta"
-    ],
     "sections": {
       "hero": {
-        "id": "hero",
+        "block": "hero",
         "title": "科学呼吸，健康生活",
-        "description": "使用呼吸波掌握科学呼吸技巧。内置冰人呼吸法和 4-7-8 呼吸法，支持 Apple Watch 实时健康追踪。",
+        "highlight_text": "健康生活",
+        "description": "使用呼吸波掌握科学呼吸技巧。内置冰人呼吸法和 4-7-8 呼吸法，<br/>支持 Apple Watch 实时健康追踪。",
+        "announcement": {
+          "title": "v2.0 全新发布",
+          "url": "/updates",
+          "target": "_self"
+        },
         "buttons": [
           {
             "title": "App Store 下载",
             "url": "https://apps.apple.com/app/breathwave",
-            "icon": "Apple"
+            "icon": "Download",
+            "variant": "default",
+            "size": "lg"
           }
         ],
+        "tip": "支持 iOS 16+ 和 watchOS 9+",
+        "show_avatars": true,
+        "avatars_tip": "超过 10,000 名用户正在使用",
         "image": {
-          "src": "https://placehold.jp/30/4a90d9/ffffff/600x400.png?text=呼吸波",
+          "src": "https://picsum.photos/seed/breathwave-hero/1200/630",
           "alt": "呼吸波应用截图",
-          "width": 600,
-          "height": 400
+          "width": 1200,
+          "height": 630
+        },
+        "image_invert": {
+          "src": "https://picsum.photos/seed/breathwave-hero-dark/1200/630",
+          "alt": "呼吸波应用截图 (深色模式)",
+          "width": 1200,
+          "height": 630
         },
         "background_image": {
-          "src": "https://placehold.jp/30/1a365d/ffffff/1600x900.png?text=",
+          "src": "https://picsum.photos/seed/breathwave-bg/1600/900",
           "alt": "背景"
         }
       },
       "introduce": {
         "block": "features-list",
-        "id": "introduce",
         "title": "两种强大的呼吸技术",
         "description": "选择经过科学验证的呼吸方法，改善你的健康和身心状态。",
         "image": {
-          "src": "https://placehold.jp/30/2ecc71/ffffff/600x400.png?text=呼吸技术",
+          "src": "https://picsum.photos/seed/breath-tech/800/600",
           "alt": "呼吸技术"
         },
+        "buttons": [
+          {
+            "title": "了解更多科学原理",
+            "url": "/science",
+            "variant": "outline",
+            "icon": "BookOpen"
+          }
+        ],
         "items": [
           {
             "title": "冰人呼吸法",
             "description": "由\"冰人\" Wim Hof 创立的强大呼吸技术。30-40 次快速深呼吸后屏息，增强免疫力和能量。",
-            "icon": "Wind",
-            "image": {
-              "src": "https://placehold.jp/30/3498db/ffffff/400x300.png?text=冰人呼吸法",
-              "alt": "冰人呼吸法"
-            }
+            "icon": "Wind"
           },
           {
             "title": "4-7-8 呼吸法",
             "description": "Andrew Weil 博士推广的放松技术。吸气 4 秒，屏息 7 秒，呼气 8 秒。非常适合放松和改善睡眠。",
-            "icon": "Moon",
-            "image": {
-              "src": "https://placehold.jp/30/9b59b6/ffffff/400x300.png?text=4-7-8",
-              "alt": "4-7-8 呼吸法"
-            }
+            "icon": "Moon"
           }
         ],
-        "className": "bg-muted"
+        "className": "bg-muted/50"
       },
       "benefits": {
         "block": "features-accordion",
-        "id": "benefits",
         "title": "为什么选择呼吸波？",
         "description": "体验专业呼吸训练指导和先进健康追踪带来的好处。",
         "items": [
@@ -78,7 +85,7 @@
             "description": "激活副交感神经系统，平静心灵，自然降低皮质醇水平。",
             "icon": "Heart",
             "image": {
-              "src": "https://placehold.jp/30/e74c3c/ffffff/400x300.png?text=减压",
+              "src": "https://picsum.photos/seed/stress-relief/800/600",
               "alt": "减轻压力"
             }
           },
@@ -87,7 +94,7 @@
             "description": "睡前使用 4-7-8 呼吸法，更快入睡，享受更深层、更有恢复性的睡眠。",
             "icon": "Moon",
             "image": {
-              "src": "https://placehold.jp/30/2c3e50/ffffff/400x300.png?text=好睡眠",
+              "src": "https://picsum.photos/seed/sleep-quality/800/600",
               "alt": "改善睡眠"
             }
           },
@@ -96,14 +103,14 @@
             "description": "冰人呼吸法增加血氧水平和思维清晰度，帮助你全天保持精力充沛。",
             "icon": "Zap",
             "image": {
-              "src": "https://placehold.jp/30/f39c12/ffffff/400x300.png?text=能量",
+              "src": "https://picsum.photos/seed/energy-focus/800/600",
               "alt": "提升能量"
             }
           }
         ]
       },
       "features": {
-        "id": "features",
+        "block": "features",
         "title": "强大功能",
         "description": "有效呼吸训练所需的一切，就在你的手腕上。",
         "items": [
@@ -115,12 +122,12 @@
           {
             "title": "实时心率监测",
             "description": "训练期间监测心率，了解呼吸如何影响你的身体。",
-            "icon": "Heart"
+            "icon": "Activity"
           },
           {
             "title": "HRV 追踪",
             "description": "追踪心率变异性，衡量你的压力水平和恢复状态。",
-            "icon": "Activity"
+            "icon": "LineChart"
           },
           {
             "title": "可视化引导",
@@ -135,12 +142,12 @@
           {
             "title": "健康数据整合",
             "description": "与 Apple 健康同步，追踪你的呼吸训练和健康数据。",
-            "icon": "HeartPulse"
+            "icon": "HeartHandshake"
           }
         ]
       },
       "faq": {
-        "id": "faq",
+        "block": "faq",
         "title": "常见问题",
         "description": "有疑问？我们来解答。",
         "items": [
@@ -160,20 +167,23 @@
             "question": "呼吸波可以离线使用吗？",
             "answer": "可以！下载后，呼吸波在 iPhone 和 Apple Watch 上都可以完全离线使用。"
           }
-        ]
+        ],
+        "tip": "还有其他问题？<a href='/contact' class='underline'>联系支持团队</a>"
       },
       "cta": {
-        "id": "cta",
+        "block": "cta",
         "title": "今天开始你的呼吸之旅",
         "description": "立即下载呼吸波，发现有意识呼吸的力量。支持 iPhone 和 Apple Watch。",
         "buttons": [
           {
             "title": "免费下载",
             "url": "https://apps.apple.com/app/breathwave",
-            "icon": "Apple"
+            "variant": "default",
+            "size": "lg",
+            "icon": "Download"
           }
         ],
-        "className": "bg-muted"
+        "className": "bg-muted/50"
       }
     }
   }

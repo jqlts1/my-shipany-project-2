@@ -40,6 +40,7 @@ See `references/00-guide.md`.
 ## Execution order
 
 1. Normalize input + decide route/slug: `references/00-guide.md`
+     - **MUST** consult `references/02-block-specs.md` for JSON block schemas.
 2. Generate locale files (based on configured `localeNames`) and register `'pages/<slug>'`:
    - Use `scripts/create_dynamic_page.py`
 3. Quick validation checklist: `references/01-checklist.md`
