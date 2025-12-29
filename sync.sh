@@ -51,9 +51,10 @@ fi
 
 # [新增] 检查 Origin 是否错误地指向了官方模板（这会导致无权限推送）
 ORIGIN_URL=$(git remote get-url origin 2>/dev/null)
-# 检查 URL 是否包含 shipany-template-two 且不包含你自己的用户名(这里简单判断是否是原版URL)
-# 更稳妥的方式是看它是否完全等于 DEFAULT_UPSTREAM_URL 或 HTTPS_UPSTREAM_URL
-if [[ "$ORIGIN_URL" == *"$DEFAULT_UPSTREAM_URL"* ]] || [[ "$ORIGIN_URL" == *"$HTTPS_UPSTREAM_URL"* ]]; then
+
+# 更加宽松的检查：只要 URL 里包含 shipanyai/shipany-template-two 就认为是错的
+# 因为 shipanyai/shipany-template-two 是官方只读模板，普通用户没有写入权限
+if [[ "$ORIGIN_URL" == *"shipanyai/shipany-template-two"* ]]; then
     echo "⚠️  检测到 origin 指向了官方只读模板 ($ORIGIN_URL)。"
     echo "🔧 正在移除错误的 remote origin..."
     git remote remove origin
@@ -64,27 +65,38 @@ if ! git remote | grep -q "origin"; then
     
     # 尝试使用 GitHub CLI (gh) 自动创建
     if command -v gh &> /dev/null; then
-        echo "🤖 检测到 GitHub CLI，尝试自动创建远程仓库..."
-        # 获取当前目录名作为仓库名
-        REPO_NAME=$(basename "$PWD")
-        
-        echo "   目标仓库名: $REPO_NAME"
-        echo "   正在创建并推送..."
-        
-        # 尝试创建公开仓库 (public)，如果需要私有请改 --private
-        # --source=. 表示使用当前目录代码
-        # --remote=origin 表示添加为 origin 远程
-        if gh repo create "$REPO_NAME" --public --source=. --remote=origin; then
-            echo "🎉 GitHub 仓库 '$REPO_NAME' 创建成功并已关联！"
+        # 检查是否已登录
+        if gh auth status &> /dev/null; then
+            echo "🤖 GitHub CLI 已就绪，正在自动创建远程仓库..."
+            # 获取当前目录名作为仓库名
+            REPO_NAME=$(basename "$PWD")
+            
+            echo "   目标仓库名: $REPO_NAME"
+            echo "   正在创建并推送..."
+            
+            # 尝试创建公开仓库 (public)，如果需要私有请改 --private
+            # --source=. 表示使用当前目录代码
+            # --remote=origin 表示添加为 origin 远程
+            if gh repo create "$REPO_NAME" --public --source=. --remote=origin; then
+                echo "🎉 GitHub 仓库 '$REPO_NAME' 创建成功并已关联！"
+            else
+                echo "❌ 自动创建失败。"
+                echo "   请尝试手动创建仓库，然后运行: git remote add origin <URL>"
+                exit 1
+            fi
         else
-            echo "❌ 自动创建失败。请确保你已登录 gh (运行 'gh auth login')。"
-            echo "或者手动创建仓库后运行: git remote add origin <URL>"
+            echo "⚠️  检测到 GitHub CLI (gh)，但似乎未登录。"
+            echo "   💡 温馨提示：请运行 'gh auth login' 登录 GitHub，"
+            echo "      然后再次运行此脚本，即可体验一键自动建库！"
+            echo ""
+            echo "   或者您可以手动创建仓库后运行: git remote add origin <URL>"
             exit 1
         fi
     else
         echo "❌ 未找到 GitHub CLI (gh)。无法自动创建仓库。"
-        echo "请手动在 GitHub 创建仓库，然后运行："
-        echo "git remote add origin <你的git地址>"
+        echo "   💡 温馨提示：推荐安装 gh (运行 'brew install gh') 以启用自动建库功能。"
+        echo "      如果不安装，请手动在 GitHub 创建仓库，然后运行："
+        echo "      git remote add origin <你的git地址>"
         exit 1
     fi
 else
