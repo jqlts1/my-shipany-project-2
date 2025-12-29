@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "title": "呼吸波 - 专业呼吸训练应用",
+    "description": "掌握科学呼吸技巧，支持冰人呼吸法和4-7-8呼吸法。适用于 iPhone 和 Apple Watch，实时监测心率和 HRV。"
+  },
+  "page": {
+    "title": "呼吸波 - 专业呼吸训练应用",
+    "show_sections": [
+      "hero",
+      "introduce",
+      "benefits",
+      "features",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "科学呼吸，健康生活",
+        "description": "使用呼吸波掌握科学呼吸技巧。内置冰人呼吸法和 4-7-8 呼吸法，支持 Apple Watch 实时健康追踪。",
+        "buttons": [
+          {
+            "title": "App Store 下载",
+            "url": "https://apps.apple.com/app/breathwave",
+            "icon": "Apple"
+          }
+        ],
+        "image": {
+          "src": "https://placehold.jp/30/4a90d9/ffffff/600x400.png?text=呼吸波",
+          "alt": "呼吸波应用截图",
+          "width": 600,
+          "height": 400
+        },
+        "background_image": {
+          "src": "https://placehold.jp/30/1a365d/ffffff/1600x900.png?text=",
+          "alt": "背景"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "两种强大的呼吸技术",
+        "description": "选择经过科学验证的呼吸方法，改善你的健康和身心状态。",
+        "image": {
+          "src": "https://placehold.jp/30/2ecc71/ffffff/600x400.png?text=呼吸技术",
+          "alt": "呼吸技术"
+        },
+        "items": [
+          {
+            "title": "冰人呼吸法",
+            "description": "由\"冰人\" Wim Hof 创立的强大呼吸技术。30-40 次快速深呼吸后屏息，增强免疫力和能量。",
+            "icon": "Wind",
+            "image": {
+              "src": "https://placehold.jp/30/3498db/ffffff/400x300.png?text=冰人呼吸法",
+              "alt": "冰人呼吸法"
+            }
+          },
+          {
+            "title": "4-7-8 呼吸法",
+            "description": "Andrew Weil 博士推广的放松技术。吸气 4 秒，屏息 7 秒，呼气 8 秒。非常适合放松和改善睡眠。",
+            "icon": "Moon",
+            "image": {
+              "src": "https://placehold.jp/30/9b59b6/ffffff/400x300.png?text=4-7-8",
+              "alt": "4-7-8 呼吸法"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "为什么选择呼吸波？",
+        "description": "体验专业呼吸训练指导和先进健康追踪带来的好处。",
+        "items": [
+          {
+            "title": "减轻压力和焦虑",
+            "description": "激活副交感神经系统，平静心灵，自然降低皮质醇水平。",
+            "icon": "Heart",
+            "image": {
+              "src": "https://placehold.jp/30/e74c3c/ffffff/400x300.png?text=减压",
+              "alt": "减轻压力"
+            }
+          },
+          {
+            "title": "改善睡眠质量",
+            "description": "睡前使用 4-7-8 呼吸法，更快入睡，享受更深层、更有恢复性的睡眠。",
+            "icon": "Moon",
+            "image": {
+              "src": "https://placehold.jp/30/2c3e50/ffffff/400x300.png?text=好睡眠",
+              "alt": "改善睡眠"
+            }
+          },
+          {
+            "title": "提升能量和专注力",
+            "description": "冰人呼吸法增加血氧水平和思维清晰度，帮助你全天保持精力充沛。",
+            "icon": "Zap",
+            "image": {
+              "src": "https://placehold.jp/30/f39c12/ffffff/400x300.png?text=能量",
+              "alt": "提升能量"
+            }
+          }
+        ]
+      },
+      "features": {
+        "id": "features",
+        "title": "强大功能",
+        "description": "有效呼吸训练所需的一切，就在你的手腕上。",
+        "items": [
+          {
+            "title": "Apple Watch 应用",
+            "description": "独立 Watch 应用，无需 iPhone。随时随地练习呼吸。",
+            "icon": "Watch"
+          },
+          {
+            "title": "实时心率监测",
+            "description": "训练期间监测心率，了解呼吸如何影响你的身体。",
+            "icon": "Heart"
+          },
+          {
+            "title": "HRV 追踪",
+            "description": "追踪心率变异性，衡量你的压力水平和恢复状态。",
+            "icon": "Activity"
+          },
+          {
+            "title": "可视化引导",
+            "description": "精美的动画引导你的呼吸节奏，确保完美的时机。",
+            "icon": "Eye"
+          },
+          {
+            "title": "触觉反馈",
+            "description": "Apple Watch 上的轻柔振动引导你，无需看屏幕。",
+            "icon": "Vibrate"
+          },
+          {
+            "title": "健康数据整合",
+            "description": "与 Apple 健康同步，追踪你的呼吸训练和健康数据。",
+            "icon": "HeartPulse"
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "常见问题",
+        "description": "有疑问？我们来解答。",
+        "items": [
+          {
+            "question": "使用呼吸波需要 Apple Watch 吗？",
+            "answer": "不需要，呼吸波在 iPhone 上也能很好地工作。但 Apple Watch 可以提供实时心率监测和触觉引导，带来更好的体验。"
+          },
+          {
+            "question": "冰人呼吸法安全吗？",
+            "answer": "冰人呼吸法对健康人群通常是安全的。但切勿在水中或驾驶时练习。如果你有心脏病或高血压，请先咨询医生。"
+          },
+          {
+            "question": "应该多久练习一次呼吸训练？",
+            "answer": "我们建议从每天一次开始。冰人呼吸法最适合早晨练习，而 4-7-8 呼吸法非常适合睡前或压力大的时候。"
+          },
+          {
+            "question": "呼吸波可以离线使用吗？",
+            "answer": "可以！下载后，呼吸波在 iPhone 和 Apple Watch 上都可以完全离线使用。"
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "今天开始你的呼吸之旅",
+        "description": "立即下载呼吸波，发现有意识呼吸的力量。支持 iPhone 和 Apple Watch。",
+        "buttons": [
+          {
+            "title": "免费下载",
+            "url": "https://apps.apple.com/app/breathwave",
+            "icon": "Apple"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}

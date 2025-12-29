@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "title": "BreathWave - Professional Breathing Training App",
+    "description": "Master scientific breathing techniques with Wim Hof Method and 4-7-8 breathing. Available on iPhone and Apple Watch with real-time heart rate and HRV tracking."
+  },
+  "page": {
+    "title": "BreathWave - Professional Breathing Training App",
+    "show_sections": [
+      "hero",
+      "introduce",
+      "benefits",
+      "features",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "id": "hero",
+        "title": "Breathe Better, Live Better",
+        "description": "Master scientific breathing techniques with BreathWave. Featuring Wim Hof Method and 4-7-8 breathing, with Apple Watch support for real-time health tracking.",
+        "buttons": [
+          {
+            "title": "Download on App Store",
+            "url": "https://apps.apple.com/app/breathwave",
+            "icon": "Apple"
+          }
+        ],
+        "image": {
+          "src": "https://placehold.jp/30/4a90d9/ffffff/600x400.png?text=BreathWave%20App",
+          "alt": "BreathWave App Screenshot",
+          "width": 600,
+          "height": 400
+        },
+        "background_image": {
+          "src": "https://placehold.jp/30/1a365d/ffffff/1600x900.png?text=",
+          "alt": "background"
+        }
+      },
+      "introduce": {
+        "block": "features-list",
+        "id": "introduce",
+        "title": "Two Powerful Breathing Techniques",
+        "description": "Choose from scientifically proven breathing methods to improve your health and well-being.",
+        "image": {
+          "src": "https://placehold.jp/30/2ecc71/ffffff/600x400.png?text=Breathing%20Techniques",
+          "alt": "Breathing Techniques"
+        },
+        "items": [
+          {
+            "title": "Wim Hof Method",
+            "description": "A powerful breathing technique created by the Ice Man. 30-40 rapid breaths followed by breath retention to boost immunity and energy.",
+            "icon": "Wind",
+            "image": {
+              "src": "https://placehold.jp/30/3498db/ffffff/400x300.png?text=Wim%20Hof",
+              "alt": "Wim Hof Method"
+            }
+          },
+          {
+            "title": "4-7-8 Breathing",
+            "description": "A calming technique by Dr. Andrew Weil. Inhale 4 seconds, hold 7 seconds, exhale 8 seconds. Perfect for relaxation and better sleep.",
+            "icon": "Moon",
+            "image": {
+              "src": "https://placehold.jp/30/9b59b6/ffffff/400x300.png?text=4-7-8",
+              "alt": "4-7-8 Breathing"
+            }
+          }
+        ],
+        "className": "bg-muted"
+      },
+      "benefits": {
+        "block": "features-accordion",
+        "id": "benefits",
+        "title": "Why Choose BreathWave?",
+        "description": "Experience the benefits of guided breathing training with advanced health tracking.",
+        "items": [
+          {
+            "title": "Reduce Stress & Anxiety",
+            "description": "Activate your parasympathetic nervous system to calm your mind and reduce cortisol levels naturally.",
+            "icon": "Heart",
+            "image": {
+              "src": "https://placehold.jp/30/e74c3c/ffffff/400x300.png?text=Stress%20Relief",
+              "alt": "Reduce Stress"
+            }
+          },
+          {
+            "title": "Improve Sleep Quality",
+            "description": "Use 4-7-8 breathing before bed to fall asleep faster and enjoy deeper, more restorative sleep.",
+            "icon": "Moon",
+            "image": {
+              "src": "https://placehold.jp/30/2c3e50/ffffff/400x300.png?text=Better%20Sleep",
+              "alt": "Better Sleep"
+            }
+          },
+          {
+            "title": "Boost Energy & Focus",
+            "description": "The Wim Hof Method increases oxygen levels and mental clarity, helping you stay energized throughout the day.",
+            "icon": "Zap",
+            "image": {
+              "src": "https://placehold.jp/30/f39c12/ffffff/400x300.png?text=Energy%20Boost",
+              "alt": "Boost Energy"
+            }
+          }
+        ]
+      },
+      "features": {
+        "id": "features",
+        "title": "Powerful Features",
+        "description": "Everything you need for effective breathing training, right on your wrist.",
+        "items": [
+          {
+            "title": "Apple Watch App",
+            "description": "Independent Watch app works without iPhone. Practice breathing anywhere, anytime.",
+            "icon": "Watch"
+          },
+          {
+            "title": "Real-time Heart Rate",
+            "description": "Monitor your heart rate during sessions to see how breathing affects your body.",
+            "icon": "Heart"
+          },
+          {
+            "title": "HRV Tracking",
+            "description": "Track Heart Rate Variability to measure your stress levels and recovery.",
+            "icon": "Activity"
+          },
+          {
+            "title": "Visual Guidance",
+            "description": "Beautiful animations guide your breathing rhythm for perfect timing.",
+            "icon": "Eye"
+          },
+          {
+            "title": "Haptic Feedback",
+            "description": "Gentle vibrations on Apple Watch guide you without looking at the screen.",
+            "icon": "Vibrate"
+          },
+          {
+            "title": "Health Integration",
+            "description": "Sync with Apple Health to track your breathing sessions and health data.",
+            "icon": "HeartPulse"
+          }
+        ]
+      },
+      "faq": {
+        "id": "faq",
+        "title": "Frequently Asked Questions",
+        "description": "Got questions? We have answers.",
+        "items": [
+          {
+            "question": "Do I need an Apple Watch to use BreathWave?",
+            "answer": "No, BreathWave works great on iPhone alone. However, Apple Watch adds real-time heart rate monitoring and haptic guidance for an enhanced experience."
+          },
+          {
+            "question": "Is the Wim Hof Method safe?",
+            "answer": "The Wim Hof Method is generally safe for healthy individuals. However, never practice in water or while driving. If you have heart conditions or high blood pressure, consult your doctor first."
+          },
+          {
+            "question": "How often should I practice breathing exercises?",
+            "answer": "We recommend starting with one session per day. The Wim Hof Method is best in the morning, while 4-7-8 breathing is perfect before bed or during stressful moments."
+          },
+          {
+            "question": "Does BreathWave work offline?",
+            "answer": "Yes! Once downloaded, BreathWave works completely offline on both iPhone and Apple Watch."
+          }
+        ]
+      },
+      "cta": {
+        "id": "cta",
+        "title": "Start Your Breathing Journey Today",
+        "description": "Download BreathWave now and discover the power of conscious breathing. Available for iPhone and Apple Watch.",
+        "buttons": [
+          {
+            "title": "Download Free",
+            "url": "https://apps.apple.com/app/breathwave",
+            "icon": "Apple"
+          }
+        ],
+        "className": "bg-muted"
+      }
+    }
+  }
+}
