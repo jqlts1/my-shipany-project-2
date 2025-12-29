@@ -126,7 +126,7 @@
       ]
     },
     "copyright": "© 2024 ShipAny. All rights reserved.",
-    "show_built_with": true,
+    "show_built_with": false,
     "show_theme": true,
     "show_locale": true
   }

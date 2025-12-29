@@ -117,9 +117,10 @@ export function Header({ header }: { header: HeaderType }) {
                   )}
                   {item.title}
                 </NavigationMenuTrigger>
-                <NavigationMenuContent className="min-w-2xs origin-top p-1">
-                  <div className="bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl p-2 shadow-xl shadow-teal-900/5">
-                    <ul className="space-y-1">
+                <NavigationMenuContent className="data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 top-0 left-0 w-full md:absolute md:w-auto">
+                   {/* Glass Dropdown Container */}
+                  <div className="w-[280px] bg-white/80 dark:bg-slate-950/80 backdrop-blur-2xl ring-1 ring-slate-200/50 dark:ring-slate-800/50 rounded-2xl p-2 shadow-2xl shadow-teal-900/10 overflow-hidden">
+                    <ul className="flex flex-col gap-1">
                       {item.children?.map((subItem: NavItem, index: number) => (
                         <ListItem
                           key={index}
@@ -129,7 +130,7 @@ export function Header({ header }: { header: HeaderType }) {
                           description={subItem.description || ''}
                         >
                           {subItem.icon && (
-                            <SmartIcon name={subItem.icon as string} />
+                            <SmartIcon name={subItem.icon as string} className="items-center justify-center"/>
                           )}
                         </ListItem>
                       ))}

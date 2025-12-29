@@ -19,7 +19,7 @@
         "buttons": [
           {
             "title": "App Store 下载",
-            "url": "https://apps.apple.com/app/breathwave",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
             "icon": "Download",
             "variant": "default",
             "size": "lg"
@@ -33,71 +33,41 @@
           "alt": "呼吸波应用截图",
           "width": 1200,
           "height": 630
-        },
-        "image_invert": {
-          "src": "https://picsum.photos/seed/breathwave-hero-dark/1200/630",
-          "alt": "呼吸波应用截图 (深色模式)",
-          "width": 1200,
-          "height": 630
-        },
-        "background_image": {
-          "src": "https://picsum.photos/seed/breathwave-bg/1600/900",
-          "alt": "背景"
         }
       },
       "logos": {
         "block": "logos",
-        "title": "被以下机构推荐",
+        "title": "",
         "items": [
-          {
-            "image": { "src": "/imgs/logos/techcrunch.svg", "alt": "TechCrunch" }
-          },
-          {
-            "image": { "src": "/imgs/logos/wired.svg", "alt": "Wired" }
-          },
-          {
-            "image": { "src": "/imgs/logos/theverge.svg", "alt": "The Verge" }
-          },
-          {
-            "image": { "src": "/imgs/logos/healthline.svg", "alt": "Healthline" }
-          },
-          {
-             "image": { "src": "/imgs/logos/apple.svg", "alt": "Apple App Store" }
-          }
+          { "title": "Science-Backed" },
+          { "title": "Privacy First" },
+          { "title": "HealthKit Integrated" },
+          { "title": "Offline Ready" },
+          { "title": "Haptics Enabled" },
+          { "title": "No Subscription Required" },
+          { "title": "Biofeedback" }
         ],
-        "className": "opacity-70 grayscale"
+        "className": "opacity-100"
       },
       "benefits": {
-        "block": "features-accordion",
+        "block": "benefits-grid",
         "title": "为什么选择呼吸波？",
         "description": "体验专业呼吸训练指导和先进健康追踪带来的好处。",
         "items": [
           {
             "title": "减轻压力和焦虑",
             "description": "激活副交感神经系统，平静心灵，自然降低皮质醇水平。",
-            "icon": "Heart",
-            "image": {
-              "src": "https://picsum.photos/seed/stress-relief/800/600",
-              "alt": "减轻压力"
-            }
+            "icon": "Heart"
           },
           {
             "title": "改善睡眠质量",
             "description": "睡前使用 4-7-8 呼吸法，更快入睡，享受更深层、更有恢复性的睡眠。",
-            "icon": "Moon",
-            "image": {
-              "src": "https://picsum.photos/seed/sleep-quality/800/600",
-              "alt": "改善睡眠"
-            }
+            "icon": "Moon"
           },
           {
             "title": "提升能量和专注力",
             "description": "冰人呼吸法增加血氧水平和思维清晰度，帮助你全天保持精力充沛。",
-            "icon": "Zap",
-            "image": {
-              "src": "https://picsum.photos/seed/energy-focus/800/600",
-              "alt": "提升能量"
-            }
+            "icon": "Zap"
           }
         ]
       },
@@ -106,7 +76,7 @@
         "title": "冰人呼吸法 (Wim Hof)",
         "description": "源自古代 Tummo 冥想的现代演绎。通过特定的快速深呼吸和长时间屏息，从细胞层面激活身体潜能。",
         "image": {
-          "src": "/imgs/features/ios-2.jpg",
+          "src": "/imgs/zh-wim.jpg",
           "alt": "冰人呼吸法界面"
         },
         "image_position": "right",
@@ -128,30 +98,34 @@
           }
         ]
       },
-      "breath_478": {
-        "block": "features-media",
-        "title": "4-7-8 呼吸法",
-        "description": "由 Andrew Weil 博士推广的神经系统天然镇静剂。无需任何设备，随时随地都能练习。",
-        "image": {
-          "src": "/imgs/features/ios-2.jpg",
-          "alt": "4-7-8 呼吸法界面"
-        },
-        "image_position": "left",
+      "breathing_library": {
+        "block": "breathing-gallery",
+        "title": "探索更多呼吸模式",
+        "description": "不仅仅是基础。呼吸波内置多种经科学验证的呼吸模式，满足你不同场景的需求。支持完全自定义。",
         "items": [
           {
-             "title": "快速入睡",
-             "description": "通过调节呼吸节奏，向大脑发送睡眠信号，缩短入睡时间。",
-             "icon": "Moon"
+             "title": "4-7-8 呼吸",
+             "description": "神经系统的天然镇静剂。吸气4秒，屏息7秒，呼气8秒。适合睡前放松。",
+             "icon": "Moon",
+             "label": "助眠"
           },
           {
-             "title": "缓解焦虑",
-             "description": "强制副交感神经系统接管身体，迅速平复紧张情绪。",
-             "icon": "Smile"
+             "title": "箱式呼吸 (Box)",
+             "description": "海豹突击队使用的战术呼吸法。等长呼吸（4-4-4-4），用于极度压力下的瞬间冷静。",
+             "icon": "Package",
+             "label": "专注"
           },
           {
-             "title": "控制冲动",
-             "description": "在渴望产生时，帮助你创造一个反应的缓冲空间。",
-             "icon": "Brain"
+             "title": "谐振呼吸 (Coherent)",
+             "description": "每分钟 6 次呼吸的完美频率。最大化心率变异性 (HRV)，平衡自主神经系统。",
+             "icon": "Activity",
+             "label": "平衡"
+          },
+          {
+             "title": "自定义模式",
+             "description": "完全自由的呼吸设计器。调整吸气、屏息、呼气时间，创建属于你的独家节奏。",
+             "icon": "Sliders",
+             "label": "高级"
           }
         ],
         "className": "bg-slate-50 dark:bg-slate-900/50"

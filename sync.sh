@@ -121,7 +121,8 @@ fi
 # 例如: "src/config" "specific-file.txt"
 # 请在这个括号内添加你要保护的路径
 PROTECTED_PATHS=(
-    ".claude/skills/shipany-page-builder"
+    ".claude/skills/shipany-page-builder",
+    "public/imgs"
 )
 
 TEMP_BACKUP_DIR=$(mktemp -d)

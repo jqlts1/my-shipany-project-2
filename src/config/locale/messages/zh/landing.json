@@ -2,10 +2,10 @@
   "header": {
     "id": "header",
     "brand": {
-      "title": "ShipAny Two",
+      "title": "呼吸波",
       "logo": {
-        "src": "/logo.png",
-        "alt": "ShipAny Two",
+        "src": "/imgs/logo.png",
+        "alt": "呼吸波",
         "width": 100,
         "height": 100
       },
@@ -14,57 +14,33 @@
     "nav": {
       "items": [
         {
-          "title": "功能亮点",
+          "title": "功能特点",
           "url": "/#features",
           "icon": "Sparkles"
         },
         {
-          "title": "案例展示",
-          "url": "/showcases",
-          "icon": "Box"
+          "title": "呼吸广场",
+          "url": "/#breathing-library",
+          "icon": "Wind"
         },
         {
-          "title": "价格",
-          "url": "/pricing",
-          "icon": "DollarSign"
+          "title": "用户评价",
+          "url": "/#testimonials",
+          "icon": "MessageCircleHeart"
+        },
+        
+        {
+          "title": "常见问题",
+          "url": "/#faq",
+          "icon": "HelpCircle"
         },
         {
-          "title": "AI",
-          "icon": "RiRobot2Line",
-          "children": [
-            {
-              "title": "AI 图片生成器",
-              "description": "使用 AI 生成图片",
-              "url": "/ai-image-generator",
-              "icon": "RiImage2Line"
-            },
-            {
-              "title": "AI 音乐生成器",
-              "description": "使用 AI 生成美妙的音乐",
-              "url": "/ai-music-generator",
-              "icon": "RiMusic2Line"
-            },
-            {
-              "title": "AI 视频生成器",
-              "description": "使用 AI 生成视频",
-              "url": "/ai-video-generator",
-              "icon": "RiVideoLine"
-            },
-            {
-              "title": "AI 聊天机器人",
-              "description": "与 AI 聊天机器人对话",
-              "url": "/chat",
-              "icon": "RiMessage2Line"
-            }
-          ]
-        },
-        {
-          "title": "内容",
+          "title": "资讯",
           "icon": "FileText",
           "children": [
             {
               "title": "博客",
-              "description": "阅读博客文章",
+              "description": "阅读我们的博客指导",
               "url": "/blog",
               "icon": "Newspaper"
             },
@@ -73,51 +49,46 @@
               "description": "阅读更新日志",
               "url": "/updates",
               "icon": "Clock"
-            },
-            {
-              "title": "文档",
-              "description": "阅读文档",
-              "url": "/docs",
-              "target": "_blank",
-              "icon": "BookOpenText"
             }
           ]
         }
       ]
     },
-    "buttons": [],
+    "buttons": [
+      {
+        "title": "下载 App",
+        "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+        "variant": "primary",
+        "icon": "Download"
+      }
+    ],
     "user_nav": {
       "show_name": true,
-      "show_credits": true,
+      "show_credits": false,
       "show_sign_out": true,
       "items": [
         {
-          "title": "账单",
-          "url": "/settings/billing",
-          "icon": "CreditCard"
-        },
-        {
-          "title": "活动",
-          "url": "/activity",
-          "icon": "Activity"
+          "title": "设置",
+          "url": "/settings",
+          "icon": "Settings"
         }
       ]
     },
-    "show_sign": true,
+    "show_sign": false,
     "show_theme": true,
     "show_locale": true,
     "topbanner": {
-      "text": "此网站是 ShipAny 模板的演示站点，购买 ShipAny 模板，请访问 <a href='https://shipany.ai/zh/pricing' class='text-orange-300' target='_blank'>ShipAny 官网</a>"
+      "text": "🎉 呼吸波 v2.0 全新发布！支持 iOS 16+ 和 watchOS 9+。 <a href='https://apps.apple.com/app/breathwave' class='underline' target='_blank'>立即下载</a>"
     }
   },
   "footer": {
     "id": "footer",
     "brand": {
-      "title": "ShipAny Two",
-      "description": "ShipAny 是专为 AI SaaS 创业项目打造的 NextJS 模板。丰富模板与组件，极速交付你的产品。",
+      "title": "呼吸波",
+      "description": "掌握科学呼吸技巧，支持冰人呼吸法和 4-7-8 呼吸法。适用于 iPhone 和 Apple Watch，实时监测心率和 HRV。",
       "logo": {
-        "src": "/logo.png",
-        "alt": "ShipAny Two",
+        "src": "/imgs/logo.png",
+        "alt": "呼吸波",
         "width": 100,
         "height": 100
       },
@@ -126,62 +97,52 @@
     "nav": {
       "items": [
         {
-          "title": "关于我们",
+          "title": "产品",
           "children": [
             {
-              "title": "功能亮点",
+              "title": "功能特点",
               "url": "/#features",
               "target": "_self"
             },
             {
-              "title": "案例展示",
-              "url": "/showcases",
+              "title": "呼吸广场",
+              "url": "/#breathing-library",
               "target": "_self"
             },
             {
-              "title": "价格",
-              "url": "/pricing",
+              "title": "更新日志",
+              "url": "/updates",
               "target": "_self"
             }
           ]
         },
         {
-          "title": "资源",
+          "title": "支持",
           "children": [
             {
-              "title": "文档",
+              "title": "帮助中心",
               "url": "/docs",
               "target": "_self"
             },
             {
-              "title": "博客",
-              "url": "/blog",
+              "title": "联系我们",
+              "url": "mailto:support@breathwave.app",
               "target": "_self"
-            },
-            {
-              "title": "对话",
-              "url": "/chat",
-              "target": "_blank"
             }
           ]
         },
         {
-          "title": "合作伙伴",
+          "title": "法律",
           "children": [
             {
-              "title": "ShipAny",
-              "url": "https://shipany.ai",
-              "target": "_blank"
+              "title": "隐私政策",
+              "url": "/privacy-policy",
+              "target": "_self"
             },
             {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "MCP.so",
-              "url": "https://mcp.so",
-              "target": "_blank"
+              "title": "服务条款",
+              "url": "/terms-of-service",
+              "target": "_self"
             }
           ]
         }
@@ -192,26 +153,8 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/your-app-name",
+          "url": "https://x.com/breathwave",
           "target": "_blank"
-        },
-        {
-          "title": "Github",
-          "icon": "Github",
-          "url": "https://github.com/your-app-name",
-          "target": "_blank"
-        },
-        {
-          "title": "Discord",
-          "icon": "RiDiscordFill",
-          "url": "https://discord.gg/your-app-name",
-          "target": "_blank"
-        },
-        {
-          "title": "邮箱",
-          "icon": "Mail",
-          "url": "mailto:support@your-domain.com",
-          "target": "_self"
         }
       ]
     },
@@ -227,7 +170,9 @@
         }
       ]
     },
+    "show_built_with": false,
     "show_theme": true,
     "show_locale": true
+
   }
 }
