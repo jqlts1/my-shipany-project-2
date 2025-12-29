@@ -7,6 +7,7 @@ MY_BRANCH="dev"
 TARGET_BRANCH="dev"
 # 默认的上游仓库地址
 DEFAULT_UPSTREAM_URL="git@github.com:shipanyai/shipany-template-two.git"
+HTTPS_UPSTREAM_URL="https://github.com/shipanyai/shipany-template-two.git"
 
 echo "========================================"
 echo "🛠️  正在检查仓库环境..."
@@ -27,7 +28,6 @@ if [ ! -d ".git" ]; then
     git fetch upstream
     
     # 重置到上游状态，保留本地文件修改
-    # 这步很关键：它让你的本地文件看起来像是基于 upstream 的"修改"，而不是"全新的文件"
     echo "🔄 重置本地历史到 upstream/$TARGET_BRANCH..."
     git reset --mixed "upstream/$TARGET_BRANCH"
     
@@ -48,19 +48,32 @@ if ! git remote | grep -q "upstream"; then
 fi
 
 # --- 3. 确保 Origin 存在 (Github) ---
+
+# [新增] 检查 Origin 是否错误地指向了官方模板（这会导致无权限推送）
+ORIGIN_URL=$(git remote get-url origin 2>/dev/null)
+# 检查 URL 是否包含 shipany-template-two 且不包含你自己的用户名(这里简单判断是否是原版URL)
+# 更稳妥的方式是看它是否完全等于 DEFAULT_UPSTREAM_URL 或 HTTPS_UPSTREAM_URL
+if [[ "$ORIGIN_URL" == *"$DEFAULT_UPSTREAM_URL"* ]] || [[ "$ORIGIN_URL" == *"$HTTPS_UPSTREAM_URL"* ]]; then
+    echo "⚠️  检测到 origin 指向了官方只读模板 ($ORIGIN_URL)。"
+    echo "🔧 正在移除错误的 remote origin..."
+    git remote remove origin
+fi
+
 if ! git remote | grep -q "origin"; then
     echo "⚠️  未检测到 remote origin (你的远程仓库)。"
     
     # 尝试使用 GitHub CLI (gh) 自动创建
     if command -v gh &> /dev/null; then
         echo "🤖 检测到 GitHub CLI，尝试自动创建远程仓库..."
+        # 获取当前目录名作为仓库名
         REPO_NAME=$(basename "$PWD")
+        
+        echo "   目标仓库名: $REPO_NAME"
+        echo "   正在创建并推送..."
         
         # 尝试创建公开仓库 (public)，如果需要私有请改 --private
         # --source=. 表示使用当前目录代码
         # --remote=origin 表示添加为 origin 远程
-        # --push 表示立即推送
-        # 注意：这里我们只创建并关联，具体的代码推送留给后面的步骤 5
         if gh repo create "$REPO_NAME" --public --source=. --remote=origin; then
             echo "🎉 GitHub 仓库 '$REPO_NAME' 创建成功并已关联！"
         else
@@ -75,7 +88,7 @@ if ! git remote | grep -q "origin"; then
         exit 1
     fi
 else
-    echo "✅ Origin 已存在。"
+    echo "✅ Origin 已存在: $(git remote get-url origin)"
 fi
 
 echo ""
@@ -126,7 +139,8 @@ echo "========================================"
 echo "⚠️  正在推送到 origin (强制推送)..."
 if git push origin $MY_BRANCH --force; then
     echo ""
-    echo "🎉 全部完成！你的仓库已是最新状态。"
+    echo "🎉 全部完成！同步成功！"
+    echo "🔗 你的仓库地址: $(git remote get-url origin)"
 else
     echo "❌ 推送失败，请检查网络或权限。"
     exit 1
