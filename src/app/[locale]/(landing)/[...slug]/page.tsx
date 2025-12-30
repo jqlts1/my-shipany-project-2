@@ -75,6 +75,17 @@ export async function generateMetadata({
   const dynamicPageConfig = await getDynamicPageConfig(locale, Array.isArray(slug) ? slug : [slug]);
 
   if (dynamicPageConfig && dynamicPageConfig.metadata) {
+    // Check for scheduled publishing
+    if (dynamicPageConfig.metadata.publishedAt) {
+      const publishTime = new Date(dynamicPageConfig.metadata.publishedAt);
+      if (publishTime > new Date()) {
+        return {
+           title: 'Page Not Found', // Don't leak metadata for future pages
+           description: ''
+        };
+      }
+    }
+
     title = dynamicPageConfig.metadata.title;
     description = dynamicPageConfig.metadata.description;
 
@@ -137,6 +148,14 @@ export default async function DynamicPage({
   // src/config/locale/messages/{locale}/pages/**/*.json
 
   const dynamicPageConfig = await getDynamicPageConfig(locale, Array.isArray(slug) ? slug : [slug]);
+
+  // Check for scheduled publishing
+  if (dynamicPageConfig && dynamicPageConfig.metadata && dynamicPageConfig.metadata.publishedAt) {
+    const publishTime = new Date(dynamicPageConfig.metadata.publishedAt);
+    if (publishTime > new Date()) {
+      return notFound();
+    }
+  }
 
   if (dynamicPageConfig && dynamicPageConfig.page) {
     const Page = await getThemePage('dynamic-page');

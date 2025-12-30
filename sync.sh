@@ -126,6 +126,8 @@ PROTECTED_PATHS=(
     "src/shared/blocks/common/mdx-content.tsx"
     "source.config.ts"
     "src/app/sitemap.ts"
+    "src/app/[locale]/(landing)/page.tsx"
+    "src/config/locale/index.ts"
 )
 
 TEMP_BACKUP_DIR=$(mktemp -d)

@@ -335,25 +335,25 @@ export async function getPostsAndCategories({
   });
 
   // 2. get remote posts
-  const {
-    posts: remotePosts,
-    postsCount: remotePostsCount,
-    categories: remoteCategories,
-    categoriesCount: remoteCategoriesCount,
-  } = await getRemotePostsAndCategories({
-    page,
-    limit,
-    locale,
-    postPrefix,
-    categoryPrefix,
-  });
+  // const {
+  //   posts: remotePosts,
+  //   postsCount: remotePostsCount,
+  //   categories: remoteCategories,
+  //   categoriesCount: remoteCategoriesCount,
+  // } = await getRemotePostsAndCategories({
+  //   page,
+  //   limit,
+  //   locale,
+  //   postPrefix,
+  //   categoryPrefix,
+  // });
 
-  // add remote posts to postsMap
-  remotePosts.forEach((post) => {
-    if (post.slug) {
-      postsMap.set(post.slug, post);
-    }
-  });
+  // // add remote posts to postsMap
+  // remotePosts.forEach((post) => {
+  //   if (post.slug) {
+  //     postsMap.set(post.slug, post);
+  //   }
+  // });
 
   // Convert map to array and sort by created_at desc
   posts = Array.from(postsMap.values()).sort((a, b) => {
@@ -365,8 +365,8 @@ export async function getPostsAndCategories({
   return {
     posts,
     postsCount: posts.length,
-    categories: remoteCategories, // todo: merge local categories
-    categoriesCount: remoteCategoriesCount, // todo: merge local categories count
+    categories: localCategories, // was remoteCategories
+    categoriesCount: localCategoriesCount, // was remoteCategoriesCount
   };
 }
 
