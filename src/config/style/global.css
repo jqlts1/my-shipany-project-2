@@ -101,6 +101,15 @@ pre {
       transform: translateY(calc(-100% - var(--gap)));
     }
   }
+  --animate-aurora: aurora 60s linear infinite;
+  @keyframes aurora {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 ::view-transition-old(root),

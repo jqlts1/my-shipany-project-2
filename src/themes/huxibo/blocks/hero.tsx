@@ -1,19 +1,24 @@
 "use client"
 
-import { motion, type Variants, useScroll, useTransform, AnimatePresence } from 'motion/react';
+import { LazyMotion, domAnimation, m, type Variants, useScroll, useTransform, AnimatePresence } from 'motion/react';
 import { ArrowRight, Star } from 'lucide-react';
 import Image from 'next/image';
 import { useRef, useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 
 import { Link } from '@/core/i18n/navigation';
 import { SmartIcon } from '@/shared/blocks/common';
 import { Button } from '@/shared/components/ui/button';
-import { Highlighter } from '@/shared/components/ui/highlighter';
 import { cn } from '@/shared/lib/utils';
 import { Section } from '@/shared/types/blocks/landing';
 
 import { SocialAvatars } from './social-avatars';
 import { BorderBeam } from '@/shared/components/magicui/border-beam';
+
+const Highlighter = dynamic(() => import('@/shared/components/ui/highlighter').then(mod => mod.Highlighter), {
+  ssr: false,
+  loading: () => <span className="bg-teal-500/20 text-teal-600 dark:text-teal-400 px-1">...</span>
+});
 
 export function Hero({
   section,
@@ -52,25 +57,13 @@ export function Hero({
   const y1 = useTransform(scrollY, [0, 500], [0, 200]);
   const y2 = useTransform(scrollY, [0, 500], [0, -150]);
 
-  // Aurora Animation
-  const auroraVariant: Variants = {
-    animate: {
-      rotate: [0, 360],
-      scale: [1, 1.1, 1],
-      transition: {
-        duration: 25,
-        repeat: Infinity,
-        ease: "linear",
-      },
-    },
-  };
-
   const fadeInUp: Variants = {
     initial: { opacity: 0, y: 30 },
     animate: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.2, 0.8, 0.2, 1] } },
   };
 
   return (
+    <LazyMotion features={domAnimation}>
     <section
       ref={containerRef}
       id={section.id}
@@ -80,28 +73,16 @@ export function Hero({
         className
       )}
     >
-        {/* === BACKGROUND: THE ETHEREAL BREATH (VIBRANT) === */}
+        {/* === BACKGROUND: THE ETHEREAL BREATH (RESTORED & OPTIMIZED) === */}
         <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none">
             <div className="absolute inset-0 bg-gradient-to-b from-teal-50/80 via-white to-white dark:from-slate-950 dark:via-slate-950 dark:to-slate-950" />
             
-            {/* Moving Orbs - Boosted Opacity & Vibrancy */}
-            <motion.div 
-                variants={auroraVariant}
-                animate="animate"
-                className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] bg-teal-400/30 dark:bg-teal-600/20 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen"
-            />
-            <motion.div 
-                variants={auroraVariant}
-                animate="animate"
-                transition={{ duration: 25, repeat: Infinity, ease: "linear", delay: 5 }}
-                className="absolute top-[10%] right-[-20%] w-[50vw] h-[50vw] bg-blue-400/30 dark:bg-blue-600/20 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen"
-            />
-             <motion.div 
-                variants={auroraVariant}
-                animate="animate"
-                transition={{ duration: 18, repeat: Infinity, ease: "linear", delay: 2 }}
-                className="absolute bottom-[-20%] left-[10%] w-[55vw] h-[55vw] bg-amber-300/30 dark:bg-amber-600/20 blur-[100px] rounded-full mix-blend-multiply dark:mix-blend-screen"
-            />
+            {/* Moving Orbs - CSS Animated (optimized) */}
+            <div className="absolute top-[-50%] left-[-50%] right-[-50%] bottom-[-50%] overflow-hidden animate-aurora">
+                <div className="absolute top-[20%] left-[20%] w-[60vw] h-[60vw] bg-teal-400/30 dark:bg-teal-600/20 blur-[100px] rounded-full mix-blend-multiply dark:mix-blend-screen" />
+                <div className="absolute top-[30%] right-[20%] w-[50vw] h-[50vw] bg-blue-400/30 dark:bg-blue-600/20 blur-[100px] rounded-full mix-blend-multiply dark:mix-blend-screen" />
+                <div className="absolute bottom-[20%] left-[30%] w-[55vw] h-[55vw] bg-amber-300/30 dark:bg-amber-600/20 blur-[80px] rounded-full mix-blend-multiply dark:mix-blend-screen" />
+            </div>
 
             {/* Grid Mesh & Noise */}
              <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-[0.04] dark:opacity-[0.06]" />
@@ -115,7 +96,7 @@ export function Hero({
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left z-20">
             
             {/* Eyebrow Label - Refined */}
-            <motion.div 
+            <m.div 
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -125,11 +106,11 @@ export function Hero({
                      <Star className="size-3.5 fill-current" />
                      <span>{section.eyebrow_text}</span>
                  </div>
-            </motion.div>
+            </m.div>
 
              {/* Announcement Pill (Mobile) */}
             {section.announcement && (
-                <motion.div 
+                <m.div 
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1, duration: 0.5 }}
@@ -145,11 +126,11 @@ export function Hero({
                     </span>
                     <ArrowRight className="size-4 text-teal-500 transition-transform duration-300 group-hover:translate-x-0.5" />
                     </Link>
-                </motion.div>
+                </m.div>
             )}
 
             {/* Headline - Bigger & Bolder with Personality */}
-            <motion.div
+            <m.div
                 initial="initial"
                 animate="animate"
                 variants={fadeInUp}
@@ -172,10 +153,10 @@ export function Hero({
                     {section.title}
                 </h1>
                 )}
-            </motion.div>
+            </m.div>
 
             {/* Description */}
-            <motion.div
+            <m.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
@@ -184,10 +165,10 @@ export function Hero({
                 className="text-muted-foreground mt-8 mb-10 text-lg md:text-xl font-medium leading-relaxed text-balance lg:max-w-lg"
                 dangerouslySetInnerHTML={{ __html: section.description ?? '' }}
                 />
-            </motion.div>
+            </m.div>
 
             {/* Buttons & Social Proof */}
-            <motion.div 
+            <m.div 
                initial={{ opacity: 0, y: 10 }}
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.5, duration: 0.5 }}
@@ -222,7 +203,7 @@ export function Hero({
                         <span>{section.rating_value} {section.rating_text}</span>
                      </div>
                 )}
-            </motion.div>
+            </m.div>
         </div>
 
 
@@ -231,7 +212,7 @@ export function Hero({
              
              {/* TAB SWITCHER - Top of Phone (High Visibility) */}
              {images.length > 1 && (
-                <motion.div
+                <m.div
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8 }}
@@ -248,7 +229,7 @@ export function Hero({
                                 )}
                             >
                                 {currentIndex === idx && (
-                                    <motion.div
+                                    <m.div
                                         layoutId="activeTabTop"
                                         className="absolute inset-0 bg-white dark:bg-slate-800 rounded-full shadow-sm -z-10"
                                         transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
@@ -258,13 +239,13 @@ export function Hero({
                             </button>
                         ))}
                     </div>
-                </motion.div>
+                </m.div>
              )}
 
              {/* Background glow for the graphic */}
             <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[80%] h-[80%] bg-gradient-radial from-teal-200/40 to-transparent blur-3xl rounded-full -z-10 dark:from-teal-800/20" />
             
-            <motion.div 
+            <m.div 
                 style={{ y: y1, rotateY: -12, rotateX: 6 }}
                 initial={{ opacity: 0, scale: 0.9, rotateY: 25 }}
                 animate={{ opacity: 1, scale: 1, rotateY: -12, rotateX: 6 }}
@@ -283,7 +264,7 @@ export function Hero({
                      {/* Screen Content - AnimatePresence Carousel */}
                      <AnimatePresence mode="popLayout">
                        {images.length > 0 ? (
-                         <motion.div
+                         <m.div
                            key={currentIndex}
                            initial={{ opacity: 0, scale: 1.1 }}
                            animate={{ opacity: 1, scale: 1 }}
@@ -299,7 +280,7 @@ export function Hero({
                              sizes="(max-width: 768px) 100vw, 320px"
                              priority
                            />
-                         </motion.div>
+                         </m.div>
                        ) : (
                          <div className="w-full h-full bg-gradient-to-br from-teal-500 to-blue-600 flex flex-col items-center justify-center text-white p-6 text-center">
                              <div className="size-16 rounded-full bg-white/20 backdrop-blur-md mb-4 animate-pulse"></div>
@@ -310,7 +291,7 @@ export function Hero({
                  </div>
 
                  {/* HEALTH CARD - Better Position */}
-                 <motion.div 
+                 <m.div 
                     style={{ y: y2 }}
                     className="absolute bottom-16 -left-12 sm:-left-16 lg:-left-20 w-44 sm:w-52 bg-white/90 dark:bg-slate-900/90 rounded-2xl p-4 shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)] border border-slate-100/50 dark:border-slate-800/50 backdrop-blur-xl"
                  >
@@ -332,13 +313,11 @@ export function Hero({
                           <div className="size-1.5 rounded-full bg-green-500 animate-pulse"></div>
                           Daily Optimized
                       </div>
-                 </motion.div>
-            </motion.div>
-
-
+                 </m.div>
+            </m.div>
         </div>
-
       </div>
     </section>
+    </LazyMotion>
   );
 }
