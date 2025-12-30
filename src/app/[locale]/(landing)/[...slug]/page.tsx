@@ -7,11 +7,25 @@ import { getLocalPage } from '@/shared/models/post';
 
 export const revalidate = 3600;
 
+async function getDynamicPageConfig(locale: string, slugPaths: string[]) {
+  const jsonPath = slugPaths.join('/');
+  
+  try {
+    // Try to load the specific page JSON for the current locale
+    const pageConfig = await import(
+      `@/config/locale/messages/${locale}/pages/${jsonPath}.json`
+    );
+    return pageConfig.default || pageConfig;
+  } catch (error) {
+    return null;
+  }
+}
+
 // dynamic page metadata
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: string; slug: string }>;
+  params: Promise<{ locale: string; slug: string[] }>;
 }) {
   const { locale, slug } = await params;
 
@@ -55,20 +69,14 @@ export async function generateMetadata({
     };
   }
 
-  // 2. static page not found, try to get dynamic page metadata from
+  // 2. static page not found, try to import dynamic page configuration directly
   // src/config/locale/messages/{locale}/pages/**/*.json
 
-  // dynamic page slug
-  const dynamicPageSlug =
-    typeof slug === 'string' ? slug : (slug as string[]).join('.') || '';
+  const dynamicPageConfig = await getDynamicPageConfig(locale, Array.isArray(slug) ? slug : [slug]);
 
-  const messageKey = `pages.${dynamicPageSlug}`;
-  const t = await getTranslations({ locale, namespace: messageKey });
-
-  // return dynamic page metadata
-  if (t.has('metadata')) {
-    title = t.raw('metadata.title');
-    description = t.raw('metadata.description');
+  if (dynamicPageConfig && dynamicPageConfig.metadata) {
+    title = dynamicPageConfig.metadata.title;
+    description = dynamicPageConfig.metadata.description;
 
     return {
       title,
@@ -97,7 +105,7 @@ export async function generateMetadata({
 export default async function DynamicPage({
   params,
 }: {
-  params: Promise<{ locale: string; slug: string }>;
+  params: Promise<{ locale: string; slug: string[] }>;
 }) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
@@ -128,23 +136,11 @@ export default async function DynamicPage({
   // try to get dynamic page content from
   // src/config/locale/messages/{locale}/pages/**/*.json
 
-  // dynamic page slug
-  const dynamicPageSlug =
-    typeof slug === 'string' ? slug : (slug as string[]).join('.') || '';
+  const dynamicPageConfig = await getDynamicPageConfig(locale, Array.isArray(slug) ? slug : [slug]);
 
-  const messageKey = `pages.${dynamicPageSlug}`;
-
-  try {
-    const t = await getTranslations({ locale, namespace: messageKey });
-
-    // return dynamic page
-    if (t.has('page')) {
-      const Page = await getThemePage('dynamic-page');
-      return <Page locale={locale} page={t.raw('page')} />;
-    }
-  } catch (error) {
-    // ignore error if translation not found
-    return notFound();
+  if (dynamicPageConfig && dynamicPageConfig.page) {
+    const Page = await getThemePage('dynamic-page');
+    return <Page locale={locale} page={dynamicPageConfig.page} />;
   }
 
   // 3. page not found

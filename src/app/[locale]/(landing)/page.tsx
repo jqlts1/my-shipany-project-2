@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
 
 import { getThemePage } from '@/core/theme';
 import { DynamicPage } from '@/shared/types/blocks/landing';
@@ -13,13 +14,22 @@ export default async function LandingPage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations('pages.index');
+  try {
+    // dynamically load index page config
+    const pageConfig = await import(
+      `@/config/locale/messages/${locale}/pages/index.json`
+    );
+    const rawPage = pageConfig.default || pageConfig;
 
-  // get page data
-  const page: DynamicPage = t.raw('page');
+    // get page data
+    const page: DynamicPage = rawPage.page;
 
-  // load page component
-  const Page = await getThemePage('dynamic-page');
+    // load page component
+    const Page = await getThemePage('dynamic-page');
 
-  return <Page locale={locale} page={page} />;
+    return <Page locale={locale} page={page} />;
+  } catch (error) {
+    console.error('Failed to load home page config', error);
+    return notFound();
+  }
 }
