@@ -33,12 +33,16 @@
         "tip": "支持 iOS 16+ 和 watchOS 9+",
         "show_avatars": true,
         "avatars_tip": "超过 10,000 名用户正在使用",
-        "image": {
-          "src": "/imgs/features/ios-2.jpg",
-          "alt": "呼吸波应用截图",
-          "width": 1200,
-          "height": 630
-        }
+        "images": [
+          {
+            "src": "/imgs/features/ios-2.jpg",
+            "alt": "呼吸波训练界面"
+          },
+          {
+            "src": "/imgs/zh-wim.jpg",
+            "alt": "沉浸式引导"
+          }
+        ]
       },
 
       "features_highlight": {

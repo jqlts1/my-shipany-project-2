@@ -64,7 +64,7 @@ export function BenefitsGrid({
           {section.items?.map((item, idx) => (
             <ScrollAnimation key={idx} delay={idx * 0.1} className="h-full">
               <div 
-                className="group relative h-full p-8 md:p-10 rounded-[32px] bg-slate-50/50 dark:bg-slate-900/50 hover:bg-white dark:hover:bg-slate-900 border border-transparent hover:border-teal-100 dark:hover:border-teal-900/30 transition-all duration-500 hover:shadow-2xl hover:shadow-teal-900/10 flex flex-col items-center text-center"
+                className="group relative h-full p-8 md:p-10 rounded-[32px] bg-gradient-to-br from-white/80 via-white/20 to-transparent dark:from-slate-800/80 dark:via-slate-900/20 dark:to-slate-950/0 backdrop-blur-xl border border-white/60 dark:border-slate-700/50 hover:bg-white/40 dark:hover:bg-slate-800/40 hover:border-white/80 dark:hover:border-slate-600 transition-all duration-500 shadow-lg shadow-teal-900/5 hover:shadow-2xl hover:shadow-teal-900/10 flex flex-col items-center text-center"
               >
                 <div className="size-20 rounded-3xl bg-white dark:bg-slate-950 shadow-sm border border-slate-100 dark:border-slate-800 flex items-center justify-center text-teal-600 dark:text-teal-400 mb-8 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-500 ease-out">
                    <SmartIcon name={item.icon as string} className="size-8" />

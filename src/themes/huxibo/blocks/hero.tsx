@@ -1,9 +1,9 @@
 "use client"
 
-import { motion, type Variants, useScroll, useTransform } from 'motion/react';
+import { motion, type Variants, useScroll, useTransform, AnimatePresence } from 'motion/react';
 import { ArrowRight, Star } from 'lucide-react';
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 import { Link } from '@/core/i18n/navigation';
 import { SmartIcon } from '@/shared/blocks/common';
@@ -19,7 +19,7 @@ export function Hero({
   section,
   className,
 }: {
-  section: Section;
+  section: Section & { images?: Array<{ src: string; alt: string }> };
   className?: string;
 }) {
   const highlightText = section.highlight_text ?? '';
@@ -27,6 +27,18 @@ export function Hero({
   if (highlightText) {
     texts = section.title?.split(highlightText, 2);
   }
+
+  // Carousel State
+  const images = section.images || (section.image ? [section.image] : []);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   const containerRef = useRef<HTMLElement>(null);
   const { scrollY } = useScroll();
@@ -227,21 +239,33 @@ export function Hero({
                      <BorderBeam duration={8} size={250} colorFrom="#14b8a6" colorTo="#3b82f6" />
                      
                      {/* Screen Content */}
-                     {section.image?.src ? (
-                         <Image
-                            src={section.image.src}
-                            alt="App Screenshot"
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 320px"
-                            priority
-                         />
-                     ) : (
+                     {/* Screen Content - AnimatePresence Carousel */}
+                     <AnimatePresence mode="popLayout">
+                       {images.length > 0 ? (
+                         <motion.div
+                           key={currentIndex}
+                           initial={{ opacity: 0, scale: 1.1 }}
+                           animate={{ opacity: 1, scale: 1 }}
+                           exit={{ opacity: 0, scale: 0.95 }}
+                           transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+                           className="absolute inset-0 size-full"
+                         >
+                           <Image
+                             src={images[currentIndex].src}
+                             alt={images[currentIndex].alt || 'App Screenshot'}
+                             fill
+                             className="object-cover"
+                             sizes="(max-width: 768px) 100vw, 320px"
+                             priority
+                           />
+                         </motion.div>
+                       ) : (
                          <div className="w-full h-full bg-gradient-to-br from-teal-500 to-blue-600 flex flex-col items-center justify-center text-white p-6 text-center">
                              <div className="size-16 rounded-full bg-white/20 backdrop-blur-md mb-4 animate-pulse"></div>
                              <p className="font-bold opacity-80">BreathWave</p>
                          </div>
-                     )}
+                       )}
+                     </AnimatePresence>
                  </div>
 
                  {/* HEALTH CARD - Better Position */}
