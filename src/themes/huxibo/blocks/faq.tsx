@@ -1,5 +1,7 @@
 'use client';
 
+import { useState, useEffect } from 'react';
+
 import {
   Accordion,
   AccordionContent,
@@ -16,6 +18,12 @@ export function Faq({
   section: Section;
   className?: string;
 }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <section id={section.id} className={`py-16 md:py-24 bg-slate-50/50 dark:bg-slate-900/50 ${className}`}>
       <div className={`mx-auto max-w-full px-4 md:max-w-3xl md:px-8`}>
@@ -32,26 +40,37 @@ export function Faq({
 
         <ScrollAnimation delay={0.2}>
           <div className="mx-auto mt-8 max-w-full space-y-4">
-            <Accordion
-              type="single"
-              collapsible
-              className="w-full space-y-4"
-            >
-              {section.items?.map((item, idx) => (
-                <AccordionItem
-                    key={idx}
-                    value={item.question || item.title || ''}
-                    className="border-none rounded-2xl bg-white dark:bg-slate-950 px-6 py-2 shadow-sm data-[state=open]:shadow-md transition-all"
-                >
-                    <AccordionTrigger className="text-left text-base font-semibold hover:no-underline py-4">
-                      {item.question || item.title || ''}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
-                        {item.answer || item.description || ''}
-                    </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+            {mounted ? (
+              <Accordion
+                type="single"
+                collapsible
+                className="w-full space-y-4"
+              >
+                {section.items?.map((item, idx) => (
+                  <AccordionItem
+                      key={idx}
+                      value={item.question || item.title || ''}
+                      className="border-none rounded-2xl bg-white dark:bg-slate-950 px-6 py-2 shadow-sm data-[state=open]:shadow-md transition-all"
+                  >
+                      <AccordionTrigger className="text-left text-base font-semibold hover:no-underline py-4">
+                        {item.question || item.title || ''}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-muted-foreground text-base leading-relaxed pb-6">
+                          {item.answer || item.description || ''}
+                      </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            ) : (
+               /* Content Placeholder for SEO/Layout Stability if needed, usually Accordion is key content */
+               <div className="space-y-4">
+                  {section.items?.map((item, idx) => (
+                    <div key={idx} className="border-none rounded-2xl bg-white dark:bg-slate-950 px-6 py-6 shadow-sm">
+                        <div className="font-semibold text-base">{item.question || item.title}</div>
+                    </div>
+                  ))}
+               </div>
+            )}
 
             <div 
               className="text-center text-muted-foreground mt-8 px-8"

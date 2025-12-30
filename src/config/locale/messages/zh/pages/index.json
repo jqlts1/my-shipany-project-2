@@ -2,421 +2,235 @@
   "page": {
     "show_sections": [
       "hero",
-      "logos",
-      "introduce",
-      "benefits",
-      "usage",
-      "features",
-      "stats",
+      "features_highlight",
+      "breathing_library",
+      "immersion",
+      "upcoming",
       "testimonials",
       "faq",
       "cta"
     ],
     "sections": {
       "hero": {
-        "id": "hero",
-        "title": "一小时快速上线你的 AI 创业项目",
-        "highlight_text": "一小时",
-        "description": "ShipAny 是用于构建 AI SaaS 创业项目的 NextJS 项目模板。<br/>集成常用功能，快速上线你的产品。",
+        "block": "hero",
+        "title": "极速心流体验",
+        "highlight_text": "快速激发灵感",
+        "description": "呼吸波是一款极简主义的呼吸冥想工具，致力于通过科学验证的呼吸训练法，帮助现代人在碎片化时间里快速减压、助眠或激活大脑。无论是深夜的焦虑，还是午后的疲惫，只需一次呼吸练习，即可找回掌控感。",
         "announcement": {
-          "badge": "全新",
-          "title": "🎉 ShipAny 模板二已发布",
-          "url": "/pricing"
+          "title": "v2.0 全新发布",
+          "url": "/updates",
+          "target": "_self"
         },
-        "tip": "🎁 前 1000 名用户特价优惠",
         "buttons": [
           {
-            "title": "立即开始",
-            "icon": "Zap",
-            "url": "/pricing",
-            "target": "_self",
-            "variant": "default"
-          },
-          {
-            "title": "阅读文档",
-            "icon": "BookOpenText",
-            "url": "/docs",
-            "target": "_blank",
-            "variant": "outline"
+            "title": "App Store 下载",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "icon": "Download",
+            "variant": "default",
+            "size": "lg"
           }
         ],
+        "tip": "支持 iOS 16+ 和 watchOS 9+",
         "show_avatars": true,
-        "avatars_tip": "999+ 用户在使用 ShipAny 上站",
-        "show_award": false,
+        "avatars_tip": "超过 10,000 名用户正在使用",
         "image": {
-          "src": "/imgs/features/admin.png",
-          "alt": "hero",
+          "src": "/imgs/features/ios-2.jpg",
+          "alt": "呼吸波应用截图",
           "width": 1200,
-          "height": 800
-        },
-        "image_invert": {
-          "src": "/imgs/features/admin-dark.png",
-          "alt": "hero",
-          "width": 1200,
-          "height": 800
-        },
-        "background_image": {
-          "src": "/imgs/bg/tree.jpg",
-          "alt": "hero"
+          "height": 630
         }
       },
-      "logos": {
-        "title": "ShipAny 使用以下技术栈构建",
+
+      "features_highlight": {
+        "id": "features-highlight",
+        "block": "benefits-grid",
+        "title": "核心功能亮点",
+        "description": "全方位辅助你的每一次呼吸练习，从指引到反馈。",
         "items": [
           {
-            "title": "Next.js",
-            "image": {
-              "src": "/imgs/logos/nextjs.svg",
-              "alt": "Next.js"
-            }
+            "title": "全能科学呼吸库",
+            "description": "集成 Wim Hof、4-7-8、盒子呼吸、特斯拉 3-6-9 等多种经典模式，满足助眠、减压、提神需求。",
+            "icon": "Library"
           },
           {
-            "title": "React",
-            "image": {
-              "src": "/imgs/logos/react.svg",
-              "alt": "React"
-            }
+            "title": "沉浸式视听引导",
+            "description": "拒绝枯燥计时。动态视觉引导 + 5D 环境白噪音（雷雨、海浪），瞬间清空大脑。",
+            "icon": "Headphones"
           },
           {
-            "title": "TailwindCSS",
-            "image": {
-              "src": "/imgs/logos/tailwindcss.svg",
-              "alt": "TailwindCSS"
-            }
+            "title": "Apple Watch 完美联动",
+            "description": "独立运行，抬腕即练。结合 Haptics 触感反馈，闭眼也能精准跟随节奏。",
+            "icon": "Watch"
           },
           {
-            "title": "Shadcn/UI",
-            "image": {
-              "src": "/imgs/logos/shadcn.svg",
-              "alt": "Shadcn/UI"
-            }
+            "title": "心率监测与反馈",
+            "description": "实时监测训练时的心率变化，直观看到呼吸对生理指标的平复作用。",
+            "icon": "Activity"
           },
           {
-            "title": "Vercel",
-            "image": {
-              "src": "/imgs/logos/vercel.svg",
-              "alt": "Vercel"
-            }
+            "title": "习惯养成系统",
+            "description": "每日打卡与时长统计，直观日历记录每一次正念时刻，建立长期健康习惯。",
+            "icon": "Calendar"
+          },
+          {
+            "title": "隐私安全保障",
+            "description": "你的健康数据完全私有。所有记录仅存储在本地设备与 HealthKit，无云端上传风险。",
+            "icon": "Shield"
           }
         ]
       },
-      "introduce": {
-        "block": "features-list",
-        "id": "introduce",
-        "title": "ShipAny 是什么？",
-        "label": "产品简介",
-        "description": "ShipAny 是专为 AI SaaS 创业项目打造的 NextJS 脚手架，包括丰富模板、组件及文档。",
-        "image": {
-          "src": "/imgs/features/landing-page.png",
-          "alt": "introduce"
-        },
+
+      "breathing_library": {
+        "id": "breathing-library",
+        "block": "breathing-gallery",
+        "title": "全能科学呼吸库",
+        "description": "每一项训练都配有专业的频率指引，满足助眠、减压、提神、专注等不同场景需求。",
         "items": [
           {
-            "title": "开箱即用的模板",
-            "description": "从数十款生产级 AI SaaS 模板中选择，快速开启你的项目。",
-            "icon": "RiNextjsFill",
-            "image": {
-              "src": "/imgs/features/1.png",
-              "alt": "introduce"
-            }
+             "title": "4-7-8 舒眠呼吸",
+             "description": "神经系统的天然镇静剂。吸气4秒，屏息7秒，呼气8秒。适合睡前放松。",
+             "icon": "Moon",
+             "label": "助眠"
           },
           {
-            "title": "基础设施搭建",
-            "description": "内置最佳实践，即刻拥有可扩展的基础设施。",
-            "icon": "RiDatabase2Line",
-            "image": {
-              "src": "/imgs/features/2.png",
-              "alt": "introduce"
-            }
+             "title": "Wim Hof 冰人呼吸",
+             "description": "源自古代 Tummo 冥想。通过特定的快速深呼吸和屏息，激活身体潜能。",
+             "icon": "Flame",
+             "label": "活力"
           },
           {
-            "title": "极速部署",
-            "description": "AI SaaS 产品快速上线，助力小时级交付。",
-            "icon": "RiCloudyFill",
-            "image": {
-              "src": "/imgs/features/3.png",
-              "alt": "introduce"
-            }
+             "title": "盒子呼吸 (Box)",
+             "description": "海豹突击队专注法。等长呼吸（4-4-4-4），用于极度压力下的瞬间冷静。",
+             "icon": "Box",
+             "label": "专注"
           },
           {
-            "title": "AI 集成",
-            "description": "通过内置的 AI SDK，轻松为你的项目集成 AI 能力。",
-            "icon": "RiRobot2Line",
-            "image": {
-              "src": "/imgs/features/4.png",
-              "alt": "introduce"
-            }
+             "title": "特斯拉 3-6-9",
+             "description": "独特的节奏模式，帮助你探索意识的深层状态。",
+             "icon": "Zap",
+             "label": "探索"
           }
         ],
-        "className": "bg-muted"
+        "className": "bg-slate-50 dark:bg-slate-900/50"
       },
-      "benefits": {
-        "block": "features-accordion",
-        "id": "benefits",
-        "title": "为何选择 ShipAny",
-        "label": "产品优势",
-        "description": "你获得一切 AI 创业所需——从开箱即用的模板到专业技术支持。",
-        "items": [
-          {
-            "title": "全栈解决方案",
-            "description": "基于 Next.js，集成认证、支付、AI，一站式开箱即用。",
-            "icon": "RiNextjsFill",
-            "image": {
-              "src": "/imgs/features/user-billing.png",
-              "alt": "benefits"
-            }
-          },
-          {
-            "title": "丰富模板库",
-            "description": "多样的 AI SaaS 模板，点击即用，涵盖聊天、图像生成等多场景。",
-            "icon": "RiClapperboardAiLine",
-            "image": {
-              "src": "/imgs/features/admin-settings.png",
-              "alt": "benefits"
-            }
-          },
-          {
-            "title": "专属技术指导",
-            "description": "享受专属技术支持与开发者社区，为你的成功保驾护航。",
-            "icon": "RiCodeFill",
-            "image": {
-              "src": "/imgs/features/landing-page.png",
-              "alt": "benefits"
-            }
-          }
-        ]
-      },
-      "usage": {
-        "block": "features-step",
-        "id": "usage",
-        "title": "三步使用 ShipAny 极速上线",
-        "description": "只需三步，快速开启你的 AI SaaS 创业之路：",
+
+      "immersion": {
+        "block": "features-media",
+        "title": "沉浸式视听引导",
+        "description": "提供细腻的动态视觉引导与精选的 5D 环境白噪音（雷雨、海浪、夏夜），利用视觉与听觉的双重包裹，帮助您瞬间清空大脑，进入状态。",
         "image": {
-          "src": "/imgs/features/1.png",
-          "alt": "usage"
+          "src": "/imgs/zh-wim.jpg",
+          "alt": "沉浸式体验展示"
         },
         "image_position": "left",
-        "text_align": "center",
         "items": [
           {
-            "title": "获取 ShipAny",
-            "description": "一次性购买 ShipAny，查收邮件获取代码与文档。",
-            "image": {
-              "src": "/imgs/features/5.png",
-              "alt": "usage"
-            }
+             "title": "动态视觉",
+             "description": "跟随屏幕上的光影律动进行呼吸，无需费力计数。",
+             "icon": "Eye"
           },
           {
-            "title": "启动你的项目",
-            "description": "阅读说明文档，克隆 ShipAny 代码，开始开发你的 AI SaaS 项目。",
-            "image": {
-              "src": "/imgs/features/6.png",
-              "alt": "usage"
-            }
+             "title": "5D 白噪音",
+             "description": "雷雨、海浪、夏夜等精选环境音，身临其境。",
+             "icon": "Music"
           },
           {
-            "title": "个性化定制",
-            "description": "根据需求修改模板内容和数据，配置专属 AI 能力。",
-            "image": {
-              "src": "/imgs/features/7.png",
-              "alt": "usage"
-            }
-          },
-          {
-            "title": "部署上线",
-            "description": "简单几步将你的项目推向生产环境，立刻为客户提供服务。",
-            "image": {
-              "src": "/imgs/features/8.png",
-              "alt": "usage"
-            }
-          }
-        ],
-        "className": "bg-muted"
-      },
-      "features": {
-        "id": "features",
-        "title": "ShipAny 核心功能",
-        "description": "一切你需要的工具，助力 AI SaaS 项目高效上线。",
-        "items": [
-          {
-            "title": "Next.js 项目模板",
-            "description": "生产就绪、支持 SEO 与多语言的 Next.js 脚手架。",
-            "icon": "RiNextjsFill"
-          },
-          {
-            "title": "身份认证与支付",
-            "description": "集成谷歌 OAuth、一键登录，以及 Stripe 支付。",
-            "icon": "RiKey2Fill"
-          },
-          {
-            "title": "数据基础设施",
-            "description": "内置 Supabase，稳定可靠的数据存储。",
-            "icon": "RiDatabase2Line"
-          },
-          {
-            "title": "一键部署",
-            "description": "自动化部署到 Vercel 或 Cloudflare，极速上线。",
-            "icon": "RiCloudy2Fill"
-          },
-          {
-            "title": "商业分析",
-            "description": "集成 Google Analytics、Search Console，助力业务增长。",
-            "icon": "RiBarChart2Line"
-          },
-          {
-            "title": "AI 原生基础设施",
-            "description": "预置 AI 集成、积分系统和 API 售卖能力。",
-            "icon": "RiRobot2Line"
+             "title": "触感反馈",
+             "description": "配合震动反馈，闭上眼睛也能精准跟随。",
+             "icon": "Vibrate"
           }
         ]
       },
-      "stats": {
-        "id": "stats",
-        "title": "用户喜爱 ShipAny",
-        "description": "因其易用且上线飞快。",
+
+      "upcoming": {
+        "block": "features-media",
+        "title": "即将推出",
+        "description": "我们持续进化，为您带来更深度的正念体验。",
+        "image": {
+          "src": "/imgs/features/ios-2.jpg",
+          "alt": "未来功能预览"
+        },
+        "image_position": "right",
         "items": [
           {
-            "title": "999+",
-            "description": "位用户"
+             "title": "「理想」声景空间",
+             "description": "专为纯粹音乐欣赏打造的板块，用高品质音乐疗愈心灵。",
+             "icon": "Music"
           },
           {
-            "title": "200+",
-            "description": "组件块"
-          },
-          {
-            "title": "50+",
-            "description": "专业模板"
+             "title": "语音冥想引导",
+             "description": "更加专业的人声引导课程，带领您进行深度的意识探索。",
+             "icon": "Mic"
           }
-        ],
-        "className": "bg-muted"
+        ]
       },
+
       "testimonials": {
         "id": "testimonials",
-        "title": "用户对 ShipAny 的评价",
-        "description": "听听开发者与创始人用 ShipAny 快速上线 AI 创业项目的故事。",
+        "block": "testimonials",
+        "title": "用户心声",
+        "description": "成千上万的用户通过呼吸波改善了他们的生活。",
         "items": [
           {
-            "name": "David Chen",
-            "role": "AIWallpaper.shop 创始人",
-            "quote": "ShipAny 为我们节省了数月开发时间。2 天上线 AI 壁纸业务，一周内就收到了第一笔付费订单！",
-            "image": {
-              "src": "/imgs/avatars/1.png",
-              "alt": "david"
-            }
+             "quote": "这也太好用了吧！界面设计非常有品味，动画流畅自然，每天睡前做一组 4-7-8，入睡速度明显变快了。",
+             "name": "Sarah M.",
+             "title": "失眠困扰者",
+             "image": { "src": "https://i.pravatar.cc/150?u=sarah", "alt": "User Sarah" }
           },
           {
-            "name": "Rachel Kim",
-            "role": "HeyBeauty.ai CTO",
-            "quote": "内置 AI 基础设施颠覆了开发体验，无需担心架构，只需专注核心功能，极快落地。",
-            "image": {
-              "src": "/imgs/avatars/2.png",
-              "alt": "rachel"
-            }
+             "quote": "作为一名开发者，我非常喜欢它的触觉反馈设计。在 Watch 上闭着眼睛跟着震动呼吸，这种体验真的非常解压。",
+             "name": "David L.",
+             "title": "软件工程师",
+             "image": { "src": "https://i.pravatar.cc/150?u=david", "alt": "User David" }
           },
           {
-            "name": "Marcus Thompson",
-            "role": "独立开发者",
-            "quote": "作为独立开发者，ShipAny 满足了全部需求——认证、支付、AI 集成、美观界面，一个周末上线 SaaS！",
-            "image": {
-              "src": "/imgs/avatars/3.png",
-              "alt": "marcus"
-            }
-          },
-          {
-            "name": "Sofia Garcia",
-            "role": "Melodisco CEO",
-            "quote": "模板高度可定制且生产级。我们几小时内搭建出了 AI 音乐平台，上市周期大大缩短！",
-            "image": {
-              "src": "/imgs/avatars/4.png",
-              "alt": "sofia"
-            }
-          },
-          {
-            "name": "James Wilson",
-            "role": "GPTs.works 技术负责人",
-            "quote": "ShipAny 基础设施极其稳定。我们从 0 到 1 万用户，无需关心后端维护，是最棒的 AI 创业投资。",
-            "image": {
-              "src": "/imgs/avatars/5.png",
-              "alt": "james"
-            }
-          },
-          {
-            "name": "Anna Zhang",
-            "role": "创业者",
-            "quote": "从想法到上线，仅用 3 天！ShipAny 模板和部署工具让我们极快验证 AI 商业创意。",
-            "image": {
-              "src": "/imgs/avatars/6.png",
-              "alt": "anna"
-            }
-          }
-        ]
-      },
-      "faq": {
-        "id": "faq",
-        "title": "关于 ShipAny 的常见问题",
-        "description": "还有其他问题？欢迎加入 Discord 或发邮件联系我们。",
-        "items": [
-          {
-            "question": "ShipAny 是什么？怎么帮到我？",
-            "answer": "ShipAny 是专为 AI SaaS 创业设计的 NextJS 全套脚手架，内含开箱即用的模板、基础设施搭建和部署工具，让你数小时内上线 AI 产品。"
-          },
-          {
-            "question": "使用 ShipAny 需要很高的技术水平吗？",
-            "answer": "有基础编程知识即可上手。ShipAny 面向开发者友好，详细文档和模板让初学者也能轻松起步，不需深厚 AI 或云计算背景。"
-          },
-          {
-            "question": "ShipAny 支持哪些类型的 AI SaaS 项目？",
-            "answer": "ShipAny 支持内容生成、数据分析、AI 聊天机器人、图片/内容生成器等多种主流 AI 应用场景。"
-          },
-          {
-            "question": "用 ShipAny 一般多久能上线？",
-            "answer": "借助 ShipAny，可在数小时内拿到产品原型并上线生产环境，预配置的一键部署大幅缩短开发周期。"
-          },
-          {
-            "question": "ShipAny 的基础设施包括哪些内容？",
-            "answer": "包含认证、数据库、API 集成、支付、云端部署等全栈解决方案，全部遵循业界最佳实践预配置。"
-          },
-          {
-            "question": "模板是否支持定制自己的品牌？",
-            "answer": "当然支持！所有模板均可自定义设计、功能和品牌，既保持基础架构稳定，又能满足个性扩展需求。"
-          }
-        ]
-      },
-      "cta": {
-        "id": "cta",
-        "title": "发布你的第一个 AI SaaS 项目",
-        "description": "从这里出发，用 ShipAny 极速交付。",
-        "buttons": [
-          {
-            "title": "获取 ShipAny",
-            "url": "https://shipany.ai",
-            "target": "_blank",
-            "icon": "Zap"
-          },
-          {
-            "title": "阅读文档",
-            "url": "/docs",
-            "target": "_blank",
-            "variant": "outline",
-            "icon": "BookOpenText"
+             "quote": "冰人呼吸法真的能给我能量！早上不再需要咖啡了，做完这组呼吸，感觉整个人都清醒了。",
+             "name": "Michael K.",
+             "title": "健身教练",
+             "image": { "src": "https://i.pravatar.cc/150?u=michael", "alt": "User Michael" }
           }
         ],
-        "className": "bg-muted"
+        "className": "bg-slate-50/50 dark:bg-slate-900/50"
       },
-      "subscribe": {
-        "id": "subscribe",
-        "title": "订阅我们的邮件通知",
-        "description": "获取 ShipAny 最新资讯与产品动态。",
-        "submit": {
-          "input": {
-            "placeholder": "输入邮箱"
+      "faq": {
+        "id":"faq",
+        "block": "faq",
+        "title": "常见问题",
+        "description": "有疑问？我们来解答。",
+        "items": [
+          {
+            "question": "使用呼吸波需要 Apple Watch 吗？",
+            "answer": "不需要，呼吸波在 iPhone 上也能很好地工作。但 Apple Watch 可以提供实时心率监测和触觉引导，带来更好的体验。"
           },
-          "button": {
-            "title": "订阅"
+          {
+            "question": "冰人呼吸法安全吗？",
+            "answer": "冰人呼吸法对健康人群通常是安全的。但切勿在水中或驾驶时练习。如果你有心脏病或高血压，请先咨询医生。"
           },
-          "action": "/api/subscribe"
-        },
-        "className": "bg-muted"
+          {
+            "question": "应该多久练习一次呼吸训练？",
+            "answer": "我们建议从每天一次开始。冰人呼吸法最适合早晨练习，而 4-7-8 呼吸法非常适合睡前或压力大的时候。"
+          },
+          {
+            "question": "呼吸波可以离线使用吗？",
+            "answer": "可以！下载后，呼吸波在 iPhone 和 Apple Watch 上都可以完全离线使用。"
+          }
+        ],
+        "tip": "还有其他问题？<a href='/contact' class='underline'>联系支持团队</a>"
+      },
+      "cta": {
+        "block": "cta",
+        "title": "今天开始你的呼吸之旅",
+        "description": "立即下载呼吸波，发现有意识呼吸的力量。支持 iPhone 和 Apple Watch。",
+        "buttons": [
+          {
+            "title": "免费下载",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "variant": "default",
+            "size": "lg",
+            "icon": "Download"
+          }
+        ],
+        "className": "bg-muted/50"
       }
     }
   }

@@ -35,19 +35,29 @@
           "height": 630
         }
       },
-      "logos": {
-        "block": "logos",
-        "title": "",
+
+      "brand_intro": {
+        "block": "brand-story",
+        "title": "什么是呼吸波？",
+        "description": "它是你掌心的宁静庇护所，也是连接身心健康的桥梁。结合古老的呼吸智慧与现代生物反馈科技，Breathwave 引导你通过每一次有意识的呼吸，找回内在的平静与力量。",
         "items": [
-          { "title": "Science-Backed" },
-          { "title": "Privacy First" },
-          { "title": "HealthKit Integrated" },
-          { "title": "Offline Ready" },
-          { "title": "Haptics Enabled" },
-          { "title": "No Subscription Required" },
-          { "title": "Biofeedback" }
-        ],
-        "className": "opacity-100"
+          {
+            "title": "古老智慧",
+            "description": "融合瑜伽呼吸 (Pranayama) 与藏传冥想 (Tummo) 的千年智慧，经现代科学验证。"
+          },
+          {
+            "title": "现代科技",
+            "description": "利用 Apple Watch 生物传感器，实时监测心率变异性 (HRV) 与身体压力反应。"
+          },
+          {
+            "title": "视觉美学",
+            "description": "沉浸式极光动画与触觉反馈，创造超越语言的深层感官体验 (ASMR)。"
+          },
+          {
+            "title": "隐私至上",
+            "description": "你的每一次呼吸数据都只属于你。完全本地化存储，无云端上传，安全无忧。"
+          }
+        ]
       },
       "benefits": {
         "block": "benefits-grid",
@@ -130,43 +140,7 @@
         ],
         "className": "bg-slate-50 dark:bg-slate-900/50"
       },
-      "features": {
-        "block": "features",
-        "title": "强大功能",
-        "description": "有效呼吸训练所需的一切，就在你的手腕上。",
-        "items": [
-          {
-            "title": "Apple Watch 应用",
-            "description": "独立 Watch 应用，无需 iPhone。随时随地练习呼吸。",
-            "icon": "Watch"
-          },
-          {
-            "title": "实时心率监测",
-            "description": "训练期间监测心率，了解呼吸如何影响你的身体。",
-            "icon": "Activity"
-          },
-          {
-            "title": "HRV 追踪",
-            "description": "追踪心率变异性，衡量你的压力水平和恢复状态。",
-            "icon": "LineChart"
-          },
-          {
-            "title": "可视化引导",
-            "description": "精美的动画引导你的呼吸节奏，确保完美的时机。",
-            "icon": "Eye"
-          },
-          {
-            "title": "触觉反馈",
-            "description": "Apple Watch 上的轻柔振动引导你，无需看屏幕。",
-            "icon": "Vibrate"
-          },
-          {
-            "title": "健康数据整合",
-            "description": "与 Apple 健康同步，追踪你的呼吸训练和健康数据。",
-            "icon": "HeartHandshake"
-          }
-        ]
-      },
+
       "testimonials": {
         "block": "testimonials",
         "title": "用户心声",
@@ -224,7 +198,7 @@
         "buttons": [
           {
             "title": "免费下载",
-            "url": "https://apps.apple.com/app/breathwave",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
             "variant": "default",
             "size": "lg",
             "icon": "Download"

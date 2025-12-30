@@ -225,14 +225,16 @@ export function Header({ header }: { header: HeaderType }) {
           <Link
             href={href}
             target={target || '_self'}
-            className="group flex gap-3 select-none rounded-lg p-3 leading-none no-underline outline-none transition-colors hover:bg-teal-50 dark:hover:bg-teal-900/20 focus:bg-teal-50 dark:focus:bg-teal-900/20"
+            className="group flex flex-row items-center gap-4 select-none rounded-xl p-3 leading-none no-underline outline-none transition-colors hover:bg-slate-50 dark:hover:bg-slate-800/50"
           >
-            <div className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-teal-100/50 dark:bg-teal-900/50 text-teal-600 dark:text-teal-400 group-hover:scale-110 transition-transform duration-200">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-slate-100 dark:bg-slate-900 text-slate-500 dark:text-slate-400 group-hover:bg-teal-50 dark:group-hover:bg-teal-900/30 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">
               {children}
             </div>
-            <div className="space-y-1">
-              <div className="text-sm font-semibold text-foreground leading-none">{title}</div>
-              <p className="line-clamp-2 text-xs leading-snug text-muted-foreground group-hover:text-teal-600/80 dark:group-hover:text-teal-400/80 transition-colors">
+            <div className="flex flex-col gap-1.5 overflow-hidden">
+              <div className="text-sm font-bold text-slate-700 dark:text-slate-200 group-hover:text-teal-700 dark:group-hover:text-teal-300 transition-colors truncate">
+                {title}
+              </div>
+              <p className="line-clamp-2 text-xs font-medium text-slate-400 group-hover:text-teal-600/70 dark:group-hover:text-teal-400/70 transition-colors leading-relaxed">
                 {description}
               </p>
             </div>

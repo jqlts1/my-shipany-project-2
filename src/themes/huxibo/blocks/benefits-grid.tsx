@@ -19,7 +19,34 @@ export function BenefitsGrid({
       className={cn('py-16 md:py-32 relative overflow-hidden', section.className, className)}
     >
       {/* Background Decor */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-teal-500/5 blur-[120px] rounded-full pointer-events-none -z-10" />
+      {/* Background Decor - Breathing Gradient */}
+      <div className="absolute inset-0 flex items-center justify-center -z-10 pointer-events-none">
+        <motion.div 
+            animate={{ 
+                scale: [1, 1.2, 1],
+                opacity: [0.3, 0.5, 0.3],
+            }}
+            transition={{
+                duration: 8,
+                repeat: Infinity,
+                ease: "easeInOut"
+            }}
+            className="w-[60vw] h-[60vw] md:w-[600px] md:h-[600px] bg-teal-500/20 dark:bg-teal-500/10 blur-[100px] rounded-full"
+        />
+        <motion.div 
+            animate={{ 
+                scale: [1.2, 1, 1.2],
+                opacity: [0.2, 0.4, 0.2],
+            }}
+            transition={{
+                duration: 10,
+                repeat: Infinity,
+                ease: "easeInOut",
+                delay: 1
+            }}
+            className="absolute w-[50vw] h-[50vw] md:w-[500px] md:h-[500px] bg-blue-400/20 dark:bg-blue-400/10 blur-[80px] rounded-full"
+        />
+      </div>
 
       <div className={`container space-y-16 md:space-y-24`}>
         <ScrollAnimation>

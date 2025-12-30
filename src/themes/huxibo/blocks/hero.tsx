@@ -13,6 +13,7 @@ import { cn } from '@/shared/lib/utils';
 import { Section } from '@/shared/types/blocks/landing';
 
 import { SocialAvatars } from './social-avatars';
+import { BorderBeam } from '@/shared/components/magicui/border-beam';
 
 export function Hero({
   section,
@@ -222,6 +223,8 @@ export function Hero({
                  <div className="relative rounded-[40px] border-[4px] border-slate-200/50 dark:border-slate-700/50 bg-slate-950 shadow-2xl shadow-teal-900/30 overflow-hidden aspect-[9/19] ring-1 ring-black/5 dark:ring-white/10 backdrop-blur-sm">
                      {/* Glass Reflection Top */}
                      <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-white/20 to-transparent z-40 pointer-events-none opacity-40 rounded-t-[36px]" />
+                     
+                     <BorderBeam duration={8} size={250} colorFrom="#14b8a6" colorTo="#3b82f6" />
                      
                      {/* Screen Content */}
                      {section.image?.src ? (
