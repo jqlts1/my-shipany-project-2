@@ -1,8 +1,7 @@
 {
   "metadata": {
-    "title": "ShipAny 模板二",
-    "description": "ShipAny 是用于构建 AI SaaS 创业项目的 NextJS 脚手架。提供丰富模板和组件，助您快速上线产品。",
-    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+    "title": "呼吸波APP",
+    "description": "呼吸波 - 专业呼吸训练应用"
   },
   "sign": {
     "sign_in_title": "登录",

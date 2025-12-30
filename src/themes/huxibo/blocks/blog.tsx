@@ -42,9 +42,22 @@ export function Blog({
   return (
     <section
       id={section.id}
-      className={cn('py-24 md:py-36', section.className, className)}
+      className={cn('relative py-24 md:py-36 overflow-hidden', section.className, className)}
     >
-      <div className="mx-auto mb-12 text-center">
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-teal-50/30 via-background to-slate-50/30 dark:from-teal-950/20 dark:via-background dark:to-slate-950/20" />
+      
+      {/* Decorative Blur Elements */}
+      <div className="absolute top-20 right-1/4 w-96 h-96 bg-teal-400/10 dark:bg-teal-600/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-1/4 w-96 h-96 bg-slate-400/10 dark:bg-slate-600/10 rounded-full blur-3xl" />
+      
+      {/* Dot Pattern Overlay */}
+      <div className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]" style={{
+        backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)',
+        backgroundSize: '24px 24px'
+      }} />
+      
+      <div className="relative z-10 mx-auto mb-12 text-center">
         {section.sr_only_title && (
           <h1 className="sr-only">{section.sr_only_title}</h1>
         )}
@@ -56,7 +69,7 @@ export function Blog({
         </p>
       </div>
 
-      <div className="container flex flex-col items-center gap-8 lg:px-16">
+      <div className="container relative z-10 flex flex-col items-center gap-8 lg:px-16">
         {categories && categories.length > 0 && (
           <div className="mb-2 flex flex-wrap items-center justify-center gap-4">
             <Tabs tabs={tabs} />

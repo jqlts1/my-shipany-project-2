@@ -1,4 +1,5 @@
 import { defineConfig, defineDocs } from 'fumadocs-mdx/config';
+import remarkBreaks from 'remark-breaks';
 
 export const docs = defineDocs({
   dir: 'content/docs',
@@ -18,6 +19,7 @@ export const logs = defineDocs({
 
 export default defineConfig({
   mdxOptions: {
+    remarkPlugins: [remarkBreaks],
     rehypeCodeOptions: {
       themes: {
         light: 'github-light',

@@ -124,6 +124,7 @@ PROTECTED_PATHS=(
     ".claude/skills/shipany-page-builder"
     "public/imgs"
     "src/shared/blocks/common/mdx-content.tsx"
+    "source.config.ts"
 )
 
 TEMP_BACKUP_DIR=$(mktemp -d)

@@ -82,7 +82,16 @@ export function BlogDetail({ post }: { post: PostType }) {
               <div className={getMainColSpan()}>
                 <article className="p-0">
                   {post.body ? (
-                    <div className="docs text-foreground text-md space-y-4 font-normal *:leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-slate max-w-none 
+                      prose-headings:font-bold prose-headings:tracking-tight 
+                      prose-h1:text-3xl lg:prose-h1:text-4xl
+                      prose-p:leading-loose prose-p:text-slate-600 dark:prose-p:text-slate-300
+                      prose-a:text-teal-600 dark:prose-a:text-teal-400 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-teal-700
+                      prose-strong:font-bold prose-strong:text-slate-900 dark:prose-strong:text-slate-100
+                      prose-ul:list-disc prose-ul:pl-6
+                      prose-blockquote:border-l-4 prose-blockquote:border-teal-500 prose-blockquote:bg-slate-50 dark:prose-blockquote:bg-slate-900/50 prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:not-italic prose-blockquote:rounded-r-lg
+                      [&_:is(h1,h2,h3,h4,h5,h6)_a]:!no-underline [&_:is(h1,h2,h3,h4,h5,h6)_a:hover]:!no-underline
+                      docs">
                       {post.body}
                     </div>
                   ) : (

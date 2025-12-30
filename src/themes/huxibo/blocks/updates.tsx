@@ -14,9 +14,22 @@ export function Updates({
   return (
     <section
       id={section.id}
-      className={cn('py-24 md:py-36', section.className, className)}
+      className={cn('relative py-24 md:py-36 overflow-hidden', section.className, className)}
     >
-      <div className="mx-auto mb-12 text-center">
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-50/30 via-background to-teal-50/30 dark:from-slate-950/20 dark:via-background dark:to-teal-950/20" />
+      
+      {/* Decorative Blur Elements */}
+      <div className="absolute top-40 left-1/3 w-96 h-96 bg-teal-400/10 dark:bg-teal-600/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-40 right-1/3 w-96 h-96 bg-slate-400/10 dark:bg-slate-600/10 rounded-full blur-3xl" />
+      
+      {/* Subtle Grid Pattern */}
+      <div className="absolute inset-0 opacity-[0.02] dark:opacity-[0.04]" style={{
+        backgroundImage: 'linear-gradient(currentColor 1px, transparent 1px), linear-gradient(90deg, currentColor 1px, transparent 1px)',
+        backgroundSize: '48px 48px'
+      }} />
+      
+      <div className="relative z-10 mx-auto mb-12 text-center">
         <h1 className="mb-6 text-3xl font-bold text-pretty lg:text-4xl">
           {section.title}
         </h1>
@@ -26,7 +39,7 @@ export function Updates({
       </div>
 
       {/* Timeline */}
-      <div className="mx-auto max-w-5xl px-6 pt-10 lg:px-10">
+      <div className="relative z-10 mx-auto max-w-5xl px-6 pt-10 lg:px-10">
         <div className="relative">
           {posts?.map((post) => {
             return (

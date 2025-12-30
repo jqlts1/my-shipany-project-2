@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "title": "博客",
+    "title": "呼吸波-博客",
     "description": "阅读我们最新的产品功能、解决方案和更新内容。"
   },
   "page": {
-    "title": "ShipAny 博客",
+    "title": "最新博客",
     "sections": {
       "blog": {
         "id": "blog",
-        "title": "博客",
+        "title": "最新博客",
         "description": "阅读我们最新的产品功能、解决方案和更新内容。"
       }
     }

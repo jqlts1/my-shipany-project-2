@@ -123,7 +123,7 @@ export function Hero({
             >
                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/50 dark:bg-slate-900/50 border border-teal-200/50 dark:border-teal-800/50 backdrop-blur-md shadow-sm text-teal-700 dark:text-teal-300 text-xs font-bold tracking-wider uppercase">
                      <Star className="size-3.5 fill-current" />
-                     <span>#1 Mindfulness App of 2024</span>
+                     <span>{section.eyebrow_text}</span>
                  </div>
             </motion.div>
 
@@ -156,7 +156,7 @@ export function Hero({
                 className="max-w-3xl lg:max-w-none relative"
             >
                 {texts && texts.length > 0 ? (
-                <h1 className="text-foreground font-serif font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl text-balance drop-shadow-sm leading-[1.05] sm:leading-[1.05]">
+                <h1 className="text-foreground font-serif font-bold text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl text-balance drop-shadow-sm leading-[1.05] sm:leading-[1.05]">
                     {texts[0]}
                     <span className="relative whitespace-nowrap px-2">
                          <span className="absolute inset-0 -skew-y-2 bg-gradient-to-r from-teal-100 to-blue-100 dark:from-teal-900/40 dark:to-blue-900/40 rounded-lg -z-10" />
@@ -168,7 +168,7 @@ export function Hero({
                     {texts[1]}
                 </h1>
                 ) : (
-                <h1 className="text-foreground tracking-tighter font-serif font-bold text-4xl md:text-6xl text-balance">
+                <h1 className="text-foreground tracking-tighter font-serif font-bold text-5xl md:text-7xl text-balance">
                     {section.title}
                 </h1>
                 )}
@@ -181,7 +181,7 @@ export function Hero({
                 transition={{ delay: 0.3, duration: 0.8 }}
             >
                 <p
-                className="text-muted-foreground mt-6 mb-8 text-base md:text-lg font-medium leading-loose tracking-wide text-balance lg:max-w-md"
+                className="text-muted-foreground mt-8 mb-10 text-lg md:text-xl font-medium leading-relaxed text-balance lg:max-w-lg"
                 dangerouslySetInnerHTML={{ __html: section.description ?? '' }}
                 />
             </motion.div>
@@ -193,6 +193,7 @@ export function Hero({
                transition={{ delay: 0.5, duration: 0.5 }}
                className="flex flex-col items-center lg:items-start gap-8"
             >
+
                 <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
                      {section.buttons?.map((button, idx) => (
                         <Button
@@ -218,7 +219,7 @@ export function Hero({
                      <div className="flex items-center gap-4 text-sm font-medium text-slate-600 dark:text-slate-400 bg-white/40 dark:bg-slate-900/40 p-2 pr-4 rounded-full border border-slate-100 dark:border-slate-800 backdrop-blur-sm">
                         <SocialAvatars tip={section.avatars_tip || ''} />
                         <span className="hidden sm:inline-block text-slate-300">•</span>
-                        <span>4.9/5 Rating on App Store</span>
+                        <span>{section.rating_value} {section.rating_text}</span>
                      </div>
                 )}
             </motion.div>

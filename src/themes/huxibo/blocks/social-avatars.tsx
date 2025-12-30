@@ -14,8 +14,8 @@ const userImgUrls = [
 
 export function SocialAvatars({ tip }: { tip: string }) {
   return (
-    <div className="mx-auto mt-8 flex w-fit flex-col items-center gap-2 sm:flex-row">
-      <span className="mx-4 inline-flex items-center -space-x-2">
+    <div className="flex w-fit flex-col items-center gap-2 sm:flex-row">
+      <span className="inline-flex items-center -space-x-2">
         {userImgUrls.map((url, index) => (
           <Avatar className="size-10 border" key={index}>
             <Image width={40} height={40} src={url} alt="placeholder" />

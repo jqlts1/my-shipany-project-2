@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "title": "呼吸波 - 专业呼吸训练应用",
+    "description": "掌握科学呼吸技巧，支持冰人呼吸法和4-7-8呼吸法。适用于 iPhone 和 Apple Watch，实时监测心率和 HRV。"
+  },
   "page": {
     "show_sections": [
       "hero",
@@ -10,10 +14,14 @@
       "faq",
       "cta"
     ],
+
     "sections": {
       "hero": {
         "block": "hero",
         "title": "极速心流体验",
+        "eyebrow_text": "2025 年度精选正念 App",
+        "rating_text": "App Store 评分",
+        "rating_value": "4.9/5",
         "highlight_text": "快速激发灵感",
         "description": "极简冥想工具，多种呼吸训练方法，支持Apple Watch独立运行，碎片时间即可冥想,找回掌控感。",
         "announcement": {
@@ -32,23 +40,24 @@
         ],
         "tip": "支持 iOS 16+ 和 watchOS 9+",
         "show_avatars": true,
-        "avatars_tip": "超过 10,000 名用户正在使用",
+        "avatars_tip": "超1,000名用户",
         "images": [
           {
-            "src": "/imgs/features/ios-2.jpg",
-            "alt": "呼吸波训练界面",
-            "label": "呼吸训练"
+            "src": "/imgs/zh/IOS-1.jpg",
+            "alt": "呼吸波首页",
+            "label": "首页"
           },
           {
-            "src": "/imgs/zh-wim.jpg",
-            "alt": "沉浸式引导",
-            "label": "沉浸引导"
+            "src": "/imgs/zh/IOS-2.jpg",
+            "alt": "Wim设置界面",
+            "label": "WimHof"
           },
           {
-            "src": "/imgs/features/ios-2.jpg",
+            "src": "/imgs/zh/IOS-3.jpg",
             "alt": "健康数据",
-            "label": "健康监测"
+            "label": "呼吸中"
           }
+          
         ]
       },
 
@@ -130,8 +139,8 @@
         "title": "沉浸式视听引导",
         "description": "提供细腻的动态视觉引导与精选的 5D 环境白噪音（雷雨、海浪、夏夜），利用视觉与听觉的双重包裹，帮助您瞬间清空大脑，进入状态。",
         "image": {
-          "src": "/imgs/zh-wim.jpg",
-          "alt": "沉浸式体验展示"
+          "src": "/imgs/zh/IOS-5.jpg",
+          "alt": "沉浸式视听展示"
         },
         "image_position": "left",
         "items": [
@@ -158,7 +167,7 @@
         "title": "即将推出",
         "description": "我们持续进化，为您带来更深度的正念体验。",
         "image": {
-          "src": "/imgs/features/ios-2.jpg",
+          "src": "/imgs/zh/IOS-4.jpg",
           "alt": "未来功能预览"
         },
         "image_position": "right",
@@ -199,6 +208,24 @@
              "name": "Michael K.",
              "title": "健身教练",
              "image": { "src": "https://i.pravatar.cc/150?u=michael", "alt": "User Michael" }
+          },
+          {
+             "quote": "非常惊艳的 UI 细节。作为一名设计师，我很看重光影和节奏的配合，呼吸波做到了极致，让人很容易进入‘禅定’状态。",
+             "name": "Elena R.",
+             "title": "交互设计师",
+             "image": { "src": "https://i.pravatar.cc/150?u=elena", "alt": "User Elena" }
+          },
+          {
+             "quote": "工作压力大的时候，开个三分钟的‘盒子呼吸’，心率立刻就能降下来。这是我用过最清爽、不啰嗦的冥想 App。",
+             "name": "James W.",
+             "title": "项目经理",
+             "image": { "src": "https://i.pravatar.cc/150?u=james", "alt": "User James" }
+          },
+          {
+             "quote": "它的声音空间（Soundscapes）真的很治愈。雷雨声配合呼吸律动，简直是午休时的‘回血’神方。",
+             "name": "Lily H.",
+             "title": "自由职业者",
+             "image": { "src": "https://i.pravatar.cc/150?u=lily", "alt": "User Lily" }
           }
         ],
         "className": "bg-slate-50/50 dark:bg-slate-900/50"
@@ -224,6 +251,14 @@
           {
             "question": "呼吸波可以离线使用吗？",
             "answer": "可以！下载后，呼吸波在 iPhone 和 Apple Watch 上都可以完全离线使用。"
+          },
+          {
+            "question": "如何开启 HealthKit 数据同步？",
+            "answer": "在您首次开始练习时，应用会提示授权访问健康数据。您也可以随时在 iPhone 的“设置”>“健康”>“数据访问与设备”中手动管理权限。"
+          },
+          {
+            "question": "我可以自定义呼吸频率吗？",
+            "answer": "当然可以！在特定的呼吸模式下，您可以进入设置手动调整吸气、屏息和呼气的时长，打造最适合您的私人练习体验。"
           }
         ],
         "tip": "还有其他问题？<a href='/contact' class='underline'>联系支持团队</a>"
