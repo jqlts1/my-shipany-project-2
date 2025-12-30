@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "呼吸波 - 专业呼吸训练应用",
-    "description": "掌握科学呼吸技巧，支持冰人呼吸法和4-7-8呼吸法。适用于 iPhone 和 Apple Watch，实时监测心率和 HRV。",
-    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+    "title": "BreathWave - Professional Breathing Training App",
+    "description": "Master scientific breathing techniques, supporting Wim Hof Method and 4-7-8 breathing. Available for iPhone and Apple Watch with real-time heart rate and HRV monitoring.",
+    "keywords": "breathing training, Wim Hof Method, 4-7-8 breathing, heart rate monitor, HRV, BreathWave, iPhone, Apple Watch"
   },
   "sign": {
     "sign_in_title": "Sign In",

@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "title": "呼吸波 - プロフェッショナル呼吸トレーニングアプリ",
+    "description": "科学的な呼吸テクニックをマスターしましょう。ヴィム・ホフ法や4-7-8法に対応。iPhoneとApple Watchで心拍数とHRVをリアルタイム監視。",
+    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+  },
+  "sign": {
+    "sign_in_title": "ログイン",
+    "sign_in_description": "アカウントにサインイン",
+    "sign_up_title": "新規登録",
+    "sign_up_description": "アカウントを作成",
+    "email_title": "メールアドレス",
+    "email_placeholder": "メールアドレスを入力してください",
+    "password_title": "パスワード",
+    "password_placeholder": "パスワードを入力してください",
+    "forgot_password": "パスワードをお忘れですか？",
+    "or": "または",
+    "continue": "続行",
+    "no_account": "アカウントをお持ちでないですか？",
+    "already_have_account": "既にアカウントをお持ちですか？",
+    "email_sign_in": "メールでサインイン",
+    "google_sign_in_title": "Googleでサインイン",
+    "github_sign_in_title": "GitHubでサインイン",
+    "close_title": "閉じる",
+    "cancel_title": "キャンセル",
+    "sign_out_title": "ログアウト",
+    "billing_title": "お支払い",
+    "name_title": "お名前",
+    "name_placeholder": "お名前を入力してください",
+    "email_verification_hint": "アクセス可能なメールアドレスを使用してください。登録後にメール認証が必要です。",
+    "admin_title": "管理システム",
+    "credits_title": "クレジット: {credits}",
+    "verify_email_sent": "認証メールを送信しました。受信トレイを確認してください。",
+    "verify_email_required": "サインインする前にメールアドレスを認証してください。",
+    "resend_verification": "認証メールを再送",
+    "resend_verification_sent": "認証メールを再送しました。受信トレイを確認してください。",
+    "verify_email_page_title": "メールを確認してください",
+    "verify_email_page_description": "続行するには、送信されたリンクをクリックしてください：",
+    "verify_email_continue": "続行",
+    "verify_email_tip": "認証後、「続行」をクリックしてください。",
+    "verify_email_not_verified_yet": "まだ認証されていません。先にメールのリンクをクリックしてください。",
+    "verify_email_account_mismatch": "{current} としてサインインしています。このページは {expected} を待機しています。",
+    "resend_verification_countdown": "認証メールを再送 ({seconds}s)",
+    "resend_verification_wait": "再送まで {seconds}秒お待ちください。",
+    "back_to_sign_in": "ログインに戻る"
+  },
+  "payment": {
+    "choose_payment_method": "支払い方法を選択",
+    "choose_payment_method_description": "",
+    "cancel_title": "キャンセル"
+  },
+  "locale_detector": {
+    "title": "ブラウザの言語が {locale} であることを検出しました。切り替えますか？",
+    "switch_to": "{locale} に切り替える"
+  }
+}

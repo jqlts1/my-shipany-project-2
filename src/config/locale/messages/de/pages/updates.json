@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "title": "Update-Protokolle",
+    "description": "Sehen Sie sich die Produkt-Update-Protokolle an, einschließlich der neuesten Funktionen und Verbesserungen."
+  },
+  "page": {
+    "sections": {
+      "updates": {
+        "id": "updates",
+        "title": "Update-Protokolle",
+        "description": "Sehen Sie sich die Produkt-Update-Protokolle an, einschließlich der neuesten Funktionen und Verbesserungen."
+      }
+    }
+  }
+}

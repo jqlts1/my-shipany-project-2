@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "title": "Breathwave - App profissional de treinamento respiratório",
+    "description": "Domine técnicas de respiração científica, suporta método Wim Hof e 4-7-8. Para iPhone e Apple Watch, monitoramento em tempo real de frequência cardíaca e HRV.",
+    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+  },
+  "sign": {
+    "sign_in_title": "Entrar",
+    "sign_in_description": "Entre na sua conta",
+    "sign_up_title": "Cadastrar",
+    "sign_up_description": "Criar uma conta",
+    "email_title": "E-mail",
+    "email_placeholder": "Insira seu e-mail aqui",
+    "password_title": "Senha",
+    "password_placeholder": "Insira sua senha aqui",
+    "forgot_password": "Esqueceu a senha?",
+    "or": "Ou",
+    "continue": "Continuar",
+    "no_account": "Não tem uma conta?",
+    "already_have_account": "Já tem uma conta?",
+    "email_sign_in": "Entrar com e-mail",
+    "google_sign_in_title": "Entrar com Google",
+    "github_sign_in_title": "Entrar com GitHub",
+    "close_title": "Fechar",
+    "cancel_title": "Cancelar",
+    "sign_out_title": "Sair",
+    "billing_title": "Faturamento",
+    "name_title": "Nome",
+    "name_placeholder": "Insira seu nome aqui",
+    "email_verification_hint": "Use um e-mail ao qual você tenha acesso. Você deve verificar seu e-mail após o cadastro.",
+    "admin_title": "Sistema administrativo",
+    "credits_title": "Créditos: {credits}",
+    "verify_email_sent": "E-mail de verificação enviado. Por favor, verifique sua caixa de entrada.",
+    "verify_email_required": "Por favor, verifique seu e-mail antes de entrar.",
+    "resend_verification": "Reenviar e-mail de verificação",
+    "resend_verification_sent": "E-mail de verificação reenviado. Verifique sua caixa de entrada.",
+    "verify_email_page_title": "Verifique seu e-mail",
+    "verify_email_page_description": "Para continuar, clique no link enviado para",
+    "verify_email_continue": "Continuar",
+    "verify_email_tip": "Após verificar, clique em “Continuar”.",
+    "verify_email_not_verified_yet": "Ainda não verificado. Clique primeiro no link no seu e-mail.",
+    "verify_email_account_mismatch": "Sessão iniciada como {current}. Esta página espera por {expected}.",
+    "resend_verification_countdown": "Reenviar e-mail de verificação ({seconds}s)",
+    "resend_verification_wait": "Aguarde {seconds}s antes de reenviar.",
+    "back_to_sign_in": "Voltar para entrar"
+  },
+  "payment": {
+    "choose_payment_method": "Escolher método de pagamento",
+    "choose_payment_method_description": "",
+    "cancel_title": "Cancelar"
+  },
+  "locale_detector": {
+    "title": "Detectamos que o idioma do seu navegador é {locale}. Deseja mudar?",
+    "switch_to": "Mudar para {locale}"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "title": "Blog",
+    "description": "Découvrez les dernières fonctionnalités, solutions et mises à jour du produit."
+  },
+  "page": {
+    "title": "Blog ShipAny",
+    "sections": {
+      "blog": {
+        "id": "blog",
+        "title": "Blog",
+        "description": "Découvrez les dernières fonctionnalités, solutions et mises à jour du produit."
+      }
+    }
+  },
+  "messages": {
+    "all": "Tout",
+    "no_content": "Pas de contenu",
+    "crumb": "Blog",
+    "toc": "Sommaire"
+  }
+}

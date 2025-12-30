@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "title": "Breathwave - Professionelle Atemtraining-App",
+    "description": "Meistern Sie wissenschaftliche Atemtechniken, unterstützt die Wim-Hof-Methode und 4-7-8. Für iPhone und Apple Watch, Echtzeit-Überwachung von Herzfrequenz und HRV.",
+    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+  },
+  "sign": {
+    "sign_in_title": "Anmelden",
+    "sign_in_description": "Melden Sie sich bei Ihrem Konto an",
+    "sign_up_title": "Registrieren",
+    "sign_up_description": "Ein Konto erstellen",
+    "email_title": "E-Mail",
+    "email_placeholder": "Geben Sie hier Ihre E-Mail ein",
+    "password_title": "Passwort",
+    "password_placeholder": "Geben Sie hier Ihr Passwort ein",
+    "forgot_password": "Passwort vergessen?",
+    "or": "Oder",
+    "continue": "Weiter",
+    "no_account": "Sie haben noch kein Konto?",
+    "already_have_account": "Haben Sie bereits ein Konto?",
+    "email_sign_in": "Mit E-Mail anmelden",
+    "google_sign_in_title": "Mit Google anmelden",
+    "github_sign_in_title": "Mit GitHub anmelden",
+    "close_title": "Schließen",
+    "cancel_title": "Abbrechen",
+    "sign_out_title": "Abmelden",
+    "billing_title": "Abrechnung",
+    "name_title": "Name",
+    "name_placeholder": "Geben Sie hier Ihren Namen ein",
+    "email_verification_hint": "Verwenden Sie eine E-Mail-Adresse, auf die Sie Zugriff haben. Sie müssen Ihre E-Mail nach der Registrierung verifizieren.",
+    "admin_title": "Admin-System",
+    "credits_title": "Credits: {credits}",
+    "verify_email_sent": "Verifizierungs-E-Mail gesendet. Bitte überprüfen Sie Ihren Posteingang.",
+    "verify_email_required": "Bitte verifizieren Sie Ihre E-Mail-Adresse, bevor Sie sich anmelden.",
+    "resend_verification": "Verifizierungs-E-Mail erneut senden",
+    "resend_verification_sent": "Verifizierungs-E-Mail erneut gesendet. Bitte überprüfen Sie Ihren Posteingang.",
+    "verify_email_page_title": "Überprüfen Sie Ihre E-Mail",
+    "verify_email_page_description": "Um fortzufahren, klicken Sie auf den Link, der gesendet wurde an",
+    "verify_email_continue": "Weiter",
+    "verify_email_tip": "Klicken Sie nach der Verifizierung auf „Weiter“.",
+    "verify_email_not_verified_yet": "Noch nicht verifiziert. Bitte klicken Sie zuerst auf den Link in Ihrer E-Mail.",
+    "verify_email_account_mismatch": "Angemeldet als {current}. Diese Seite wartet auf {expected}.",
+    "resend_verification_countdown": "Verifizierungs-E-Mail erneut senden ({seconds}s)",
+    "resend_verification_wait": "Bitte warten Sie {seconds}s, bevor Sie sie erneut senden.",
+    "back_to_sign_in": "Zurück zur Anmeldung"
+  },
+  "payment": {
+    "choose_payment_method": "Zahlungsmethode wählen",
+    "choose_payment_method_description": "",
+    "cancel_title": "Abbrechen"
+  },
+  "locale_detector": {
+    "title": "Wir haben erkannt, dass Ihre Browsersprache {locale} ist. Dazu wechseln?",
+    "switch_to": "Zu {locale} wechseln"
+  }
+}

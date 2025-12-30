@@ -1,0 +1,176 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "Breathwave",
+      "logo": {
+        "src": "/imgs/logo.png",
+        "alt": "Breathwave",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "特徴",
+          "url": "/#features-highlight",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "ライブラリ",
+          "url": "/#breathing-library",
+          "icon": "Wind"
+        },
+        {
+          "title": "レビュー",
+          "url": "/#testimonials",
+          "icon": "MessageCircleHeart"
+        },
+        {
+          "title": "FAQ",
+          "url": "/#faq",
+          "icon": "HelpCircle"
+        },
+        {
+          "title": "ニュース",
+          "icon": "FileText",
+          "children": [
+            {
+              "title": "ブログ",
+              "description": "最新ガイドを読む",
+              "url": "/blog",
+              "icon": "Newspaper"
+            },
+            {
+              "title": "変更履歴",
+              "description": "新機能を確認",
+              "url": "/updates",
+              "icon": "Clock"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "アプリをダウンロード",
+        "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+        "variant": "primary",
+        "icon": "Download"
+      }
+    ],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": false,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "設定",
+          "url": "/settings",
+          "icon": "Settings"
+        }
+      ]
+    },
+    "show_sign": false,
+    "show_theme": true,
+    "show_locale": true,
+    "topbanner": {
+      "text": "🎉 Breathwave v2.0 公開中！iOS 16+ と watchOS 9+ に対応。<a href='https://apps.apple.com/app/breathwave' class='underline' target='_blank'>今すぐダウンロード</a>"
+    }
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "Breathwave",
+      "description": "ヴィム・ホフ法や4-7-8法などの科学的な呼吸テクニックをマスターしましょう。心拍数とHRVを記録。iPhoneとApple Watchで利用可能。",
+      "logo": {
+        "src": "/imgs/logo.png",
+        "alt": "Breathwave",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "製品",
+          "children": [
+            {
+              "title": "特徴",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "ライブラリ",
+              "url": "/#breathing-library",
+              "target": "_self"
+            },
+            {
+              "title": "変更履歴",
+              "url": "/updates",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "サポート",
+          "children": [
+            {
+              "title": "ヘルプセンター",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "お問い合わせ",
+              "url": "mailto:support@breathwave.app",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "法的事項",
+          "children": [
+            {
+              "title": "プライバシーポリシー",
+              "url": "/privacy-policy",
+              "target": "_self"
+            },
+            {
+              "title": "利用規約",
+              "url": "/terms-of-service",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/breathwave",
+          "target": "_blank"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "プライバシーポリシー",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "利用規約",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_built_with": false,
+    "show_theme": true,
+    "show_locale": true
+  }
+}

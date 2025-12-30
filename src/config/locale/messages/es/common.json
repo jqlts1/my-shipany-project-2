@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "title": "Breathwave - Aplicación de entrenamiento respiratorio profesional",
+    "description": "Domine técnicas de respiración científica, compatible con método Wim Hof y 4-7-8. Para iPhone y Apple Watch, monitoreo en tiempo real de ritmo cardíaco y HRV.",
+    "keywords": "shipany, shipany-boilerplate, shipany-template-two-demo"
+  },
+  "sign": {
+    "sign_in_title": "Iniciar sesión",
+    "sign_in_description": "Inicie sesión en su cuenta",
+    "sign_up_title": "Registrarse",
+    "sign_up_description": "Crear una cuenta",
+    "email_title": "Correo electrónico",
+    "email_placeholder": "Ingrese su correo aquí",
+    "password_title": "Contraseña",
+    "password_placeholder": "Ingrese su contraseña aquí",
+    "forgot_password": "¿Olvidó su contraseña?",
+    "or": "O",
+    "continue": "Continuar",
+    "no_account": "¿No tiene una cuenta?",
+    "already_have_account": "¿Ya tiene una cuenta?",
+    "email_sign_in": "Iniciar sesión con correo",
+    "google_sign_in_title": "Iniciar sesión con Google",
+    "github_sign_in_title": "Iniciar sesión con GitHub",
+    "close_title": "Cerrar",
+    "cancel_title": "Cancelar",
+    "sign_out_title": "Cerrar sesión",
+    "billing_title": "Facturación",
+    "name_title": "Nombre",
+    "name_placeholder": "Ingrese su nombre aquí",
+    "email_verification_hint": "Use un correo al que tenga acceso. Debe verificar su correo después de registrarse.",
+    "admin_title": "Sistema administrativo",
+    "credits_title": "Créditos: {credits}",
+    "verify_email_sent": "Correo de verificación enviado. Revise su bandeja de entrada.",
+    "verify_email_required": "Verifique su correo antes de iniciar sesión.",
+    "resend_verification": "Reenviar correo de verificación",
+    "resend_verification_sent": "Correo de verificación reenviado. Revise su bandeja de entrada.",
+    "verify_email_page_title": "Revise su correo",
+    "verify_email_page_description": "Para continuar, haga clic en el enlace enviado a",
+    "verify_email_continue": "Continuar",
+    "verify_email_tip": "Después de verificar, haga clic en “Continuar”.",
+    "verify_email_not_verified_yet": "Aún no verificado. Haga clic primero en el enlace de su correo.",
+    "verify_email_account_mismatch": "Sesión iniciada como {current}. Esta página espera a {expected}.",
+    "resend_verification_countdown": "Reenviar correo de verificación ({seconds}s)",
+    "resend_verification_wait": "Espere {seconds}s antes de reenviar.",
+    "back_to_sign_in": "Volver a iniciar sesión"
+  },
+  "payment": {
+    "choose_payment_method": "Elegir método de pago",
+    "choose_payment_method_description": "",
+    "cancel_title": "Cancelar"
+  },
+  "locale_detector": {
+    "title": "Detectamos que el idioma de su navegador es {locale}. ¿Cambiar a él?",
+    "switch_to": "Cambiar a {locale}"
+  }
+}

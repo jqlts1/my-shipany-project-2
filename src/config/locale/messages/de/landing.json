@@ -1,0 +1,176 @@
+{
+  "header": {
+    "id": "header",
+    "brand": {
+      "title": "Breathwave",
+      "logo": {
+        "src": "/imgs/logo.png",
+        "alt": "Breathwave",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Funktionen",
+          "url": "/#features-highlight",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "Bibliothek",
+          "url": "/#breathing-library",
+          "icon": "Wind"
+        },
+        {
+          "title": "Bewertungen",
+          "url": "/#testimonials",
+          "icon": "MessageCircleHeart"
+        },
+        {
+          "title": "FAQ",
+          "url": "/#faq",
+          "icon": "HelpCircle"
+        },
+        {
+          "title": "Neuigkeiten",
+          "icon": "FileText",
+          "children": [
+            {
+              "title": "Blog",
+              "description": "Neueste Anleitungen",
+              "url": "/blog",
+              "icon": "Newspaper"
+            },
+            {
+              "title": "Changelog",
+              "description": "Was ist neu",
+              "url": "/updates",
+              "icon": "Clock"
+            }
+          ]
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "App laden",
+        "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+        "variant": "primary",
+        "icon": "Download"
+      }
+    ],
+    "user_nav": {
+      "show_name": true,
+      "show_credits": false,
+      "show_sign_out": true,
+      "items": [
+        {
+          "title": "Einstellungen",
+          "url": "/settings",
+          "icon": "Settings"
+        }
+      ]
+    },
+    "show_sign": false,
+    "show_theme": true,
+    "show_locale": true,
+    "topbanner": {
+      "text": "🎉 Breathwave v2.0 ist live! Unterstützt iOS 16+ und watchOS 9+. <a href='https://apps.apple.com/app/breathwave' class='underline' target='_blank'>Jetzt laden</a>"
+    }
+  },
+  "footer": {
+    "id": "footer",
+    "brand": {
+      "title": "Breathwave",
+      "description": "Meistern Sie wissenschaftliche Atemtechniken wie Wim Hof und 4-7-8. Verfolgen Sie Herzfrequenz und HRV. Verfügbar für iPhone und Apple Watch.",
+      "logo": {
+        "src": "/imgs/logo.png",
+        "alt": "Breathwave",
+        "width": 100,
+        "height": 100
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Produkt",
+          "children": [
+            {
+              "title": "Funktionen",
+              "url": "/#features",
+              "target": "_self"
+            },
+            {
+              "title": "Bibliothek",
+              "url": "/#breathing-library",
+              "target": "_self"
+            },
+            {
+              "title": "Changelog",
+              "url": "/updates",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Support",
+          "children": [
+            {
+              "title": "Hilfezentrum",
+              "url": "/docs",
+              "target": "_self"
+            },
+            {
+              "title": "Kontakt",
+              "url": "mailto:support@breathwave.app",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Rechtliches",
+          "children": [
+            {
+              "title": "Datenschutz",
+              "url": "/privacy-policy",
+              "target": "_self"
+            },
+            {
+              "title": "Nutzungsbedingungen",
+              "url": "/terms-of-service",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/breathwave",
+          "target": "_blank"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Datenschutzrichtlinie",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Nutzungsbedingungen",
+          "url": "/terms-of-service"
+        }
+      ]
+    },
+    "show_built_with": false,
+    "show_theme": true,
+    "show_locale": true
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "features_highlight",
+      "breathing_library",
+      "immersion",
+      "upcoming",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "block": "hero",
+        "title": "瞬時にフロー状態へ",
+        "eyebrow_text": "2025年No.1マインドフルネスアプリ",
+        "rating_text": "App Storeでの評価",
+        "rating_value": "4.9/5",
+        "highlight_text": "感性を刺激",
+        "description": "多様な呼吸エクササイズを備えたミニマルなマインドフルネスツール。Apple Watch単体での使用もサポート。隙間時間でフローを見つけよう。",
+        "announcement": {
+          "title": "v2.0 リリース",
+          "url": "/updates",
+          "target": "_self"
+        },
+        "buttons": [
+          {
+            "title": "App Storeからダウンロード",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "icon": "Download",
+            "variant": "default",
+            "size": "lg"
+          }
+        ],
+        "tip": "iOS 16+ および watchOS 9+ 対応",
+        "show_avatars": true,
+        "avatars_tip": "10,000人以上のユーザーから信頼されています",
+        "images": [
+          {
+            "src": "/imgs/en/IOS-1.jpg",
+            "alt": "呼吸トレーニング",
+            "label": "トレーニング"
+          },
+          {
+            "src": "/imgs/en/IOS-2.jpg",
+            "alt": "没入型ガイド",
+            "label": "没入体験"
+          },
+          {
+            "src": "/imgs/en/IOS-3.jpg",
+            "alt": "ヘルスケアデータ",
+            "label": "ヘルスケア"
+          }
+        ]
+      },
+
+      "features_highlight": {
+        "id": "features-highlight",
+        "block": "benefits-grid",
+        "title": "主な特徴",
+        "description": "ガイドからフィードバックまで、すべての呼吸を包括的にサポート。",
+        "items": [
+          {
+            "title": "科学的根拠に基づくライブラリ",
+            "description": "ヴィム・ホフ、4-7-8、ボックス・ブリージング、テスラ3-6-9など、睡眠、集中、落ち着きのためのメソッドを収録。",
+            "icon": "Library"
+          },
+          {
+            "title": "没入型ガイダンス",
+            "description": "退屈なタイマーとはおさらば。ダイナミックなビジュアルガイドと5D環境音（雨、海）で、瞬時に心をクリアに。",
+            "icon": "Headphones"
+          },
+          {
+            "title": "Apple Watch同期",
+            "description": "スタンドアロンアプリ。手首を上げて呼吸。ハプティックフィードバックにより、目を閉じていてもリズムに従えます。",
+            "icon": "Watch"
+          },
+          {
+            "title": "心拍バイオフィードバック",
+            "description": "リアルタイムの心拍数モニタリングで、呼吸が生理機能にもたらす落ち着きを即座に確認。",
+            "icon": "Activity"
+          },
+          {
+            "title": "習慣トラッキング",
+            "description": "日々のストリークと統計。マインドフルネスの旅を可視化し、長期的な習慣を構築。",
+            "icon": "Calendar"
+          },
+          {
+            "title": "プライバシーファースト",
+            "description": "あなたの健康データは非公開です。ローカルおよびHealthKitのみに保存され、クラウドへのアップロードはありません。",
+            "icon": "Shield"
+          }
+        ]
+      },
+
+      "breathing_library": {
+        "id": "breathing-library",
+        "block": "breathing-gallery",
+        "title": "科学的呼吸ライブラリ",
+        "description": "各エクササイズには、睡眠、ストレス、集中、活力のための専門的な周波数ガイドが付いています。",
+        "items": [
+          {
+             "title": "4-7-8 睡眠",
+             "description": "天然の精神安定剤。4秒吸って、7秒止めて、8秒吐く。就寝前に最適。",
+             "icon": "Moon",
+             "label": "睡眠"
+          },
+          {
+             "title": "ヴィム・ホフ・メソッド",
+             "description": "活性化呼吸。急速な深呼吸と保息で潜在能力を解き放つ。",
+             "icon": "Flame",
+             "label": "エネルギー"
+          },
+          {
+             "title": "ボックス・ブリージング",
+             "description": "ネイビーシールズの集中法。均等な部分（4-4-4-4）で、プレッシャー下でも瞬時に落ち着く。",
+             "icon": "Box",
+             "label": "集中"
+          },
+          {
+             "title": "テスラ 3-6-9",
+             "description": "より深い意識状態を探求するためのユニークなリズムパターン。",
+             "icon": "Zap",
+             "label": "探求"
+          }
+        ],
+        "className": "bg-slate-50 dark:bg-slate-900/50"
+      },
+
+      "immersion": {
+        "block": "features-media",
+        "title": "没入型A/Vガイド",
+        "description": "洗練されたダイナミックなビジュアルと厳選された5D環境音（雷、波）が、あなたを静寂で包み込みます。",
+        "image": {
+          "src": "/imgs/en/IOS-5.jpg",
+          "alt": "没入体験"
+        },
+        "image_position": "left",
+        "items": [
+          {
+             "title": "ダイナミックなビジュアル",
+             "description": "画面上のリズミカルな光と影に従ってください。カウントは不要です。",
+             "icon": "Eye"
+          },
+          {
+             "title": "5D環境音",
+             "description": "雨や海のような高忠実度のサウンドが、あなたをその場にいざないます。",
+             "icon": "Music"
+          },
+          {
+             "title": "ハプティックフィードバック",
+             "description": "振動の合図により、目を閉じていても呼吸に従うことができます。",
+             "icon": "Vibrate"
+          }
+        ]
+      },
+
+      "upcoming": {
+        "block": "features-media",
+        "title": "近日公開",
+        "description": "より深いマインドフルネス体験をお届けするために、常に進化し続けています。",
+        "image": {
+          "src": "/imgs/en/IOS-4.jpg",
+          "alt": "将来の機能"
+        },
+        "image_position": "right",
+        "items": [
+          {
+             "title": "「理想的」なサウンドスケープ",
+             "description": "純粋な音響ヒーリングと高品質な音楽のための専用スペース。",
+             "icon": "Music"
+          },
+          {
+             "title": "ガイド付き瞑想",
+             "description": "より深い意識の探求へと導く、プロフェッショナルな音声ガイド。",
+             "icon": "Mic"
+          }
+        ]
+      },
+
+      "testimonials": {
+        "id": "testimonials",
+        "block": "testimonials",
+        "title": "ユーザーストーリー",
+        "description": "何千人ものユーザーがBreathwaveで生活を改善しています。",
+        "items": [
+          {
+             "quote": "素晴らしい！UIは趣味が良く、アニメーションもスムーズ。寝る前の4-7-8で、寝つきがずっと良くなりました。",
+             "name": "Sarah M.",
+             "title": "不眠症に悩むユーザー",
+             "image": { "src": "https://i.pravatar.cc/150?u=sarah", "alt": "User Sarah" }
+          },
+          {
+             "quote": "開発者として、ハプティクスが気に入っています。目を閉じてWatchの振動に従うだけで、瞬時にストレス解消になります。",
+             "name": "David L.",
+             "title": "ソフトウェアエンジニア",
+             "image": { "src": "https://i.pravatar.cc/150?u=david", "alt": "User David" }
+          },
+          {
+             "quote": "ヴィム・ホフで本当の活力が湧きます！朝のコーヒーはもう不要。1セッションで完全に目が覚めます。",
+             "name": "Michael K.",
+             "title": "フィットネスコーチ",
+             "image": { "src": "https://i.pravatar.cc/150?u=michael", "alt": "User Michael" }
+          },
+          {
+             "quote": "見事なUIのディテール。デザイナーとして、光とリズムの調和を評価します。Breathwaveはそれを完璧にこなし、禅の状態に達するのを容易にします。",
+             "name": "Elena R.",
+             "title": "UXデザイナー",
+             "image": { "src": "https://i.pravatar.cc/150?u=elena", "alt": "User Elena" }
+          },
+          {
+             "quote": "仕事に圧倒されそうになったら、3分間のボックス・ブリージングに入ります。心拍数が即座に下がります。最高の気晴らしなしの瞑想アプリです。",
+             "name": "James W.",
+             "title": "プロジェクトマネージャー",
+             "image": { "src": "https://i.pravatar.cc/150?u=james", "alt": "User James" }
+          },
+          {
+             "quote": "サウンドスケープは本当に癒されます。雷の音と呼吸のリズムのミックスは、昼休み中の究極の充電ハックです。",
+             "name": "Lily H.",
+             "title": "フリーランサー",
+             "image": { "src": "https://i.pravatar.cc/150?u=lily", "alt": "User Lily" }
+          }
+        ],
+        "className": "bg-slate-50/50 dark:bg-slate-900/50"
+      },
+      "faq": {
+        "id":"faq",
+        "block": "faq",
+        "title": "よくある質問",
+        "description": "ご質問ですか？回答をご用意しています。",
+        "items": [
+          {
+            "question": "Apple Watchは必要ですか？",
+            "answer": "いいえ、iPhoneでも完璧に動作します。ただし、Apple Watchがあれば、心拍数モニタリングとハプティックガイドが追加され、より良い体験が得られます。"
+          },
+          {
+            "question": "ヴィム・ホフ呼吸法は安全ですか？",
+            "answer": "健康な人にとっては一般的に安全です。水中や運転中は絶対に行わないでください。心臓に疾患がある場合は医師に相談してください。"
+          },
+          {
+            "question": "どのくらいの頻度で練習すべきですか？",
+            "answer": "まずは1日1回から始めましょう。ヴィム・ホフは朝に、4-7-8は睡眠やストレスの高い瞬間に最適です。"
+          },
+          {
+            "question": "オフラインで使用できますか？",
+            "answer": "はい！ダウンロードすれば、BreathwaveはiPhoneとApple Watchの両方で100%オフラインで動作します。"
+          },
+          {
+            "question": "HealthKitの同期を有効にするには？",
+            "answer": "最初のセッションを開始すると、アプリはヘルスケアデータへのアクセス許可を求めます。iPhoneの「設定」>「ヘルスケア」>「データアクセスとデバイス」からいつでも権限を管理できます。"
+          },
+          {
+            "question": "呼吸の間隔をカスタマイズできますか？",
+            "answer": "もちろんです！特定の呼吸モードでは、設定から吸気、保息、呼気の時間を手動で調整し、あなたの肺活量に合わせた真にパーソナライズされた練習が可能です。"
+          }
+        ],
+        "tip": "その他の質問は？ <a href='/contact' class='underline'>サポートに連絡</a>"
+      },
+      "cta": {
+        "block": "cta",
+        "title": "今日から旅を始めましょう",
+        "description": "今すぐBreathwaveをダウンロードして、意識的な呼吸の力を発見してください。iPhoneとApple Watchに対応。",
+        "buttons": [
+          {
+            "title": "無料ダウンロード",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "variant": "default",
+            "size": "lg",
+            "icon": "Download"
+          }
+        ],
+        "className": "bg-muted/50"
+      }
+    }
+  }
+}

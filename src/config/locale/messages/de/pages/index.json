@@ -1,0 +1,277 @@
+{
+  "page": {
+    "show_sections": [
+      "hero",
+      "features_highlight",
+      "breathing_library",
+      "immersion",
+      "upcoming",
+      "testimonials",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "block": "hero",
+        "title": "Sofortiger Flow-Zustand",
+        "eyebrow_text": "#1 Achtsamkeits-App 2025",
+        "rating_text": "Bewertung im App Store",
+        "rating_value": "4.9/5",
+        "highlight_text": "Inspiration wecken",
+        "description": "Minimalistisches Achtsamkeitstool mit vielfältigen Atemübungen. Unterstützt eigenständige Nutzung auf der Apple Watch. Finden Sie Ihren Flow in freien Momenten.",
+        "announcement": {
+          "title": "v2.0 Veröffentlicht",
+          "url": "/updates",
+          "target": "_self"
+        },
+        "buttons": [
+          {
+            "title": "Im App Store laden",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "icon": "Download",
+            "variant": "default",
+            "size": "lg"
+          }
+        ],
+        "tip": "Unterstützt iOS 16+ und watchOS 9+",
+        "show_avatars": true,
+        "avatars_tip": "Vertraut von 10.000+ Nutzern",
+        "images": [
+          {
+            "src": "/imgs/en/IOS-1.jpg",
+            "alt": "Atemtraining",
+            "label": "Training"
+          },
+          {
+            "src": "/imgs/en/IOS-2.jpg",
+            "alt": "Immersiver Leitfaden",
+            "label": "Immersion"
+          },
+          {
+            "src": "/imgs/en/IOS-3.jpg",
+            "alt": "Gesundheitsdaten",
+            "label": "Gesundheit"
+          }
+        ]
+      },
+
+      "features_highlight": {
+        "id": "features-highlight",
+        "block": "benefits-grid",
+        "title": "Kern-Highlights",
+        "description": "Umfassende Unterstützung für jeden Atemzug, von der Anleitung bis zum Feedback.",
+        "items": [
+          {
+            "title": "Wissenschaftsbasierte Bibliothek",
+            "description": "Enthält Wim Hof, 4-7-8, Box-Atmung, Tesla 3-6-9 und mehr für Schlaf, Fokus und Ruhe.",
+            "icon": "Library"
+          },
+          {
+            "title": "Immersive Führung",
+            "description": "Verabschieden Sie sich von langweiligen Timern. Dynamische visuelle Anleitungen + 5D-Umgebungsgeräusche (Regen, Ozean), um Ihren Kopf sofort frei zu bekommen.",
+            "icon": "Headphones"
+          },
+          {
+            "title": "Apple Watch Sync",
+            "description": "Eigenständige App. Heben zum Atmen. Haptisches Feedback ermöglicht es Ihnen, dem Rhythmus mit geschlossenen Augen zu folgen.",
+            "icon": "Watch"
+          },
+          {
+            "title": "Herzfrequenz-Biofeedback",
+            "description": "Echtzeit-Herzfrequenzüberwachung zeigt, wie Atmung Ihre Physiologie sofort beruhigt.",
+            "icon": "Activity"
+          },
+          {
+            "title": "Gewohnheitstracking",
+            "description": "Tägliche Serien und Statistiken. Visualisieren Sie Ihre Achtsamkeitsreise und bauen Sie langfristige Gewohnheiten auf.",
+            "icon": "Calendar"
+          },
+          {
+            "title": "Datenschutz zuerst",
+            "description": "Ihre Gesundheitsdaten bleiben privat. Nur lokal und in HealthKit gespeichert. Keine Cloud-Uploads.",
+            "icon": "Shield"
+          }
+        ]
+      },
+
+      "breathing_library": {
+        "id": "breathing-library",
+        "block": "breathing-gallery",
+        "title": "Wissenschaftliche Atem-Bibliothek",
+        "description": "Jede Übung kommt mit professionellen Frequenz-Guides für Schlaf, Stress, Fokus und Energie.",
+        "items": [
+          {
+             "title": "4-7-8 Schlaf",
+             "description": "Natürliches Beruhigungsmittel. 4s Einatmen, 7s Halten, 8s Ausatmen. Perfekt vor dem Schlafengehen.",
+             "icon": "Moon",
+             "label": "Schlaf"
+          },
+          {
+             "title": "Wim-Hof-Methode",
+             "description": "Aktivierungsatmung. Schnelle tiefe Atemzüge und Anhalten, um Potenzial freizusetzen.",
+             "icon": "Flame",
+             "label": "Energie"
+          },
+          {
+             "title": "Box-Atmung",
+             "description": "Navy SEAL Fokus-Technik. Gleiche Teile (4-4-4-4) für sofortige Ruhe unter Druck.",
+             "icon": "Box",
+             "label": "Fokus"
+          },
+          {
+             "title": "Tesla 3-6-9",
+             "description": "Einzigartiges rhythmisches Muster zur Erforschung tieferer Bewusstseinszustände.",
+             "icon": "Zap",
+             "label": "Erforschen"
+          }
+        ],
+        "className": "bg-slate-50 dark:bg-slate-900/50"
+      },
+
+      "immersion": {
+        "block": "features-media",
+        "title": "Immersiver A/V-Guide",
+        "description": "Exquisite dynamische Visuals kombiniert mit kuratierten 5D-Umgebungsgeräuschen (Donner, Wellen) hüllen Sie in Ruhe.",
+        "image": {
+          "src": "/imgs/en/IOS-5.jpg",
+          "alt": "Immersive Erfahrung"
+        },
+        "image_position": "left",
+        "items": [
+          {
+             "title": "Dynamische Visuals",
+             "description": "Folgen Sie dem rhythmischen Licht und Schatten auf dem Bildschirm. Kein Zählen erforderlich.",
+             "icon": "Eye"
+          },
+          {
+             "title": "5D-Ambiente",
+             "description": "High-Fidelity-Geräusche wie Regen und Ozean versetzen Sie direkt in die Szene.",
+             "icon": "Music"
+          },
+          {
+             "title": "Haptisches Feedback",
+             "description": "Vibrationssignale lassen Sie dem Atem auch mit geschlossenen Augen folgen.",
+             "icon": "Vibrate"
+          }
+        ]
+      },
+
+      "upcoming": {
+        "block": "features-media",
+        "title": "Demnächst",
+        "description": "Wir entwickeln uns ständig weiter, um Ihnen tiefere Achtsamkeitserfahrungen zu bringen.",
+        "image": {
+          "src": "/imgs/en/IOS-4.jpg",
+          "alt": "Zukünftige Funktionen"
+        },
+        "image_position": "right",
+        "items": [
+          {
+             "title": "\"Ideale\" Klanglandschaften",
+             "description": "Ein dedizierter Raum für reine Klangheilung und hochwertige Musik.",
+             "icon": "Music"
+          },
+          {
+             "title": "Geführte Meditationen",
+             "description": "Professionelle Stimmführungen, um Sie in tiefere bewusste Erforschung zu leiten.",
+             "icon": "Mic"
+          }
+        ]
+      },
+
+      "testimonials": {
+        "id": "testimonials",
+        "block": "testimonials",
+        "title": "Benutzergeschichten",
+        "description": "Tausende von Nutzern haben ihr Leben mit Breathwave verbessert.",
+        "items": [
+          {
+             "quote": "Das ist erstaunlich! Die UI ist geschmackvoll und die Animationen sind flüssig. 4-7-8 vor dem Bett zu machen hilft mir so viel schneller einzuschlafen.",
+             "name": "Sarah M.",
+             "title": "Insomnikerin",
+             "image": { "src": "https://i.pravatar.cc/150?u=sarah", "alt": "Benutzer Sarah" }
+          },
+          {
+             "quote": "Als Entwickler liebe ich die Haptik. Die Augen schließen und den Vibrationen auf meiner Watch folgen bringt sofortigen Stressabbau.",
+             "name": "David L.",
+             "title": "Softwareingenieur",
+             "image": { "src": "https://i.pravatar.cc/150?u=david", "alt": "Benutzer David" }
+          },
+          {
+             "quote": "Wim Hof gibt mir echte Energie! Kein Morgenkaffee mehr nötig. Ich fühle mich nach einer Sitzung hellwach.",
+             "name": "Michael K.",
+             "title": "Fitness-Coach",
+             "image": { "src": "https://i.pravatar.cc/150?u=michael", "alt": "Benutzer Michael" }
+          },
+          {
+             "quote": "Atemberaubende UI-Details. Als Designer schätze ich die Harmonie zwischen Licht und Rhythmus. Breathwave trifft es genau und macht es mühelos, einen Zen-Zustand zu erreichen.",
+             "name": "Elena R.",
+             "title": "UX Designer",
+             "image": { "src": "https://i.pravatar.cc/150?u=elena", "alt": "Benutzer Elena" }
+          },
+          {
+             "quote": "Wenn die Arbeit überwältigend wird, mache ich eine 3-Minuten-Box-Atmung-Sitzung. Meine Herzfrequenz sinkt sofort. Beste ablenkungsfreie Meditations-App aller Zeiten.",
+             "name": "James W.",
+             "title": "Projektmanager",
+             "image": { "src": "https://i.pravatar.cc/150?u=james", "alt": "Benutzer James" }
+          },
+          {
+             "quote": "Die Klanglandschaften sind wirklich heilend. Der Klang von Donner gemischt mit dem Atemrhythmus ist mein ultimativer Auflade-Hack in der Mittagspause.",
+             "name": "Lily H.",
+             "title": "Freiberufler",
+             "image": { "src": "https://i.pravatar.cc/150?u=lily", "alt": "Benutzer Lily" }
+          }
+        ],
+        "className": "bg-slate-50/50 dark:bg-slate-900/50"
+      },
+      "faq": {
+        "id":"faq",
+        "block": "faq",
+        "title": "FAQ",
+        "description": "Fragen? Wir haben Antworten.",
+        "items": [
+          {
+            "question": "Brauche ich eine Apple Watch?",
+            "answer": "Nein, es funktioniert perfekt auf dem iPhone. Allerdings fügt die Apple Watch Herzfrequenzüberwachung und haptische Anleitungen für ein besseres Erlebnis hinzu."
+          },
+          {
+            "question": "Ist Wim Hof Atmung sicher?",
+            "answer": "Im Allgemeinen sicher für gesunde Menschen. Niemals im Wasser oder beim Autofahren praktizieren. Konsultieren Sie einen Arzt, wenn Sie Herzerkrankungen haben."
+          },
+          {
+            "question": "Wie oft sollte ich üben?",
+            "answer": "Beginnen Sie mit einmal täglich. Wim Hof ist am besten für den Morgen, während 4-7-8 großartig für den Schlaf oder Momente mit hohem Stress ist."
+          },
+          {
+            "question": "Kann ich es offline nutzen?",
+            "answer": "Ja! Einmal heruntergeladen, funktioniert Breathwave zu 100% offline auf iPhone und Apple Watch."
+          },
+          {
+            "question": "Wie aktiviere ich die HealthKit-Synchronisierung?",
+            "answer": "Wenn Sie Ihre erste Sitzung starten, fragt die App nach der Erlaubnis, auf Gesundheitsdaten zuzugreifen. Sie können Berechtigungen jederzeit über iPhone Einstellungen > Gesundheit > Datenzugriff & Geräte verwalten."
+          },
+          {
+            "question": "Kann ich die Atemintervalle anpassen?",
+            "answer": "Absolut! In bestimmten Atemmodi können Sie in die Einstellungen gehen, um die Dauer für Einatmen, Halten und Ausatmen manuell anzupassen, passend zu Ihrer Lungenkapazität für eine wirklich personalisierte Praxis."
+          }
+        ],
+        "tip": "Weitere Fragen? <a href='/contact' class='underline'>Support kontaktieren</a>"
+      },
+      "cta": {
+        "block": "cta",
+        "title": "Beginnen Sie Ihre Reise heute",
+        "description": "Laden Sie Breathwave jetzt herunter und entdecken Sie die Kraft des bewussten Atmens. Unterstützt iPhone und Apple Watch.",
+        "buttons": [
+          {
+            "title": "Kostenlos herunterladen",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "variant": "default",
+            "size": "lg",
+            "icon": "Download"
+          }
+        ],
+        "className": "bg-muted/50"
+      }
+    }
+  }
+}

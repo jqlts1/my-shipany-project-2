@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "title": "Log aggiornamenti",
+    "description": "Visualizza i log degli aggiornamenti del prodotto, incluse le ultime funzionalità e miglioramenti."
+  },
+  "page": {
+    "sections": {
+      "updates": {
+        "id": "updates",
+        "title": "Log aggiornamenti",
+        "description": "Visualizza i log degli aggiornamenti del prodotto, incluse le ultime funzionalità e miglioramenti."
+      }
+    }
+  }
+}
