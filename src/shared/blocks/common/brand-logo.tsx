@@ -21,7 +21,7 @@ export function BrandLogo({ brand }: { brand: BrandType }) {
         />
       )}
       {brand.title && (
-        <span className="text-lg font-medium">{brand.title}</span>
+        <span className="text-base font-bold whitespace-nowrap">{brand.title}</span>
       )}
     </Link>
   );

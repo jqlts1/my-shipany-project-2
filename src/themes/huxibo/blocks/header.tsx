@@ -264,7 +264,7 @@ export function Header({ header }: { header: HeaderType }) {
         >
           <div className="container h-full">
             <div className="flex h-full items-center justify-between">
-              <div className="flex items-center gap-8">
+              <div className="flex items-center gap-4 lg:gap-6">
                 {/* Brand Logo */}
                 {header.brand && <BrandLogo brand={header.brand} />}
 
