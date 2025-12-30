@@ -3,6 +3,7 @@ import type { MDXComponents } from 'mdx/types';
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
+import remarkBreaks from 'remark-breaks';
 
 interface MDXContentProps {
   source: string;
@@ -22,7 +23,7 @@ export async function MDXContent({ source, components }: MDXContentProps) {
       components={mdxComponents}
       options={{
         mdxOptions: {
-          remarkPlugins: [remarkGfm],
+          remarkPlugins: [remarkGfm, remarkBreaks],
           rehypePlugins: [rehypeSlug],
         },
       }}

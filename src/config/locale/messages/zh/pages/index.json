@@ -15,7 +15,7 @@
         "block": "hero",
         "title": "极速心流体验",
         "highlight_text": "快速激发灵感",
-        "description": "呼吸波是一款极简主义的呼吸冥想工具，致力于通过科学验证的呼吸训练法，帮助现代人在碎片化时间里快速减压、助眠或激活大脑。无论是深夜的焦虑，还是午后的疲惫，只需一次呼吸练习，即可找回掌控感。",
+        "description": "极简冥想工具，多种呼吸训练方法，支持Apple Watch独立运行，碎片时间即可冥想,找回掌控感。",
         "announcement": {
           "title": "v2.0 全新发布",
           "url": "/updates",
@@ -36,11 +36,18 @@
         "images": [
           {
             "src": "/imgs/features/ios-2.jpg",
-            "alt": "呼吸波训练界面"
+            "alt": "呼吸波训练界面",
+            "label": "呼吸训练"
           },
           {
             "src": "/imgs/zh-wim.jpg",
-            "alt": "沉浸式引导"
+            "alt": "沉浸式引导",
+            "label": "沉浸引导"
+          },
+          {
+            "src": "/imgs/features/ios-2.jpg",
+            "alt": "健康数据",
+            "label": "健康监测"
           }
         ]
       },

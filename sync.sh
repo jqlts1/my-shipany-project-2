@@ -122,7 +122,8 @@ fi
 # 请在这个括号内添加你要保护的路径
 PROTECTED_PATHS=(
     ".claude/skills/shipany-page-builder",
-    "public/imgs"
+    "public/imgs",
+    "src/shared/blocks/common/mdx-content.tsx",
 )
 
 TEMP_BACKUP_DIR=$(mktemp -d)

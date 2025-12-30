@@ -19,7 +19,7 @@ export function Hero({
   section,
   className,
 }: {
-  section: Section & { images?: Array<{ src: string; alt: string }> };
+  section: Section & { images?: Array<{ src: string; alt: string; label?: string }> };
   className?: string;
 }) {
   const highlightText = section.highlight_text ?? '';
@@ -31,14 +31,21 @@ export function Hero({
   // Carousel State
   const images = section.images || (section.image ? [section.image] : []);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   useEffect(() => {
-    if (images.length <= 1) return;
+    if (images.length <= 1 || !isAutoPlaying) return;
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 4000);
+    }, 4000); // Auto-play every 4 seconds
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, [images.length, isAutoPlaying]);
+
+  const handleTabClick = (index: number) => {
+    setCurrentIndex(index);
+    setIsAutoPlaying(false); // Stop auto-play on manual interaction
+    // Optional: Resume auto-play after 10s of inactivity? For now let's just stop it to respect user intent.
+  };
 
   const containerRef = useRef<HTMLElement>(null);
   const { scrollY } = useScroll();
@@ -149,7 +156,7 @@ export function Hero({
                 className="max-w-3xl lg:max-w-none relative"
             >
                 {texts && texts.length > 0 ? (
-                <h1 className="text-foreground font-serif font-bold text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl text-balance drop-shadow-sm leading-[1.05] sm:leading-[1.05]">
+                <h1 className="text-foreground font-serif font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl text-balance drop-shadow-sm leading-[1.05] sm:leading-[1.05]">
                     {texts[0]}
                     <span className="relative whitespace-nowrap px-2">
                          <span className="absolute inset-0 -skew-y-2 bg-gradient-to-r from-teal-100 to-blue-100 dark:from-teal-900/40 dark:to-blue-900/40 rounded-lg -z-10" />
@@ -161,7 +168,7 @@ export function Hero({
                     {texts[1]}
                 </h1>
                 ) : (
-                <h1 className="text-foreground tracking-tighter font-serif font-bold text-5xl md:text-7xl text-balance">
+                <h1 className="text-foreground tracking-tighter font-serif font-bold text-4xl md:text-6xl text-balance">
                     {section.title}
                 </h1>
                 )}
@@ -174,7 +181,7 @@ export function Hero({
                 transition={{ delay: 0.3, duration: 0.8 }}
             >
                 <p
-                className="text-muted-foreground mt-8 mb-10 text-lg md:text-xl font-medium leading-relaxed text-balance lg:max-w-lg"
+                className="text-muted-foreground mt-6 mb-8 text-base md:text-lg font-medium leading-loose tracking-wide text-balance lg:max-w-md"
                 dangerouslySetInnerHTML={{ __html: section.description ?? '' }}
                 />
             </motion.div>
@@ -219,7 +226,40 @@ export function Hero({
 
 
         {/* === RIGHT COLUMN: 3D VISUALS === */}
-        <div className="relative mt-16 lg:mt-0 perspective-1000 group z-10 w-full flex justify-center lg:justify-end lg:pr-12">
+        <div className="relative mt-16 lg:mt-0 perspective-1000 group z-10 w-full flex flex-col items-center lg:items-end lg:pr-12">
+             
+             {/* TAB SWITCHER - Top of Phone (High Visibility) */}
+             {images.length > 1 && (
+                <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.8 }}
+                    className="relative z-30 mb-6 lg:mr-10"
+                >
+                    <div className="flex items-center gap-1 p-1.5 rounded-full bg-white/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-200/50 dark:border-slate-800/50 shadow-sm">
+                        {images.map((img, idx) => (
+                            <button
+                                key={idx}
+                                onClick={() => handleTabClick(idx)}
+                                className={cn(
+                                    "relative px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-300 z-10",
+                                    currentIndex === idx ? "text-teal-700 dark:text-teal-300" : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300"
+                                )}
+                            >
+                                {currentIndex === idx && (
+                                    <motion.div
+                                        layoutId="activeTabTop"
+                                        className="absolute inset-0 bg-white dark:bg-slate-800 rounded-full shadow-sm -z-10"
+                                        transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                                    />
+                                )}
+                                {img.label || `View ${idx + 1}`}
+                            </button>
+                        ))}
+                    </div>
+                </motion.div>
+             )}
+
              {/* Background glow for the graphic */}
             <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[80%] h-[80%] bg-gradient-radial from-teal-200/40 to-transparent blur-3xl rounded-full -z-10 dark:from-teal-800/20" />
             
@@ -293,6 +333,8 @@ export function Hero({
                       </div>
                  </motion.div>
             </motion.div>
+
+
         </div>
 
       </div>
