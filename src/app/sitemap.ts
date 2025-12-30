@@ -3,8 +3,8 @@ import { locales, defaultLocale, localePrefix } from '@/config/locale';
 import { getPostsAndCategories } from '@/shared/models/post';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Use DOMAIN from env or fallback
-  const domain = process.env.DOMAIN || 'https://huxibo-v2.zeabur.com';
+  // Use NEXT_PUBLIC_APP_URL from env or fallback
+  const domain = process.env.NEXT_PUBLIC_APP_URL || 'https://huxibo-v2.zeabur.com';
   
   // Define your base routes here
   const routes = [
