@@ -137,7 +137,7 @@ export function Hero({
                 className="max-w-3xl lg:max-w-none relative"
             >
                 {texts && texts.length > 0 ? (
-                <h1 className="text-foreground font-serif font-bold text-5xl sm:text-7xl md:text-7xl lg:text-7xl xl:text-8xl text-balance drop-shadow-sm leading-[1.05] sm:leading-[1.05]">
+                <h1 className="text-foreground font-serif font-bold text-4xl sm:text-5xl md:text-7xl lg:text-7xl xl:text-8xl text-balance drop-shadow-sm leading-[1.05] sm:leading-[1.05]">
                     {texts[0]}
                     <span className="relative whitespace-nowrap px-2">
                          <span className="absolute inset-0 -skew-y-2 bg-gradient-to-r from-teal-100 to-blue-100 dark:from-teal-900/40 dark:to-blue-900/40 rounded-lg -z-10" />
@@ -149,7 +149,7 @@ export function Hero({
                     {texts[1]}
                 </h1>
                 ) : (
-                <h1 className="text-foreground tracking-tighter font-serif font-bold text-5xl md:text-7xl text-balance">
+                <h1 className="text-foreground tracking-tighter font-serif font-bold text-4xl sm:text-5xl md:text-7xl text-balance">
                     {section.title}
                 </h1>
                 )}
@@ -293,7 +293,7 @@ export function Hero({
                  {/* HEALTH CARD - Better Position */}
                  <m.div 
                     style={{ y: y2 }}
-                    className="absolute bottom-16 -left-12 sm:-left-16 lg:-left-20 w-44 sm:w-52 bg-white/90 dark:bg-slate-900/90 rounded-2xl p-4 shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)] border border-slate-100/50 dark:border-slate-800/50 backdrop-blur-xl"
+                    className="absolute bottom-16 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:-left-16 lg:-left-20 w-44 sm:w-52 bg-white/90 dark:bg-slate-900/90 rounded-2xl p-4 shadow-[0_20px_40px_-12px_rgba(0,0,0,0.15)] border border-slate-100/50 dark:border-slate-800/50 backdrop-blur-xl"
                  >
                       <div className="flex items-center gap-3 mb-3">
                           <div className="size-10 rounded-full bg-rose-100 dark:bg-rose-900/30 flex items-center justify-center text-rose-500">
