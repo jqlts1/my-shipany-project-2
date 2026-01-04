@@ -363,7 +363,7 @@ export async function getPostsAndCategories({
       // For now, let's just append or replace. The original commented-out code seemed to replace localCategories behavior.
       // But typically we want to merge. Simple merge for now:
       remoteCategories.forEach((cat) => {
-        if (!localCategories.find((lc) => lc.slug === cat.slug)) {
+        if (cat.slug && !localCategories.find((lc) => lc.slug === cat.slug)) {
           localCategories.push(cat);
         }
       });
@@ -489,7 +489,7 @@ export async function getLocalPostsAndCategories({
     return {
       posts: [],
       postsCount: 0,
-      categories: [],
+      categories: [] as BlogCategoryType[],
       categoriesCount: 0,
     };
   }
@@ -539,7 +539,7 @@ export async function getLocalPostsAndCategories({
   return {
     posts: localPostsList,
     postsCount: localPostsList.length,
-    categories: [],
+    categories: [] as BlogCategoryType[],
     categoriesCount: 0,
   };
 }
