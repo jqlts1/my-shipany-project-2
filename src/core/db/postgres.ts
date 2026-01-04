@@ -2,10 +2,11 @@ import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
 
 import { envConfigs } from '@/config';
+import * as schema from '@/config/db/schema';
 import { isCloudflareWorker } from '@/shared/lib/env';
 
 // Global database connection instance (singleton pattern)
-let dbInstance: ReturnType<typeof drizzle> | null = null;
+let dbInstance: ReturnType<typeof drizzle<typeof schema>> | null = null;
 let client: ReturnType<typeof postgres> | null = null;
 
 export function getPostgresDb() {
@@ -46,7 +47,7 @@ export function getPostgresDb() {
       ...connectionSchemaOptions,
     });
 
-    return drizzle(client);
+    return drizzle(client, { schema });
   }
 
   // Singleton mode: reuse existing connection (good for traditional servers and serverless warm starts)
@@ -65,7 +66,7 @@ export function getPostgresDb() {
       ...connectionSchemaOptions,
     });
 
-    dbInstance = drizzle({ client });
+    dbInstance = drizzle(client, { schema });
     return dbInstance;
   }
 
@@ -79,7 +80,7 @@ export function getPostgresDb() {
     ...connectionSchemaOptions,
   });
 
-  return drizzle({ client: serverlessClient });
+  return drizzle(serverlessClient, { schema });
 }
 
 // Optional: Function to close database connection (useful for testing or graceful shutdown)

@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "title": "等待名单验证",
+    "description": "用于验证 Waitlist 功能的测试页面"
+  },
+  "page": {
+    "sections": {
+      "verification_form": {
+        "block": "subscribe",
+        "title": "验证 Waitlist 功能",
+        "description": "请输入测试邮箱，数据应存入数据库。",
+        "submit": {
+          "action": "/api/waitlist",
+          "input": {
+            "placeholder": "test@example.com"
+          },
+          "button": {
+            "title": "加入测试"
+          }
+        },
+        "className": "bg-slate-50 dark:bg-slate-900"
+      }
+    }
+  }
+}

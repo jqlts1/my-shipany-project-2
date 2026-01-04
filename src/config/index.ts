@@ -42,4 +42,5 @@ export const envConfigs: ConfigMap = {
   locale_detect_enabled:
     process.env.NEXT_PUBLIC_LOCALE_DETECT_ENABLED ?? 'false',
   enable_blog_db: process.env.ENABLE_BLOG_DB ?? 'false',
+  blog_api_secret: process.env.BLOG_API_SECRET ?? '',
 };
