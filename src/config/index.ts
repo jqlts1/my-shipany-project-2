@@ -41,4 +41,5 @@ export const envConfigs: ConfigMap = {
   version: packageJson.version,
   locale_detect_enabled:
     process.env.NEXT_PUBLIC_LOCALE_DETECT_ENABLED ?? 'false',
+  enable_blog_db: process.env.ENABLE_BLOG_DB ?? 'false',
 };

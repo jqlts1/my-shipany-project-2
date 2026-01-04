@@ -4,6 +4,7 @@ import { createRelativeLink } from 'fumadocs-ui/mdx';
 import moment from 'moment';
 
 import { db } from '@/core/db';
+import { envConfigs } from '@/config';
 import { logsSource, pagesSource, postsSource } from '@/core/docs/source';
 import { generateTOC } from '@/core/docs/toc';
 import { post } from '@/config/db/schema';
@@ -335,25 +336,39 @@ export async function getPostsAndCategories({
   });
 
   // 2. get remote posts
-  // const {
-  //   posts: remotePosts,
-  //   postsCount: remotePostsCount,
-  //   categories: remoteCategories,
-  //   categoriesCount: remoteCategoriesCount,
-  // } = await getRemotePostsAndCategories({
-  //   page,
-  //   limit,
-  //   locale,
-  //   postPrefix,
-  //   categoryPrefix,
-  // });
+  if (envConfigs.enable_blog_db === 'true') {
+    const {
+      posts: remotePosts,
+      // postsCount: remotePostsCount,
+      categories: remoteCategories,
+      // categoriesCount: remoteCategoriesCount,
+    } = await getRemotePostsAndCategories({
+      page,
+      limit,
+      locale,
+      postPrefix,
+      categoryPrefix,
+    });
 
-  // // add remote posts to postsMap
-  // remotePosts.forEach((post) => {
-  //   if (post.slug) {
-  //     postsMap.set(post.slug, post);
-  //   }
-  // });
+    // add remote posts to postsMap
+    remotePosts.forEach((post) => {
+      if (post.slug) {
+        postsMap.set(post.slug, post);
+      }
+    });
+
+    // If we have remote categories, we might want to merge them or use them
+    if (remoteCategories.length > 0) {
+      // Just an example strategy: if remote enabled, prioritize remote categories or merge
+      // For now, let's just append or replace. The original commented-out code seemed to replace localCategories behavior.
+      // But typically we want to merge. Simple merge for now:
+      remoteCategories.forEach((cat) => {
+        if (!localCategories.find((lc) => lc.slug === cat.slug)) {
+          localCategories.push(cat);
+        }
+      });
+    }
+  }
 
   // Convert map to array and sort by created_at desc
   posts = Array.from(postsMap.values()).sort((a, b) => {
@@ -365,8 +380,8 @@ export async function getPostsAndCategories({
   return {
     posts,
     postsCount: posts.length,
-    categories: localCategories, // was remoteCategories
-    categoriesCount: localCategoriesCount, // was remoteCategoriesCount
+    categories: localCategories,
+    categoriesCount: localCategories.length,
   };
 }
 

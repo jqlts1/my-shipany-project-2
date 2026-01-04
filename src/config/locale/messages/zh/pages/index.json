@@ -12,10 +12,27 @@
       "upcoming",
       "testimonials",
       "faq",
+      "subscribe",
       "cta"
     ],
 
     "sections": {
+      "subscribe": {
+        "id": "waitlist",
+        "block": "subscribe",
+        "title": "加入等待名单",
+        "description": "第一时间获取更新通知，抢先体验新功能。",
+        "submit": {
+          "action": "/api/waitlist",
+          "input": {
+            "placeholder": "请输入您的邮箱"
+          },
+          "button": {
+            "title": "加入等待名单"
+          }
+        },
+        "className": "bg-slate-50 dark:bg-slate-900/50"
+      },
       "hero": {
         "block": "hero",
         "title": "极速心流体验",
