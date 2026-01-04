@@ -48,6 +48,7 @@ export function Nav({ nav, className }: { nav: NavType; className?: string }) {
                 {item?.children ? (
                   <CollapsibleTrigger asChild>
                     <SidebarMenuButton
+                      suppressHydrationWarning
                       tooltip={item?.title}
                       className={`${
                         item?.is_active ||

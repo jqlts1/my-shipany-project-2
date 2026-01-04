@@ -1,0 +1,21 @@
+{
+  "list": {
+    "title": "等待名单",
+    "crumbs": {
+      "admin": "首页",
+      "waitlist": "等待名单"
+    },
+    "search": {
+      "email": {
+        "title": "邮箱",
+        "placeholder": "搜索邮箱"
+      }
+    }
+  },
+  "fields": {
+    "id": "ID",
+    "email": "邮箱",
+    "status": "状态",
+    "created_at": "加入时间"
+  }
+}

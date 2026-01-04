@@ -20,6 +20,11 @@
           "is_expand": true,
           "children": [
             {
+              "title": "Waitlist",
+              "icon": "List",
+              "url": "/admin/waitlist"
+            },
+            {
               "title": "Users",
               "url": "/admin/users",
               "icon": "User"

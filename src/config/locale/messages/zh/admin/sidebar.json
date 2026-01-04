@@ -20,7 +20,12 @@
           "is_expand": true,
           "children": [
             {
-              "title": "用户",
+              "title": "Waitlist",
+              "icon": "List",
+              "url": "/admin/waitlist"
+            },
+            {
+              "title": "用户管理",
               "url": "/admin/users",
               "icon": "User"
             },

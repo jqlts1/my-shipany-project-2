@@ -1,0 +1,21 @@
+{
+  "list": {
+    "title": "Waitlist",
+    "crumbs": {
+      "admin": "Home",
+      "waitlist": "Waitlist"
+    },
+    "search": {
+      "email": {
+        "title": "Email",
+        "placeholder": "Search email"
+      }
+    }
+  },
+  "fields": {
+    "id": "ID",
+    "email": "Email",
+    "status": "Status",
+    "created_at": "Joined At"
+  }
+}
