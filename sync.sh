@@ -3,8 +3,8 @@
 # --- 配置区域 ---
 MY_BRANCH="dev"
 TARGET_BRANCH="dev"
-DEFAULT_UPSTREAM_URL="git@github.com:jqlts1/my-shipany-project-2.git"
-TEMPLATE_IDENTIFIER="jqlts1/my-shipany-project-2"
+DEFAULT_UPSTREAM_URL="git@github.com:shipanyai/shipany-template-two.git"
+TEMPLATE_IDENTIFIER="shipanyai/shipany-template-two"
 LEGACY_TEMPLATE_IDENTIFIER="shipanyai/shipany-template-two"
 
 PROTECTED_PATHS=(
