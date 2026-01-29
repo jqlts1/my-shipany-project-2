@@ -11,7 +11,7 @@
 # =============================================================================
 
 # --- 配置区域 (派生项目需要修改这里) ---
-MY_BRANCH="main"              # 派生项目的分支
+MY_BRANCH="dev"              # 派生项目的分支
 TARGET_BRANCH="dev"           # 上游模板的分支
 DEFAULT_UPSTREAM_URL="git@github.com:jqlts1/my-shipany-project-2.git"  # 二次模板地址
 TEMPLATE_IDENTIFIER="jqlts1/my-shipany-project-2"
