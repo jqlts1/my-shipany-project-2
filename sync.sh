@@ -8,6 +8,8 @@ TEMPLATE_IDENTIFIER="shipanyai/shipany-template-two"
 LEGACY_TEMPLATE_IDENTIFIER="shipanyai/shipany-template-two"
 
 PROTECTED_PATHS=(
+    ".agent"
+    ".claude"
     ".claude/skills/shipany-page-builder"
     "public/imgs"
     "src/shared/blocks/common/mdx-content.tsx"
