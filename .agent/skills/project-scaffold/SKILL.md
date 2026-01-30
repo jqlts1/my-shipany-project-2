@@ -59,12 +59,12 @@ AI 分析: 这是一个健康/冥想类应用
 2. **建议分类**：向用户确认分类（或自动选择）
 3. **检查现有分类**：
    ```bash
-   ls ~/CascadeProjects/
+   ls /Users/zhangte/Documents/WebProjects/
    ```
 4. **创建/进入分类目录**：
    ```bash
-   mkdir -p ~/CascadeProjects/<分类名>
-   cd ~/CascadeProjects/<分类名>
+   mkdir -p /Users/zhangte/Documents/WebProjects/<分类名>
+   cd /Users/zhangte/Documents/WebProjects/<分类名>
    ```
 
 ### 示例对话
@@ -95,10 +95,10 @@ AI: 好的！我来帮你创建项目。
 
 ```bash
 # 进入分类目录
-cd ~/CascadeProjects/<分类>
+cd /Users/zhangte/Documents/WebProjects/<分类>
 
 # 克隆模板
-git clone -b dev git@github.com:zhangte/my-shipany-project-2.git <项目名>
+git clone -b dev git@github.com:jqlts1/my-shipany-project-2.git <项目名>
 
 # 进入项目
 cd <项目名>
@@ -127,7 +127,7 @@ git push -u origin dev
 
 ```bash
 # 确认上游地址正确
-DEFAULT_UPSTREAM_URL="git@github.com:zhangte/my-shipany-project-2.git"
+DEFAULT_UPSTREAM_URL="git@github.com:jqlts1/my-shipany-project-2.git"
 
 # 根据需要调整分支
 MY_BRANCH="dev"
