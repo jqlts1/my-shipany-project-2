@@ -25,6 +25,7 @@ PROTECTED_PATHS=(
     # 项目特有内容
     "public/imgs"
     "src/config/locale/messages"
+    "content"
     # AI 技能和定制化
     ".agent"
     ".claude"
