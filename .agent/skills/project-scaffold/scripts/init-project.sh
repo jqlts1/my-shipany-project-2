@@ -10,9 +10,9 @@
 set -e
 
 # --- 配置 ---
-TEMPLATE_REPO="git@github.com:jqlts1/my-shipany-project-2.git"
+TEMPLATE_REPO="git@github.com:zhangte/my-shipany-project-2.git"
 TEMPLATE_BRANCH="dev"
-DEFAULT_CATEGORY_PATH="/Users/zhangte/Documents/WebProjects"
+DEFAULT_CATEGORY_PATH="$HOME/CascadeProjects"
 
 # --- 颜色 ---
 RED='\033[0;31m'
