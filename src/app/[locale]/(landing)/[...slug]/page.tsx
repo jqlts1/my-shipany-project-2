@@ -17,7 +17,15 @@ async function getDynamicPageConfig(locale: string, slugPaths: string[]) {
     );
     return pageConfig.default || pageConfig;
   } catch (error) {
-    return null;
+    try {
+      // Fallback: if jsonPath is a directory, try loading its index.json
+      const indexConfig = await import(
+        `@/config/locale/messages/${locale}/pages/${jsonPath}/index.json`
+      );
+      return indexConfig.default || indexConfig;
+    } catch (fallbackError) {
+      return null;
+    }
   }
 }
 

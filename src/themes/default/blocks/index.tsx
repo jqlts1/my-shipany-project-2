@@ -25,3 +25,6 @@ export * from './pricing';
 export * from './blog';
 export * from './blog-detail';
 export * from './page-detail';
+export * from './comparison-table';
+export * from './pros-cons';
+export * from './hero-pseo';

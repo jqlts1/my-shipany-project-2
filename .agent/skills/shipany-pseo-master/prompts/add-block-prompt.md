@@ -36,6 +36,12 @@
     *   只有在找不到环境变量时，才回退到 `src/themes/default/blocks/`。
     *   **严禁**将新文件分散在错误的主题目录下，这会导致组件无法加载。
 
+4.  **防御性 Prop 提取 (Defensive Prop Extraction) - CRITICAL BUG FIX**:
+    *   **背景**: 本项目的路由引擎 (`dynamic-page.tsx`) 在渲染区块时，由于 JSON 数据包组织格式的不同，有时会将数据结构展平通过 props 传递给区块 (`{...data}`)，有时则会放在 `section` 对象中传递。
+    *   **强制规定**: 组件的 Props 签名必须同时接受顶层属性和 `section` 对象。在提取数据时，**必须双重求值**，以防出现空壳 UI。
+    *   **正确范例**: `const title = props.title || props.section?.title;`
+    *   **错误范例**: 直接认定数据必然存在于 `props.title` 或必然存在于 `props.section.title`。
+
 # Task Steps
 
 ## Step 1: 视觉风格分析

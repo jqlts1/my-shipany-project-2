@@ -25,6 +25,141 @@ When creating dynamic pages, **strictly follow** these JSON structures.
 
 ---
 
+## Hero PSEO
+
+`block: "hero-pseo"`
+
+A clean, text-heavy Hero block designed specifically for Programmatic SEO. Prioritizes readability and high-conversion intent over complex visuals.
+
+### Props
+
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `block` | `string` | Fixed: `"hero-pseo"` |
+| `eyebrow_text` | `string` | Small overline text |
+| `title` | `string` | Main H1 title |
+| `description` | `string` | Subtitle/description (HTML allowed) |
+| `announcement` | `object` | Small text pill below buttons `{ title }` |
+| `buttons` | `array` | List of `{ title, url, variant, size, icon }` |
+
+### Example
+
+```json
+{
+  "hero-pseo": {
+    "block": "hero-pseo",
+    "eyebrow_text": "PSEO Infrastructure",
+    "title": "ShipAny vs Notion",
+    "description": "Why modern growth teams are switching to ShipAny for generating thousands of <strong>Programmatic SEO pages</strong> at scale without worrying about Vercel timeouts or missing metadata.",
+    "buttons": [
+      {
+        "title": "Start modernizing your SEO",
+        "primary": true,
+        "url": "/pricing"
+      }
+    ],
+    "announcement": {
+      "title": "Trusted by 200+ Growth Hackers"
+    }
+  }
+}
+```
+
+---
+
+## Comparison Table
+
+`block: "comparison-table"`
+
+A hard feature comparison matrix typically used for Competitor vs Competitor SEO pages.
+
+### Props
+
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `block` | `string` | Fixed: `"comparison-table"` |
+| `title` | `string` | Section Title |
+| `description` | `string` | Subtitle |
+| `features` | `array` | Rows of `{ name, us, them }`. The `us` and `them` fields can be `boolean` (Check/X icon) or `string` for text values. |
+| `usName` | `string` | Header for your product column (defaults to "Us") |
+| `themName` | `string` | Header for the competitor column (defaults to "Them") |
+| `usIcon` | `string` | Custom Lucide icon for your product |
+| `themIcon` | `string` | Custom Lucide icon for the competitor |
+
+### Example
+
+```json
+{
+  "comparison": {
+    "block": "comparison-table",
+    "title": "A smarter choice for HRV optimization",
+    "description": "See why thousands are switching to BreathWave for science-backed breathing protocols.",
+    "usName": "BreathWave",
+    "themName": "Other Apps",
+    "usIcon": "Activity",
+    "themIcon": "Dumbbell",
+    "features": [
+      {
+        "name": "HRV Real-time Biofeedback",
+        "us": true,
+        "them": false
+      },
+      {
+        "name": "Apple Health Native Sync",
+        "us": true,
+        "them": "Partial"
+      }
+    ]
+  }
+}
+```
+
+---
+
+## Pros & Cons
+
+`block: "pros-cons"`
+
+Displays a side-by-side list of advantages and disadvantages. Ideal for highlighting switching costs or addressing detailed feature sets in PSEO articles.
+
+### Props
+
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `block` | `string` | Fixed: `"pros-cons"` |
+| `title` | `string` | Main section Title |
+| `description` | `string` | Supporting subtitle |
+| `prosTitle` | `string` | Left column title (defaults to "Pros") |
+| `consTitle` | `string` | Right column title (defaults to "Cons") |
+| `pros` | `array` | List of string advantages (rendered with green checks) |
+| `cons` | `array` | List of string disadvantages (rendered with red info/X icons) |
+
+### Example
+
+```json
+{
+  "switching-cost": {
+    "block": "pros-cons",
+    "title": "The true cost of ignoring your nervous system",
+    "description": "Compare the benefits of daily HRV breathing vs traditional meditation.",
+    "prosTitle": "With BreathWave",
+    "consTitle": "Traditional Meditation",
+    "pros": [
+      "Immediate, measurable HRV increase",
+      "Syncs instantly with Apple Watch data",
+      "Scientifically proven protocols"
+    ],
+    "cons": [
+      "Hard to measure actual physiological impact",
+      "No real-time biofeedback",
+      "Takes longer to see stress-reduction results"
+    ]
+  }
+}
+```
+
+---
+
 ## Hero
 
 `block: "hero"`
