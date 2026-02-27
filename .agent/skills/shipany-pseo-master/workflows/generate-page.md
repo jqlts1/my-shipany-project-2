@@ -32,7 +32,20 @@ Select one of the following macro-templates to structure `page.show_sections`:
 ## 3. Delegation (Missing Blocks)
 If a needed block isn't in `block-specs.md`, DO NOT invent fake JSON. Instruct the user to run the `create-block` track first.
 
-## 4. Multi-Language Output & URL Siloing (Topic Clusters)
+## 4. Strict SEO Semantics & Copywriting Rules (MANDATORY)
+When generating content for the JSON blocks, you MUST adhere to the following technical SEO standards:
+1. **H-Tag Hierarchy**: 
+   - The `title` of the `hero-pseo` or `hero` block is your **H1**. It MUST contain the exact target keyword. There can only be ONE H1 per page.
+   - The `title` properties of all subsequent main blocks (e.g., `comparison-table`, `faq`) act as **H2**s. They should include secondary or LSI (Latent Semantic Indexing) keywords.
+   - The questions inside the `faq` block act as **H3**s. They should target long-tail search intent (e.g., "People Also Ask" questions).
+2. **Keyword Density & Placement**:
+   - Do NOT keyword stuff. Maintain a natural density (~1-2%).
+   - The target keyword MUST appear in the first 100 words of the `hero` description.
+   - Use bold tags (`<strong>`) in descriptions for semantic emphasis on LSI keywords.
+3. **Search Intent Matching**:
+   - Ensure the tone matches the intent (Transactional for "VS" pages, Informational for "Glossary" pages).
+
+## 5. Multi-Language Output & URL Siloing (Topic Clusters)
 To build a strong SEO structure, encourage the user to place related pages into nested directories (e.g., `pages/alternatives/calm.json`, `pages/glossary/hrv.json`). This creates powerful URL silos.
 
 **CRITICAL RULE: The Hub & Spoke Model**
