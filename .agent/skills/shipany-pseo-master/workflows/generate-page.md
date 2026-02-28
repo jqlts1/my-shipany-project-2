@@ -6,7 +6,7 @@ This workflow guides you through generating the JSON payload for a Programmatic 
 - **Identify the App**: Read project context.
 - **Active Theme**: Read `NEXT_PUBLIC_THEME` from `.env.development` or `.env`.
 - **Reference Material**: Read existing landing pages in `src/config/locale/messages/en/pages/` to clone the brand tone.
-- **Block Specs**: READ `.agent/skills/shipany-pseo-master/references/block-specs.md` to know what blocks are available.
+- **Block Specs**: READ `src/themes/{NEXT_PUBLIC_THEME}/block-specs.md` to know what blocks are available for this specific project design.
 
 ## 2. Page Template Strategies
 Select one of the following macro-templates to structure `page.show_sections`:
@@ -30,7 +30,7 @@ Select one of the following macro-templates to structure `page.show_sections`:
 - Rewrite ONLY the localized text to fit the new keyword.
 
 ## 3. Delegation (Missing Blocks)
-If a needed block isn't in `block-specs.md`, DO NOT invent fake JSON. Instruct the user to run the `create-block` track first.
+If a needed block isn't in `src/themes/{NEXT_PUBLIC_THEME}/block-specs.md`, DO NOT invent fake JSON. Instruct the user to run the `create-block` track first.
 
 ## 4. Strict SEO Semantics & Copywriting Rules (MANDATORY)
 When generating content for the JSON blocks, you MUST adhere to the following technical SEO standards:

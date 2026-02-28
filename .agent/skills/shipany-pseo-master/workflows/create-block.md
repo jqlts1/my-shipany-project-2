@@ -16,4 +16,4 @@ Read the project's `.env` or `.env.development` file to find `NEXT_PUBLIC_THEME`
 - Export your component in `src/themes/<YOUR_THEME>/blocks/index.tsx`.
 
 ## 4. JSON Schema Registration
-If this block is used for PSEO generation, you MUST document its JSON schema (with an example) at the bottom of `.agent/skills/shipany-pseo-master/references/block-specs.md` so that the `generate-page` orchestrator knows it exists.
+If this block is used for PSEO generation, you MUST document its JSON schema (with an example) at the bottom of `src/themes/{NEXT_PUBLIC_THEME}/block-specs.md` so that the `generate-page` orchestrator knows it exists.
