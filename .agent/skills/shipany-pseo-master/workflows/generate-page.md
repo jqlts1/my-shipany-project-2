@@ -44,6 +44,9 @@ When generating content for the JSON blocks, you MUST adhere to the following te
    - Use bold tags (`<strong>`) in descriptions for semantic emphasis on LSI keywords.
 3. **Search Intent Matching**:
    - Ensure the tone matches the intent (Transactional for "VS" pages, Informational for "Glossary" pages).
+4. **Global Root Metadata (CRITICAL FOR `<title>`)**:
+   - YOU MUST generate a `metadata` object at the very root of the JSON file (sibling to `page`).
+   - This `metadata` object MUST contain `title` (max 60 chars) and `description` (max 160 chars) properties. If you omit this, the page will inherit the website's generic SEO title, destroying the PSEO keyword strategy.
 
 ## 5. Multi-Language Output & URL Siloing (Topic Clusters)
 To build a strong SEO structure, encourage the user to place related pages into nested directories (e.g., `pages/alternatives/calm.json`, `pages/glossary/hrv.json`). This creates powerful URL silos.
