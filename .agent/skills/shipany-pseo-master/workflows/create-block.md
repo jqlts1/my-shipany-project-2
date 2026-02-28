@@ -1,6 +1,6 @@
 # `create-block` Workflow
 
-If you are asked to create a new frontend React UI block, you **MUST** strictly follow these steps:
+If you are asked to create a new frontend React UI block OR modify an existing one, you **MUST** strictly follow these steps:
 
 ## 1. Read the Golden Rules
 You MUST first read `.agent/skills/shipany-pseo-master/prompts/add-block-prompt.md`. This contains critical rules regarding Defensive Prop Extraction to prevent blank UIs. DO NOT write code before reading it.
@@ -15,5 +15,5 @@ Read the project's `.env` or `.env.development` file to find `NEXT_PUBLIC_THEME`
 - Check existing blocks in the theme's folder to copy UI tokens (spacing, dark mode colors).
 - Export your component in `src/themes/<YOUR_THEME>/blocks/index.tsx`.
 
-## 4. JSON Schema Registration
-If this block is used for PSEO generation, you MUST document its JSON schema (with an example) at the bottom of `src/themes/{NEXT_PUBLIC_THEME}/block-specs.md` so that the `generate-page` orchestrator knows it exists.
+## 4. JSON Schema Registration (MANDATORY)
+Whenever you create a new block OR add new props/features to an existing block, YOU (the AI) MUST automatically edit the corresponding JSON schema documentation in `src/themes/{NEXT_PUBLIC_THEME}/block-specs.md` so that the `generate-page` orchestrator knows about the new capabilities. Do not ask the user to do this; do it yourself within this workflow.
