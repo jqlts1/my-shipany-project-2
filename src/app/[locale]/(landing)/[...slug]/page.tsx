@@ -94,16 +94,13 @@ export async function generateMetadata({
       }
     }
 
-    title = dynamicPageConfig.metadata.title;
-    description = dynamicPageConfig.metadata.description;
+    const dynamicMetadata = await import('@/shared/lib/seo').then(mod => mod.getMetadata({
+      title: dynamicPageConfig.metadata.title,
+      description: dynamicPageConfig.metadata.description,
+      canonicalUrl: canonicalUrl
+    })({ params: Promise.resolve({ locale }) }));
 
-    return {
-      title,
-      description,
-      alternates: {
-        canonical: canonicalUrl,
-      },
-    };
+    return dynamicMetadata;
   }
 
   // 3. return common metadata
