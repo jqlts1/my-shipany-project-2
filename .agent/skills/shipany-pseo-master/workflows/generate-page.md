@@ -55,6 +55,7 @@ To build a strong SEO structure, encourage the user to place related pages into 
 If you suggest creating a new nested directory (e.g., `pages/alternatives/`), you MUST also generate the "Hub" page for that directory: `pages/alternatives/index.json`. 
 - The `index.json` should act as a directory/pillar page (using `hero` and `showcases` blocks to link out to all the child isolated pages like `calm.json` and `oura.json`).
 - Without this `index.json`, the user will hit a 404 if they navigate to `/alternatives`, destroying the SEO silo.
+- LIKE ALL OTHER PAGES, this `index.json` MUST ALSO contain the root `metadata` object with a unique `<title>` and `description` to ensure the directory itself ranks.
 
 You MUST output the JSON structure for multiple supported locales (English and Chinese):
 1. Output English to `src/config/locale/messages/en/pages/{cluster-dir}/{slug}.json` (And the `index.json` if new).
