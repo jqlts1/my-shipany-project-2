@@ -2,7 +2,13 @@
 
 This workflow guides you through generating the JSON payload for a Programmatic SEO page.
 
-## 1. Context Acquisition (MANDATORY)
+## 1. Pre-flight Taxonomy Check (MANDATORY)
+Before generating ANY pages, you MUST verify the site's PSEO architecture to prevent orphan pages and URL bloat.
+- **Read the Ledger**: Check if `content/pseo-architecture.md` exists.
+- **Branch A (Missing)**: If it does NOT exist, STOP. Do not generate pages. Enter "Architect Mode". Interview the user to define 3-5 core PSEO Hubs (e.g., `/sleep`, `/anxiety`) based on their product. Generate and save `pseo-architecture.md`.
+- **Branch B (Exists)**: If it exists, READ IT. You MUST route the user's requested keywords into one of the designated Hubs specified in this document (e.g., routing "fear of flying" to the `/anxiety` hub). DO NOT invent new top-level directories unless explicitly negotiating an architecture update with the user.
+
+## 2. Context Acquisition (MANDATORY)
 - **Identify the App**: Read project context.
 - **Active Theme**: Read `NEXT_PUBLIC_THEME` from `.env.development` or `.env`.
 - **Reference Material**: Read existing landing pages in `src/config/locale/messages/en/pages/` to clone the brand tone.
