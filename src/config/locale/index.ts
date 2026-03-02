@@ -54,9 +54,4 @@ export const localeMessagesPaths = [
   'pages/showcases',
   'pages/blog',
   'pages/updates',
-  'pages/sleep/index',
-  'pages/sleep/4-7-8-breathing',
-  'pages/sleep/box-breathing',
-  'pages/energy/index',
-  'pages/energy/wim-hof'
 ];
