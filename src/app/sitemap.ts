@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { locales, defaultLocale, localePrefix } from '@/config/locale';
+import { locales, defaultLocale, localePrefix, localeMessagesPaths } from '@/config/locale';
 import { envConfigs } from '@/config';
 import { getPostsAndCategories } from '@/shared/models/post';
 
@@ -38,7 +38,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       });
     });
 
-    // 2. Add blog posts
+    // 2. Add Dynamic PSEO Pages (from localeMessagesPaths)
+    localeMessagesPaths.forEach((item) => {
+      if (typeof item === 'string' && item.startsWith('pages/')) {
+        // e.g. "pages/sleep/index" -> "sleep/index" -> "/sleep/index"
+        let routePath = '/' + item.replace('pages/', '');
+        // e.g. "/sleep/index" -> "/sleep"
+        if (routePath.endsWith('/index')) {
+          routePath = routePath.replace('/index', '');
+        }
+
+        const url = `${domain}${localePath}${routePath}`;
+        sitemapEntries.push({
+          url,
+          lastModified: new Date(),
+          changeFrequency: 'weekly',
+          priority: 0.8, // High priority for PSEO landers
+        });
+      }
+    });
+
+    // 3. Add blog posts
     try {
       // Fetch posts for the current locale
       const { posts } = await getPostsAndCategories({ 
