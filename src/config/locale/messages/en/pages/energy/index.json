@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "title": "Energizing Breathing Guide: Quit Caffeine & Beat Morning Fatigue | BreathWave",
+    "description": "Explore intense breathing techniques like the Wim Hof Method. Flush your brain with oxygen and trigger adrenaline to wake up your body in 3 minutes."
+  },
+  "page": {
+    "show_sections": [
+      "hero",
+      "methods_grid",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "block": "hero",
+        "title": "The Energy Breathing Vault",
+        "description": "Reboot your brain without caffeine.<br/> Explore high-intensity activation breathing methods. Through hyper-oxygenation and breath-hold challenges, awaken every inch of muscle and nerve.",
+        "buttons": [
+          {
+            "title": "Get BreathWave App",
+            "url": "https://apps.apple.com/us/app/breathwave/id6745539686",
+            "variant": "default",
+            "icon": "Apple"
+          }
+        ]
+      },
+      "methods_grid": {
+        "block": "showcases",
+        "title": "Activation Methods",
+        "description": "Click to view detailed physiological breakdowns and guided practices.",
+        "groups": [
+          {
+            "name": "all",
+            "title": "All"
+          },
+          {
+            "name": "morning",
+            "title": "Morning Wake-Up"
+          },
+          {
+            "name": "focus",
+            "title": "Hyper Focus"
+          }
+        ],
+        "items": [
+          {
+            "title": "Wim Hof Method: More Intense Than Black Coffee",
+            "description": "A modern recreation of ancient Tummo meditation. Heavy hyperventilation induces a micro-adrenaline release, completely sweeping away morning grogginess.",
+            "image": {
+              "src": "/imgs/en/IOS-2.jpg",
+              "alt": "Wim Hof Breathing"
+            },
+            "group": "morning",
+            "url": "/energy/wim-hof",
+            "button": {
+              "title": "Read Guide",
+              "url": "/energy/wim-hof",
+              "icon": "ArrowRight"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "block": "faq",
+        "title": "FAQs About Energizing Breath",
+        "items": [
+          {
+            "question": "Are these high-intensity methods safe?",
+            "answer": "As long as practiced in a safe environment (sitting on a couch or lying in bed), they are perfectly safe for healthy individuals. NEVER practice while driving or in water."
+          },
+          {
+            "question": "Why do my hands and feet tingle after practice?",
+            "answer": "Expelling massive amounts of CO2 temporarily alters blood pH and constricts blood vessels. This tingling (T-rex hands) is the standard physiological response of energy charging and means your brain is being activated."
+          }
+        ]
+      },
+      "cta": {
+        "block": "cta",
+        "title": "Start Your Day With Nature's Power",
+        "description": "Ready for a brainstorm? Put on your headphones, turn up the tempo, and experience an instant recharge.",
+        "buttons": [
+          {
+            "title": "Experience For Free",
+            "url": "https://apps.apple.com/us/app/breathwave/id6745539686",
+            "variant": "default",
+            "icon": "Apple"
+          }
+        ]
+      }
+    }
+  }
+}

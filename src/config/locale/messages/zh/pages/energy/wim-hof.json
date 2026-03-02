@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "title": "Wim Hof 冰人呼吸法：比黑咖啡更猛烈的早晨唤醒指南 | 呼吸波 App",
+    "description": "早起无力、下午犯困怎么办？掌握风靡全球的 Wim Hof 冰人呼吸法。通过高频换气与极限屏息，瞬间激发身体潜能，用呼吸波 App 安全跟练。"
+  },
+  "page": {
+    "show_sections": [
+      "hero",
+      "stats",
+      "mechanism",
+      "steps",
+      "comparison",
+      "showcase",
+      "users",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "block": "hero-pseo",
+        "eyebrow_text": "自然界的神奇提神剂",
+        "title": "Wim Hof 冰人呼吸法：<br/>比黑咖啡更猛烈的能量开关",
+        "description": "早晨起床感到浑身乏力，或者下午三点准时犯困？不要急着灌下第三杯咖啡。<br/>体验风靡硅谷与职业运动员圈层的 <strong>Wim Hof 冰人呼吸法</strong>。源自古老 Tummo 冥想的现代再造，通过特定高频深呼吸诱发体内的微观肾上腺素释放，只需 3 分钟，彻底扫除大脑残余的疲惫感。",
+        "buttons": [
+          {
+            "title": "获取专业可视化跟练",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "icon": "Download",
+            "variant": "default",
+            "size": "lg"
+          }
+        ],
+        "announcement": {
+          "title": "戴上耳机，调大节奏，跟着屏幕光环起飞"
+        }
+      },
+
+      "stats": {
+        "block": "stats",
+        "title": "为什么硅谷精英都在练习冰人呼吸？",
+        "description": "纯粹的生理学奇迹，直接作用于你的神经系统生态",
+        "items": [
+          {
+            "title": "肾上腺素",
+            "description": "短时间内安全地刺激自然释放，唤醒机体"
+          },
+          {
+            "title": "弱碱性",
+            "description": "排出大量二氧化碳促使血液呈微碱性，减少炎症"
+          },
+          {
+            "title": "无耐药性",
+            "description": "不会像咖啡因那样导致午后崩溃或耐受"
+          }
+        ]
+      },
+
+      "mechanism": {
+        "block": "features-list",
+        "title": "打破疲惫循环：冰人呼吸的内核",
+        "description": "与助眠呼吸法（如 4-7-8）试图降低心率完全相反，Wim Hof 是一种“受控激变”。它通过打破常规呼吸的氧气/二氧化碳平衡，欺骗身体进入一种高度警觉但心理平静的特殊状态。",
+        "image": {
+          "src": "/imgs/zh/IOS-3.jpg",
+          "alt": "高频呼吸节奏图"
+        },
+        "items": [
+          {
+            "title": "阶段一：超通气 (Hyperventilation)",
+            "description": "30 次深吸浅呼。像海浪一样把氧气压入身体的每一个细胞，同时大量排出二氧化碳，让你感到轻微的眩晕和酥麻。",
+            "icon": "Wind"
+          },
+          {
+            "title": "阶段二：低氧屏息 (Retension)",
+            "description": "呼出最后一口气后停止呼吸。由于血液中二氧化碳浓度极低，你可以轻松憋气 1 到 3 分钟！这个强烈的低氧信号会触发身体释放大量能量激素。",
+            "icon": "Timer"
+          },
+          {
+            "title": "阶段三：恢复吸气 (Recovery)",
+            "description": "深吸一口气并保持 15 秒，将富氧血液强行挤压输送到大脑，随后完全释放，享受多巴胺分泌带来的巨大愉悦感。",
+            "icon": "Brain"
+          }
+        ]
+      },
+
+      "steps": {
+        "block": "features-step",
+        "label": "充能实操",
+        "title": "今早，在床上完成你的第一次冲刷",
+        "description": "安全警告：绝对不要在站立、开车或水中进行（可能因低氧晕厥导致严重危险）。请选择舒适地坐下或平躺。",
+        "items": [
+          {
+            "title": "步骤 1：全心吸气，随性呼出 (30次)",
+            "description": "从肚子到胸部深深吸满，然后顺其自然地松开呼气（不要用力吐干净）。连做 30 次，你会感觉手脚发麻，头脑轻飘飘的。",
+            "icon": "Activity"
+          },
+          {
+            "title": "步骤 2：排空肺部，挑战极限屏气",
+            "description": "第 30 次呼出后，立刻闭气！不要吸气。放松全身，观察思想。只要不是极度难受，就尽量坚持。大多数人第一次就能轻松超过 1 分钟。",
+            "icon": "PauseCircle"
+          },
+          {
+            "title": "步骤 3：深吸到底并保持 (15秒)",
+            "description": "当你感觉强烈的呼吸欲望时，深深吸满一口气，仿佛要将气压入大脑，屏住 15 秒钟。最后松开吐气。完成一个循环。建议进行 3-4 个循环。",
+            "icon": "ArrowUpCircle"
+          }
+        ]
+      },
+
+      "comparison": {
+        "block": "pros-cons",
+        "title": "为什么跟练 Wim Hof 必须使用专业的计时器？",
+        "description": "30 次的高频深呼吸极其容易让人失去计数能力；而极限屏息若没有计时挑战，很难激发个人的潜能边界。",
+        "prosTitle": "使用 呼吸波 App",
+        "consTitle": "自己盲目练习",
+        "pros": [
+          "强烈的视觉声浪动画，完美卡点你的每一次吸/呼",
+          "专属屏息计时仪表盘，每次突破时长带来巨大成就感",
+          "全程震动辅助，闭眼也能知道目前处于 30 次循环的哪一步",
+          "科学设置的安全铃声，避免低氧过度沉迷"
+        ],
+        "cons": [
+          "数到十几下就忘记了遍数，大脑一片混乱",
+          "不知道自己屏息了多久，没有对比和成就感",
+          "无法保持每一下深吸的力度均匀，效果大打折扣",
+          "独自练习容易因不了解正确节奏而产生恐慌"
+        ]
+      },
+
+      "showcase": {
+        "block": "features-media",
+        "title": "沉浸式激振视听引擎",
+        "description": "与暗黑助眠模式不同，呼吸波为 Wim Hof 模式设计了极具张力的“能量光环”与重低音节拍。让你不仅在生理上，更在全感官层面上被彻底点燃。",
+        "image": {
+          "src": "/imgs/zh/IOS-2.jpg",
+          "alt": "能量呼吸模式界面"
+        },
+        "image_position": "left",
+        "items": [
+          {
+            "title": "动态心率联动",
+            "description": "佩戴 Apple Watch 时，屏幕上的光效颜色会随着你实际心率在最高点与底部的变化而动态过渡。",
+            "icon": "HeartPulse"
+          },
+          {
+            "title": "自定义组数与节奏",
+            "description": "新手从每组 30 次开始；如果你是老练的海象，可以自由将超通气次数调高至 40 次或更快节奏。",
+            "icon": "Settings"
+          }
+        ]
+      },
+
+      "users": {
+        "block": "testimonials",
+        "title": "打碎早晨的起床气",
+        "description": "无论是备考的学生还是冲刺业绩的高管，能量呼吸改变了他们的清晨。",
+        "items": [
+          {
+            "name": "Jason T.",
+            "role": "资深程序员",
+            "quote": "咖啡对我已经没用了。每天早晨在地上坐着做三组 Wim Hof，憋气 1 分半后那个深吸的 15 秒，简直是颅内高潮。直接让我一天都充满斗志！",
+            "image": { "src": "https://i.pravatar.cc/150?u=jason", "alt": "Jason" }
+          },
+          {
+            "name": "Kelly C.",
+            "role": "健身爱好者",
+            "quote": "呼吸波的这个动态环太爽了，那种低音轰鸣配上手表的震动，跟着吸气呼气，感觉自己像在某种黑客帝国的训练舱里。憋气成绩每天都在进步！",
+            "image": { "src": "https://i.pravatar.cc/150?u=kelly", "alt": "Kelly" }
+          },
+          {
+            "name": "Li Wei.",
+            "role": "创业团队创始人",
+            "quote": "下午 3 点最犯困的时候，与其去买星巴克，不如进会议室躺平花 5 分钟来两组。身体的轻微刺痛感是真真切切的唤醒信号，比什么红牛都管用。",
+            "image": { "src": "https://i.pravatar.cc/150?u=li", "alt": "Li Wei" }
+          }
+        ],
+        "className": "bg-slate-50/50 dark:bg-slate-900/50"
+      },
+
+      "faq": {
+        "block": "faq",
+        "title": "冰雪修行者的进阶解答 (FAQ)",
+        "description": "安全、科学地发掘身体极限",
+        "items": [
+          {
+            "question": "做这个呼吸法手脚发麻、抽筋、头晕正常吗？",
+            "answer": "非常正常。由于高频深呼吸排出了体内的大量二氧化碳，引起血液酸碱度改变和血管收缩，导致末梢神经产生麻木感（T-rex hands）。这是能量通道被打开的标志。当你在第二阶段屏息时，二氧化碳浓度逐渐恢复，这些感觉就会慢慢消散。这就是为什么绝对不能在危险环境中练习此法。"
+          },
+          {
+            "question": "我想憋气久一点，可以在第 31 口气吸满再憋吗？",
+            "answer": "不可以！原版 Wim Hof 明确要求是在【呼气后（排空肺部）】进行屏息（Retention）。这更能安全地触发低氧条件。如果你吸满再憋，产生的压力可能会对肺部或心脏造成不必要的负担，并且降低生理收益。"
+          },
+          {
+            "question": "呼吸波只提供倒计时器吗？",
+            "answer": "远不止如此。呼吸波提供的是极其震撼的“声光电”立体跟练，每一次的高频呼吸都有极其清脆的节奏拍子提示，你完全不需要动用左脑去算数字，只需要将自己交给节奏。"
+          },
+          {
+            "question": "晚上睡不着可以做 Wim Hof 吗？",
+            "answer": "绝对不要。Wim Hof 会刺激交感神经，释放肾上腺素。如果你在睡前做，很可能会彻夜难眠。针对失眠，请在 App 中切换到【4-7-8】或【盒子呼吸】模式。"
+          }
+        ],
+        "tip": "免责声明：如果您怀孕、患有癫痫、或有任何严重心血管病史，请勿练习此高强度呼吸法。"
+      },
+
+      "cta": {
+        "block": "cta",
+        "title": "解锁你的隐藏能量条",
+        "description": "你本可以爆发出更大的潜能。下载呼吸波，今天就开始你的第一次冰人体验。",
+        "buttons": [
+          {
+            "title": "在 App Store 免费下载",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "variant": "default",
+            "size": "lg",
+            "icon": "Apple"
+          }
+        ],
+        "className": "bg-muted/50"
+      }
+    }
+  }
+}

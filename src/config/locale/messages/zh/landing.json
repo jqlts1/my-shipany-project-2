@@ -28,7 +28,24 @@
           "url": "/#testimonials",
           "icon": "MessageCircleHeart"
         },
-        
+        {
+          "title": "呼吸法",
+          "icon": "Wind",
+          "children": [
+            {
+              "title": "助眠放松",
+              "description": "4-7-8、盒子呼吸法等",
+              "url": "/sleep",
+              "icon": "Moon"
+            },
+            {
+              "title": "提神唤醒",
+              "description": "Wim Hof 冰人呼吸等",
+              "url": "/energy",
+              "icon": "Sun"
+            }
+          ]
+        },
         {
           "title": "常见问题",
           "url": "/#faq",
@@ -142,6 +159,21 @@
             {
               "title": "服务条款",
               "url": "/terms-of-service",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "探索",
+          "children": [
+            {
+              "title": "助眠放松",
+              "url": "/sleep",
+              "target": "_self"
+            },
+            {
+              "title": "提神唤醒",
+              "url": "/energy",
               "target": "_self"
             }
           ]

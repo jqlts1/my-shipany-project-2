@@ -1,0 +1,230 @@
+{
+  "metadata": {
+    "title": "4-7-8 呼吸法：1分钟快速入睡的科学指南 | 呼吸波 App",
+    "description": "失眠怎么办？探索哈佛医学专家推荐的 4-7-8 呼吸法原理与实操步骤。使用呼吸波 Apple Watch 触感引导，告别入睡困难，自然降低心率，找回深度睡眠。"
+  },
+  "page": {
+    "show_sections": [
+      "hero",
+      "stats",
+      "mechanism",
+      "steps",
+      "comparison",
+      "showcase",
+      "users",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "block": "hero-pseo",
+        "eyebrow_text": "科学助眠指南",
+        "title": "4-7-8 呼吸法：<br/>1 分钟快速入睡的“神经镇静剂”",
+        "description": "翻来覆去无法入睡，大脑停不下来？不要过度依赖褪黑素。<br/>尝试美国哈佛大学安德鲁·韦伊博士（Dr. Andrew Weil）推广的 <strong>4-7-8 呼吸法</strong>。通过特定频率的物理干预，快速激活副交感神经，3分钟内平复心率，找回久违的深度睡眠。",
+        "buttons": [
+          {
+            "title": "获取 Apple Watch 触感引导版",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "icon": "Download",
+            "variant": "default",
+            "size": "lg"
+          }
+        ],
+        "announcement": {
+          "title": "无需自己默数，闭眼感受震动律动"
+        }
+      },
+
+      "stats": {
+        "block": "stats",
+        "title": "为什么呼吸是应对失眠的最快开关？",
+        "description": "纯物理干预，重塑你的生理节律",
+        "items": [
+          {
+            "title": "3 分钟",
+            "description": "临床证明可显著降低静息心率的时间"
+          },
+          {
+            "title": "85%",
+            "description": "坚持跟练两周后，入睡时间缩短的用户比例"
+          },
+          {
+            "title": "0 副作用",
+            "description": "完全自然的物理疗法，不依赖任何药物"
+          }
+        ]
+      },
+
+      "mechanism": {
+        "block": "features-list",
+        "title": "揭秘 4-7-8 呼吸法的工作原理",
+        "description": "失眠的真凶往往是“交感神经”过度活跃。4-7-8 呼吸法通过强行改变呼吸节律，向大脑发送安全信号。",
+        "image": {
+          "src": "/imgs/zh/IOS-3.jpg",
+          "alt": "心率监测图表分析"
+        },
+        "items": [
+          {
+            "title": "吸气 4 秒：吸入氧气",
+            "description": "缓慢而平静的吸气，为血液补充新鲜的氧气准备。",
+            "icon": "Wind"
+          },
+          {
+            "title": "屏息 7 秒：氧气交换",
+            "description": "这是最关键的一步。屏息迫使心率慢下来，让氧气在肺部充分交换，进入血液循环。",
+            "icon": "Timer"
+          },
+          {
+            "title": "呼气 8 秒：排出二氧化碳与浊气",
+            "description": "拉长的呼气过程会减缓心脏跳动，直接激活“副交感神经系统”（负责休息和消化的神经），让你体验到瞬间的松弛感。",
+            "icon": "ArrowDownToLine"
+          }
+        ]
+      },
+
+      "steps": {
+        "block": "features-step",
+        "label": "助眠实操",
+        "title": "今晚就可以尝试的 4-7-8 实操步骤",
+        "description": "躺在床上，放松舌头（舌尖抵住上颚门牙后方），准备开始。",
+        "items": [
+          {
+            "title": "步骤 1：安静吸气 (4秒)",
+            "description": "闭上嘴巴，通过鼻子安静、平缓地吸气，在心里默数 4 秒。",
+            "icon": "ArrowUpCircle"
+          },
+          {
+            "title": "步骤 2：保持屏息 (7秒)",
+            "description": "屏住呼吸，保持 7 秒。让身体适应这个节奏，不要用力憋气，而是自然停顿。",
+            "icon": "PauseCircle"
+          },
+          {
+            "title": "步骤 3：用力呼气 (8秒)",
+            "description": "全部通过嘴巴呼气，发出“呼——”的声音，持续 8 秒。这算完成一次循环。建议每次练习 4 个循环。",
+            "icon": "ArrowDownCircle"
+          }
+        ]
+      },
+
+      "comparison": {
+        "block": "pros-cons",
+        "title": "为什么很多人尝试了却没有效果？",
+        "description": "正确的节奏是关键。自己默数往往会因为焦虑而加快速度，导致心率不降反升。",
+        "prosTitle": "使用 呼吸波 App",
+        "consTitle": "自己大脑默数",
+        "pros": [
+          "Apple Watch 手腕震动触感，闭眼无脑跟随",
+          "5D 沉浸式雷雨/海浪白噪音，双重视听催眠",
+          "实时监测心率变化，直观看到心率下降曲线",
+          "自动记录每日练习时长，养成健康习惯"
+        ],
+        "cons": [
+          "容易分心去数秒，加重大脑负担和焦虑",
+          "闭眼时经常忘记下一步是屏息还是呼气",
+          "节奏不稳，呼吸过快导致换气过度反而心慌",
+          "无法得知自己的心率是否真的降下来了"
+        ]
+      },
+
+      "showcase": {
+        "block": "features-media",
+        "title": "专为极致失眠者打造的“暗夜模式”",
+        "description": "呼吸波的暗黑 UI 设计与 Apple Watch 独立运行能力，确保你在睡前练习时，屏幕光线不会刺眼，彻底告别手机依赖。",
+        "image": {
+          "src": "/imgs/zh/IOS-2.jpg",
+          "alt": "暗黑极简 UI 设计"
+        },
+        "image_position": "left",
+        "items": [
+          {
+            "title": "Haptics 触觉引擎",
+            "description": "在 Watch 上，吸气、屏息、呼气对应不同频率的微震动，像私人教练在手腕轻拍你。",
+            "icon": "Vibrate"
+          },
+          {
+            "title": "环境白噪音融合",
+            "description": "雷雨、夏夜等高品质声音空间，配合视觉光影的呼吸律动，加速入眠。",
+            "icon": "Headphones"
+          },
+          {
+            "title": "HealthKit 数据私有",
+            "description": "你的心率与正念分钟数直接同步到 Apple 健康，没有任何云端隐私泄露风险。",
+            "icon": "ShieldCheck"
+          }
+        ]
+      },
+
+      "users": {
+        "block": "testimonials",
+        "title": "他们找回了睡眠的掌控感",
+        "description": "每天睡前 5 分钟，告别褪黑素依赖。",
+        "items": [
+          {
+            "name": "Sarah M.",
+            "role": "产品经理 | 长期失眠",
+            "quote": "这也太好用了吧！界面设计非常有品味，动画流畅自然。每天睡前在床上只看手表震动做一组 4-7-8，入睡速度明显变快了，不再需要强迫自己数羊了。",
+            "image": { "src": "https://i.pravatar.cc/150?u=sarah", "alt": "Sarah" }
+          },
+          {
+            "name": "David L.",
+            "role": "软件开发工程师",
+            "quote": "自己数秒总是越数越清醒。呼吸波的震动反馈绝了，闭着眼睛跟着手腕的节奏呼吸，大脑终于能彻底清空了。目前已经连续打卡 20 天。",
+            "image": { "src": "https://i.pravatar.cc/150?u=david", "alt": "David" }
+          },
+          {
+            "name": "Elena R.",
+            "role": "自由设计师",
+            "quote": "不仅是助眠，下午工作焦虑的时候开个两分钟，看着屏幕光环随着雷雨声闪烁，心率立刻就能降下来。超级解压。",
+            "image": { "src": "https://i.pravatar.cc/150?u=elena", "alt": "Elena" }
+          }
+        ],
+        "className": "bg-slate-50/50 dark:bg-slate-900/50"
+      },
+
+      "faq": {
+        "block": "faq",
+        "title": "关于 4-7-8 呼吸法的常见疑问",
+        "description": "科学实践，安全有效",
+        "items": [
+          {
+            "question": "严重失眠吃褪黑素不管用，呼吸法真的有效吗？",
+            "answer": "褪黑素是补充激素，而呼吸法是直接通过物理手段调节心率和自主神经系统（降低交感神经活跃度）。很多人对褪黑素产生耐受，但呼吸法作为长期的生理干预，效果更加立竿见影且无副作用。"
+          },
+          {
+            "question": "4-7-8 呼吸法每天要做几次？睡前做多久？",
+            "answer": "建议初学者每次做 4 个循环（约 1-2 分钟），每天 2 次。习惯后最多可增加到 8 个循环。对于助眠，在关灯躺平后闭眼练习效果最佳。"
+          },
+          {
+            "question": "练习时感到轻微头晕是正常的吗？",
+            "answer": "初次练习时，由于深呼吸导致体内氧气和二氧化碳比例变化，可能会有极其轻微的头晕。这是正常现象。如果感到不适，请恢复正常呼吸，循序渐进地练习。"
+          },
+          {
+            "question": "戴着 Apple Watch 睡觉并开启呼吸波会很耗电吗？",
+            "answer": "不会的。呼吸波使用系统原生的触觉反馈接口，极其省电，只需短短几分钟的引导即可入睡，完全不影响手表的整夜续航。"
+          },
+          {
+            "question": "除了 4-7-8，呼吸波还有其他助眠模式吗？",
+            "answer": "有的。除了专注于极速镇静的 4-7-8 呼吸，应用内还提供经典的“盒子呼吸法”（Box Breathing）、特斯拉 3-6-9 等多种模式，您可以根据当晚的身体状态自由选择。"
+          }
+        ],
+        "tip": "免责声明：呼吸训练不能替代专业医疗建议。如果您有严重的心肺疾病，请在练习前咨询医生。"
+      },
+
+      "cta": {
+        "block": "cta",
+        "title": "今晚，找回你的睡眠控制权",
+        "description": "无需再为失眠焦虑。下载呼吸波，通过手腕的震动引导，进入深度的平静。",
+        "buttons": [
+          {
+            "title": "在 App Store 免费下载",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "variant": "default",
+            "size": "lg",
+            "icon": "Apple"
+          }
+        ],
+        "className": "bg-muted/50"
+      }
+    }
+  }
+}

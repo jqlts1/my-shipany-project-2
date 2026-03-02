@@ -1,0 +1,92 @@
+{
+  "metadata": {
+    "title": "提神醒脑呼吸法指南：告别早晨疲惫与咖啡因依赖 | 呼吸波 App",
+    "description": "探索最新的科学提神呼吸法库。这里汇集了如 Wim Hof 冰人呼吸等高强度激活训练，用纯粹的氧气冲刷大脑，三分钟唤醒身体潜能。"
+  },
+  "page": {
+    "show_sections": [
+      "hero",
+      "methods_grid",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "block": "hero",
+        "title": "元气充能呼吸库",
+        "description": "不用咖啡，也能瞬间重启大脑。<br/> 探索高强度的激活呼吸法，通过超氧气摄入与屏息挑战，唤醒每一寸肌肉与神经。",
+        "buttons": [
+          {
+            "title": "获取呼吸波 App",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "variant": "default",
+            "icon": "Apple"
+          }
+        ]
+      },
+      "methods_grid": {
+        "block": "showcases",
+        "title": "激能呼吸方法库",
+        "description": "点击查看详细图文、生理学原理与跟练指南。",
+        "groups": [
+          {
+            "name": "all",
+            "title": "全部"
+          },
+          {
+            "name": "morning",
+            "title": "早晨唤醒"
+          },
+          {
+            "name": "focus",
+            "title": "极致专注"
+          }
+        ],
+        "items": [
+          {
+            "title": "冰人呼吸法 (Wim Hof)：比黑咖啡更猛烈的能量开关",
+            "description": "源自古老 Tummo 冥想的现代再造。通过高频深呼吸诱发体内的微观肾上腺素释放，彻底扫除早起疲惫感。",
+            "image": {
+              "src": "/imgs/zh/IOS-2.jpg",
+              "alt": "Wim Hof 冰人呼吸法"
+            },
+            "group": "morning",
+            "url": "/energy/wim-hof",
+            "button": {
+              "title": "阅读指南",
+              "url": "/energy/wim-hof",
+              "icon": "ArrowRight"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "block": "faq",
+        "title": "关于充能呼吸的常见疑问",
+        "items": [
+          {
+            "question": "这类高强度的呼吸法安全吗？",
+            "answer": "只要在安全的环境（如坐在沙发上或平躺在床上）练习，对健康人都是非常安全的。绝不可在驾驶或泡澡时练习。"
+          },
+          {
+            "question": "为什么练习后手脚会发麻？",
+            "answer": "由于大量排出二氧化碳，血液的酸碱度短暂改变，血管收缩，这是充能呼吸的标准生理反应，意味着大脑正在被激活，属于正常现象。"
+          }
+        ]
+      },
+      "cta": {
+        "block": "cta",
+        "title": "用自然的力量开启新的一天",
+        "description": "准备好迎接头脑风暴了吗？戴上耳机，调大节奏，立即体检极速充能。",
+        "buttons": [
+          {
+            "title": "马上免费体验",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "variant": "default",
+            "icon": "Apple"
+          }
+        ]
+      }
+    }
+  }
+}

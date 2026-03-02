@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "title": "助眠呼吸法库：从海豹突击队到古老冥想的入睡指南 | 呼吸波 App",
+    "description": "探索最全的科学助眠呼吸法。无论是经典的 4-7-8 呼吸、盒子呼吸，还是环境白噪音引导，这里有帮助您应对严重失眠、快速入睡的所有实操指南。"
+  },
+  "page": {
+    "show_sections": [
+      "hero",
+      "methods_grid",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "block": "hero",
+        "title": "科学助眠呼吸法专区",
+        "description": "告别药物依赖，用身体自带的节律物理催眠。 <br/> 探索各大流派的呼吸实操指南，总有一款能让你今晚安然入睡。",
+        "buttons": [
+          {
+            "title": "获取呼吸波 App",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "variant": "default",
+            "icon": "Apple"
+          }
+        ]
+      },
+      "methods_grid": {
+        "block": "showcases",
+        "title": "助眠方法库",
+        "description": "点击查看详细图文与跟练指南",
+        "groups": [
+          {
+            "name": "all",
+            "title": "全部"
+          },
+          {
+            "name": "fast",
+            "title": "快速入睡"
+          },
+          {
+            "name": "deep",
+            "title": "深度放松"
+          }
+        ],
+        "items": [
+          {
+            "title": "4-7-8 呼吸法：1分钟快速入睡的神经镇静剂",
+            "description": "哈佛大学专家强烈推荐的睡前物理干预法。通过拉长呼气，激活副交感神经，快速平复心率。",
+            "image": {
+              "src": "/imgs/zh/IOS-2.jpg",
+              "alt": "4-7-8呼吸法"
+            },
+            "group": "fast",
+            "url": "/sleep/4-7-8-breathing",
+            "button": {
+              "title": "阅读指南",
+              "url": "/sleep/4-7-8-breathing",
+              "icon": "ArrowRight"
+            }
+          },
+          {
+            "title": "盒子呼吸法 (Box Breathing)：极度焦虑下的入眠救星",
+            "description": "海豹突击队在极端压力下使用的等长呼吸节奏，帮助你在睡前彻底清空杂乱思绪。",
+            "image": {
+              "src": "/imgs/zh/IOS-3.jpg",
+              "alt": "盒子呼吸法"
+            },
+            "group": "deep",
+            "url": "/sleep/box-breathing",
+            "button": {
+              "title": "阅读指南",
+              "url": "/sleep/box-breathing",
+              "icon": "ArrowRight"
+            }
+          }
+        ]
+      },
+      "faq": {
+        "block": "faq",
+        "title": "关于睡前呼吸的常见问题",
+        "items": [
+          {
+            "question": "我应该尝试哪种呼吸法？",
+            "answer": "如果您是因为心跳过快、处于亢奋状态无法入睡，建议首选 4-7-8 呼吸法来快速降低心率；如果您是因为脑子里一直在想事情（反刍思维），建议使用盒子呼吸法来强制转移注意力。"
+          },
+          {
+            "question": "这些方法需要配合 App 使用吗？",
+            "answer": "您可以自己默数练习，但闭眼默数往往会丢失节奏并加重焦虑。呼吸波 App 提供 Apple Watch 的纯震动触感引导，让大脑彻底放空，是失眠者的最佳搭配。"
+          }
+        ]
+      },
+      "cta": {
+        "block": "cta",
+        "title": "准备好迎接今夜的好眠了吗？",
+        "description": "选择适合你的呼吸节奏，让手腕的律动带你进入梦乡。",
+        "buttons": [
+          {
+            "title": "免费下载",
+            "url": "https://apps.apple.com/zh/app/%E5%91%BC%E5%90%B8%E6%B3%A2-%E6%AD%A3%E5%BF%B5%E6%94%BE%E6%9D%BE%E5%87%8F%E5%8E%8Bwimhof%E5%86%B0%E4%BA%BA%E5%86%A5%E6%83%B3%E5%BC%95%E5%AF%BC%E5%8A%A9%E7%9C%A0%E7%84%A6%E8%99%91asmr/id6745539686",
+            "variant": "default",
+            "icon": "Apple"
+          }
+        ]
+      }
+    }
+  }
+}

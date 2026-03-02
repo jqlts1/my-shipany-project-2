@@ -1,0 +1,230 @@
+{
+  "metadata": {
+    "title": "4-7-8 Breathing: The 1-Minute Science Guide to Fall Asleep Fast | BreathWave",
+    "description": "Struggling with insomnia? Discover the 4-7-8 breathing method. Use BreathWave's Apple Watch haptic guidance to lower your heart rate and reclaim deep sleep."
+  },
+  "page": {
+    "show_sections": [
+      "hero",
+      "stats",
+      "mechanism",
+      "steps",
+      "comparison",
+      "showcase",
+      "users",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "block": "hero-pseo",
+        "eyebrow_text": "Scientific Sleep Guide",
+        "title": "The 4-7-8 Breathing Method: The 1-Minute Nervous System Tranquilizer",
+        "description": "Tossing and turning, unable to fall asleep? Over-relying on melatonin? Try the <strong>4-7-8 breathing method</strong>, popularized by Dr. Andrew Weil. By using specific rhythmic physical intervention, you can rapidly activate your parasympathetic nervous system, calm your heart rate in under 3 minutes, and reclaim your natural deep sleep.",
+        "buttons": [
+          {
+            "title": "Get Apple Watch Haptic Guide",
+            "url": "https://apps.apple.com/us/app/breathwave/id6745539686",
+            "icon": "Download",
+            "variant": "default",
+            "size": "lg"
+          }
+        ],
+        "announcement": {
+          "title": "No counting needed, just close your eyes and feel the rhythm"
+        }
+      },
+
+      "stats": {
+        "block": "stats",
+        "title": "Why breathing is the fastest switch for insomnia",
+        "description": "Pure physical intervention targeting your physiological rhythm",
+        "items": [
+          {
+            "title": "3 Mins",
+            "description": "Clinically proven time to significantly lower resting heart rate"
+          },
+          {
+            "title": "85%",
+            "description": "Users report falling asleep faster after practicing for two weeks"
+          },
+          {
+            "title": "0 Side Effects",
+            "description": "100% natural physical therapy, no drug dependence"
+          }
+        ]
+      },
+
+      "mechanism": {
+        "block": "features-list",
+        "title": "The Science Behind 4-7-8 Breathing",
+        "description": "The real culprit behind insomnia is often an overactive 'sympathetic nervous system'. The 4-7-8 method forces a rhythm change, sending safety signals down your vagus nerve.",
+        "image": {
+          "src": "/imgs/en/IOS-3.jpg",
+          "alt": "Heart Rate Monitoring Analysis Chart"
+        },
+        "items": [
+          {
+            "title": "Inhale 4s: Oxygen Intake",
+            "description": "A slow, quiet inhalation begins to replenish your blood with fresh oxygen.",
+            "icon": "Wind"
+          },
+          {
+            "title": "Hold 7s: Oxygen Exchange",
+            "description": "The crucial step. Holding forces your heart rate to slow down, allowing oxygen to fully exchange in the lungs and enter the bloodstream.",
+            "icon": "Timer"
+          },
+          {
+            "title": "Exhale 8s: Expelling CO2",
+            "description": "The elongated exhalation directly activates the 'parasympathetic nervous system' (rest and digest), instantly giving you a profound sense of relaxation.",
+            "icon": "ArrowDownToLine"
+          }
+        ]
+      },
+
+      "steps": {
+        "block": "features-step",
+        "label": "Sleep Practice",
+        "title": "Try these 4-7-8 steps tonight",
+        "description": "Lie down in bed, relax your tongue (tip gently behind your upper front teeth), and let's begin.",
+        "items": [
+          {
+            "title": "Step 1: Quiet Inhale (4s)",
+            "description": "Close your mouth and inhale quietly and smoothly through your nose, mentally counting to 4.",
+            "icon": "ArrowUpCircle"
+          },
+          {
+            "title": "Step 2: Hold Breath (7s)",
+            "description": "Hold your breath for 7 seconds. Let your body adapt to this pause, don't strain, keep it natural.",
+            "icon": "PauseCircle"
+          },
+          {
+            "title": "Step 3: Forceful Exhale (8s)",
+            "description": "Exhale completely through your mouth, making a 'whoosh' sound for 8 seconds. This completes one cycle. We recommend 4 cycles per session.",
+            "icon": "ArrowDownCircle"
+          }
+        ]
+      },
+
+      "comparison": {
+        "block": "pros-cons",
+        "title": "Why doesn't it work when people try it alone?",
+        "description": "Correct rhythm is everything. Counting silently often induces anxiety, causing you to speed up and paradoxically raise your heart rate.",
+        "prosTitle": "Using BreathWave App",
+        "consTitle": "Counting in Your Head",
+        "pros": [
+          "Apple Watch wrist vibrations: follow effortlessly with eyes closed",
+          "5D Immersive stormy/ocean white noise: dual sensory hypnosis",
+          "Real-time heart rate monitoring: intuitively see your physiological drop",
+          "Automatic health journal sync for habit building"
+        ],
+        "cons": [
+          "Counting distracts the mind, increasing cognitive load and anxiety",
+          "Closing your eyes makes you prone to losing track of the steps",
+          "Unstable rhythm: breathing too fast leads to hyperventilation and panic",
+          "No objective way to know if your heart rate is actually lowering"
+        ]
+      },
+
+      "showcase": {
+        "block": "features-media",
+        "title": "The 'Dark Mode' built for extreme insomniacs",
+        "description": "BreathWave's ultra-minimal dark UI combined with independent Apple Watch capabilities ensures screen light won't pierce your eyes before bed.",
+        "image": {
+          "src": "/imgs/en/IOS-2.jpg",
+          "alt": "Dark minimalist UI"
+        },
+        "image_position": "left",
+        "items": [
+          {
+            "title": "Haptic Engine",
+            "description": "On the Watch, inhale, hold, and exhale trigger distinct micro-vibrations, like a personal coach tapping your wrist.",
+            "icon": "Vibrate"
+          },
+          {
+            "title": "Atmospheric White Noise",
+            "description": "Premium soundscapes like summer rain blend with visual breathing halos to accelerate sleep onset.",
+            "icon": "Headphones"
+          },
+          {
+            "title": "Private Health Data",
+            "description": "Your heart rate and mindful minutes sync directly to Apple Health natively. Zero cloud tracking risks.",
+            "icon": "ShieldCheck"
+          }
+        ]
+      },
+
+      "users": {
+        "block": "testimonials",
+        "title": "They took back control of their sleep",
+        "description": "5 minutes a night is all it takes to ditch melatonin dependence.",
+        "items": [
+          {
+            "name": "Sarah M.",
+            "role": "Product Manager | Chronic Insomnia",
+            "quote": "This is amazing! I just stay in bed, rely entirely on the watch vibrations to do a set of 4-7-8, and I fall asleep noticeably faster without forcing myself to count sheep.",
+            "image": { "src": "https://i.pravatar.cc/150?u=sarah", "alt": "Sarah" }
+          },
+          {
+            "name": "David L.",
+            "role": "Software Engineer",
+            "quote": "Counting backwards always made me more awake. BreathWave's haptic feedback is insane. I close my eyes, follow my wrist, and my brain finally shuts off.",
+            "image": { "src": "https://i.pravatar.cc/150?u=david", "alt": "David" }
+          },
+          {
+            "name": "Elena R.",
+            "role": "Freelance Designer",
+            "quote": "Not just for sleep! When I'm overwhelmed with deadlines at 3 PM, taking 2 minutes with the storm soundscape Drops my heart rate instantly. Super stress-relieving.",
+            "image": { "src": "https://i.pravatar.cc/150?u=elena", "alt": "Elena" }
+          }
+        ],
+        "className": "bg-slate-50/50 dark:bg-slate-900/50"
+      },
+
+      "faq": {
+        "block": "faq",
+        "title": "Questions about 4-7-8 Breathing",
+        "description": "Science-backed, safe, and effective.",
+        "items": [
+          {
+            "question": "Melatonin stopped working for me, will breathing really help?",
+            "answer": "Melatonin is a hormone supplement, whereas breathing is a direct physical hack to regulate your heart rate and autonomic nervous system (turning down sympathetic activity). Many develop melatonin tolerance, but breathing exercises offer long-term, side-effect-free physiological modulation."
+          },
+          {
+            "question": "How often should I practice 4-7-8?",
+            "answer": "Beginners should do 4 complete cycles (about 1-2 minutes) twice a day. As you adapt, you can extend it up to 8 cycles. For sleep, doing it right after turning off the lights works best."
+          },
+          {
+            "question": "Is mild lightheadedness normal at first?",
+            "answer": "Yes. When you first practice deep breathing, the altered ratios of oxygen and CO2 can cause temporary, mild lightheadedness. This is normal. If you feel uncomfortable, return to normal breathing and build up gradually."
+          },
+          {
+            "question": "Will running BreathWave overnight drain my Apple Watch battery?",
+            "answer": "Not at all. BreathWave utilizes native, highly-optimized haptic APIs. You only run it for a few minutes to guide you into sleep, which has nearly zero impact on overnight battery life."
+          },
+          {
+            "question": "Does BreathWave offer other techniques besides 4-7-8?",
+            "answer": "Yes! Alongside the ultra-calming 4-7-8 method, the app features Box Breathing (used by Navy SEALs), Tesla 3-6-9, and customized Wim Hof-style routines to match whatever state your body is in."
+          }
+        ],
+        "tip": "Disclaimer: Breathing exercises do not replace professional medical advice. Consult your doctor if you have severe cardiovascular or pulmonary conditions."
+      },
+
+      "cta": {
+        "block": "cta",
+        "title": "Take back your sleep tonight",
+        "description": "Stop stressing about not sleeping. Download BreathWave and let haptic rhythms guide you to deep calm.",
+        "buttons": [
+          {
+            "title": "Download Free on App Store",
+            "url": "https://apps.apple.com/us/app/breathwave/id6745539686",
+            "variant": "default",
+            "size": "lg",
+            "icon": "Apple"
+          }
+        ],
+        "className": "bg-muted/50"
+      }
+    }
+  }
+}

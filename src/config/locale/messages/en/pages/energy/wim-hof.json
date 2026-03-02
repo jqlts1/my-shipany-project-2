@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "title": "Wim Hof Method Guide: The Ultimate Morning Wake-Up Without Coffee | BreathWave",
+    "description": "Tired in the morning? Afternoon slump? Master the Wim Hof Method. Use hyperventilation and breath retention to spike adrenaline. Guided safely on BreathWave."
+  },
+  "page": {
+    "show_sections": [
+      "hero",
+      "stats",
+      "mechanism",
+      "steps",
+      "comparison",
+      "showcase",
+      "users",
+      "faq",
+      "cta"
+    ],
+    "sections": {
+      "hero": {
+        "block": "hero-pseo",
+        "eyebrow_text": "Nature's Magic Stimulant",
+        "title": "Wim Hof Breathing:<br/>The Energy Switch Stronger Than Black Coffee",
+        "description": "Waking up exhausted or fighting that 3 PM slump? Don't pour another cup of coffee.<br/>Experience the <strong>Wim Hof Method</strong>, popular among Silicon Valley elites and pro athletes. A modern iteration of ancient Tummo meditation, this high-frequency deep breathing triggers a micro-release of adrenaline in your body. In just 3 minutes, sweep away the residual brain fog and fatigue.",
+        "buttons": [
+          {
+            "title": "Get Visual Guided Practice",
+            "url": "https://apps.apple.com/us/app/breathwave/id6745539686",
+            "icon": "Download",
+            "variant": "default",
+            "size": "lg"
+          }
+        ],
+        "announcement": {
+          "title": "Put your headphones on, watch the halos, and fly"
+        }
+      },
+
+      "stats": {
+        "block": "stats",
+        "title": "Why Silicon Valley Relies on the Iceman",
+        "description": "It's a pure physiological miracle acting directly on your nervous system ecology.",
+        "items": [
+          {
+            "title": "Adrenaline",
+            "description": "Safely stimulates natural release in a short burst to wake the body"
+          },
+          {
+            "title": "Alkalinity",
+            "description": "Flushing CO2 makes blood slightly alkaline, reducing inflammation"
+          },
+          {
+            "title": "Zero Tolerance",
+            "description": "Won't cause afternoon crashes or tolerance built up like caffeine"
+          }
+        ]
+      },
+
+      "mechanism": {
+        "block": "features-list",
+        "title": "Breaking the Fatigue Loop: Core Mechanisms",
+        "description": "In stark contrast to sleep breathing (like 4-7-8) which seeks to lower heart rate, Wim Hof is a 'controlled stressor'. By breaking the normal O2/CO2 balance, it tricks the body into a state of hyper-alertness paired with profound mental calm.",
+        "image": {
+          "src": "/imgs/en/IOS-3.jpg",
+          "alt": "High Frequency Breathing Rhythm"
+        },
+        "items": [
+          {
+            "title": "Phase 1: Hyperventilation",
+            "description": "30 deep inhales, relaxed exhales. Force oxygen like a wave into every cell while stripping out CO2. You will feel lightheaded and tingling.",
+            "icon": "Wind"
+          },
+          {
+            "title": "Phase 2: Hypoxic Retention",
+            "description": "Stop breathing after exhaling the final breath. Because CO2 levels are so low, you can easily hold for 1 to 3 minutes! This extreme hypoxic signal triggers the energy hormone release.",
+            "icon": "Timer"
+          },
+          {
+            "title": "Phase 3: Recovery Breath",
+            "description": "Take one huge breath in and hold for 15 seconds. This forces oxygen-rich blood into the brain. Release to experience a massive dopamine rush.",
+            "icon": "Brain"
+          }
+        ]
+      },
+
+      "steps": {
+        "block": "features-step",
+        "label": "Activation Practice",
+        "title": "Complete your first 'flush' in bed tomorrow",
+        "description": "Safety Warning: NEVER practice while standing, driving, or in water (risk of shallow water blackout). Sit comfortably or lie down.",
+        "items": [
+          {
+            "title": "Step 1: Fully In, Let It Go (30x)",
+            "description": "Breathe deeply into the belly, then chest. Just let the air go naturally (don't force the exhale out). Do 30 reps. You will feel tingling in hands/feet and lightheaded.",
+            "icon": "Activity"
+          },
+          {
+            "title": "Step 2: Empty Lungs, Extreme Hold",
+            "description": "After the 30th exhale, stop! Do not inhale. Relax the body and observe the mind. Hold as long as comfortable. Most hit 1+ minutes easily their first time.",
+            "icon": "PauseCircle"
+          },
+          {
+            "title": "Step 3: Deep Inhale & Hold (15s)",
+            "description": "When the urge to breathe hits, take one massive inhale as if pushing pressure into your head. Hold 15s. Exhale. That's one round. Do 3-4 rounds.",
+            "icon": "ArrowUpCircle"
+          }
+        ]
+      },
+
+      "comparison": {
+        "block": "pros-cons",
+        "title": "Why You MUST Use a Timer App for Wim Hof",
+        "description": "30 fast breaths scramble your ability to count; extreme breath-holding without a timer challenge limits your potential boundary.",
+        "prosTitle": "Using BreathWave App",
+        "consTitle": "Blind Practice",
+        "pros": [
+          "Intense visual audio cues perfectly synchronize your inhales/exhales",
+          "Dedicated retention dashboard gives immense satisfaction when breaking new records",
+          "Haptic feedback lets you know exactly where you are in the 30 reps with eyes closed",
+          "Scientifically calibrated safety alarms prevent hypoxic over-indulgence"
+        ],
+        "cons": [
+          "Losing count around rep 15, causing mental chaos",
+          "No idea how long the retention lasted, zero sense of progress",
+          "Inconsistent rhythm dampens the biochemical reaction",
+          "Practicing alone without pace guidance often leads to anxiety rather than energy"
+        ]
+      },
+
+      "showcase": {
+        "block": "features-media",
+        "title": "Immersive Energizing Audiovisual Engine",
+        "description": "Unlike the dark ambient sleep modes, BreathWave designed aggressive 'Energy Halos' and heavy bass beats for Wim Hof. It sparks you not just biologically, but across all sensory levels.",
+        "image": {
+          "src": "/imgs/en/IOS-2.jpg",
+          "alt": "Energy Breathing Interface"
+        },
+        "image_position": "left",
+        "items": [
+          {
+            "title": "Dynamic Heart Rate Sync",
+            "description": "When wearing Apple Watch, the on-screen halo colors dynamically transition matching the peaks and valleys of your actual heart rate.",
+            "icon": "HeartPulse"
+          },
+          {
+            "title": "Custom Reps & Tempo",
+            "description": "Beginners start at 30 reps; seasoned Walruses can dial the hyperventilation up to 40 reps or a faster BPM.",
+            "icon": "Settings"
+          }
+        ]
+      },
+
+      "users": {
+        "block": "testimonials",
+        "title": "Shattering Morning Grogginess",
+        "description": "From students prepping for exams to executives chasing quotas, energy breathing changed their mornings.",
+        "items": [
+          {
+            "name": "Jason T.",
+            "role": "Senior Engineer",
+            "quote": "Coffee stopped working for me. Doing 3 rounds of Wim Hof on the floor every morning—that 15-second recovery sip after a 1.5 min hold is a literal brain orgasm. Wakes me up violently.",
+            "image": { "src": "https://i.pravatar.cc/150?u=jason", "alt": "Jason" }
+          },
+          {
+            "name": "Kelly C.",
+            "role": "Fitness Enthusiast",
+            "quote": "The dynamic halos in BreathWave go hard. That bass drone paired with the watch vibration following the breathing makes you feel like you are in a Matrix training simulator.",
+            "image": { "src": "https://i.pravatar.cc/150?u=kelly", "alt": "Kelly" }
+          },
+          {
+            "name": "Li Wei.",
+            "role": "Startup Founder",
+            "quote": "During the 3 PM crash, instead of Starbucks, I hit the couch for 5 minutes and do 2 rounds. The light body tingling is a real physical wake-up signal that beats any Red Bull.",
+            "image": { "src": "https://i.pravatar.cc/150?u=li", "alt": "Li Wei" }
+          }
+        ],
+        "className": "bg-slate-50/50 dark:bg-slate-900/50"
+      },
+
+      "faq": {
+        "block": "faq",
+        "title": "Advanced Q&A for the Ice Warrior",
+        "description": "Safely exploring your body's limits",
+        "items": [
+          {
+            "question": "Is it normal to get dizzy, experience muscle cramps, or numb hands?",
+            "answer": "Completely normal. The hyperventilation flushes out CO2, altering blood pH and constricting blood vessels, causing peripheral numbness (T-rex hands). It means the energy channels are open. As CO2 recovers during the breath-hold, it fades. This is why you NEVER practice in a dangerous environment."
+          },
+          {
+            "question": "I want to hold longer, can I take one full deep breath before the retention?",
+            "answer": "NO! The original Wim Hof explicitly mandates holding AFTER the exhale (Empty Lung). This safely triggers the hypoxic condition. A full-lung hold creates unnecessary internal pressure on the heart/lungs and diminishes the specific physiological benefits."
+          },
+          {
+            "question": "Does BreathWave just provide a countdown?",
+            "answer": "Far from it. BreathWave provides a stunning audiovisual pacing track. Every high-frequency breath has a crisp beat marker. You don't use your left brain to count; you simply surrender to the rhythm."
+          },
+          {
+            "question": "Can I do Wim Hof at night if I can't sleep?",
+            "answer": "Absolutely not. Wim Hof stimulates the sympathetic nervous system and fires adrenaline. Doing it before bed will keep you awake all night. Switch to the [4-7-8] or [Box Breathing] modes in the App for insomnia."
+          }
+        ],
+        "tip": "Disclaimer: Do not practice this intense breathing method if you are pregnant, have epilepsy, or severe cardiovascular issues."
+      },
+
+      "cta": {
+        "block": "cta",
+        "title": "Unlock Your Hidden Energy Bar",
+        "description": "You have a much larger potential waiting. Download BreathWave and start your first Iceman experience today.",
+        "buttons": [
+          {
+            "title": "Download Free on App Store",
+            "url": "https://apps.apple.com/us/app/breathwave/id6745539686",
+            "variant": "default",
+            "size": "lg",
+            "icon": "Apple"
+          }
+        ],
+        "className": "bg-muted/50"
+      }
+    }
+  }
+}

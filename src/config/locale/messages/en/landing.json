@@ -28,7 +28,24 @@
           "url": "/#testimonials",
           "icon": "MessageCircleHeart"
         },
-        
+        {
+          "title": "Methods",
+          "icon": "Wind",
+          "children": [
+            {
+              "title": "Sleep & Relax",
+              "description": "4-7-8, Box Breathing...",
+              "url": "/sleep",
+              "icon": "Moon"
+            },
+            {
+              "title": "Energy & Focus",
+              "description": "Wim Hof Method...",
+              "url": "/energy",
+              "icon": "Sun"
+            }
+          ]
+        },
         {
           "title": "FAQ",
           "url": "/#faq",
@@ -142,6 +159,21 @@
             {
               "title": "Terms of Service",
               "url": "/terms-of-service",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Explore",
+          "children": [
+            {
+              "title": "Sleep & Relax",
+              "url": "/sleep",
+              "target": "_self"
+            },
+            {
+              "title": "Energy & Focus",
+              "url": "/energy",
               "target": "_self"
             }
           ]
