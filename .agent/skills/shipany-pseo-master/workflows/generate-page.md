@@ -38,6 +38,7 @@ When generating content for the JSON blocks, you MUST adhere to the following te
    - The `title` of the `hero-pseo` or `hero` block is your **H1**. It MUST contain the exact target keyword. There can only be ONE H1 per page.
    - The `title` properties of all subsequent main blocks (e.g., `comparison-table`, `faq`) act as **H2**s. They should include secondary or LSI (Latent Semantic Indexing) keywords.
    - The questions inside the `faq` block act as **H3**s. They should target long-tail search intent (e.g., "People Also Ask" questions).
+   - **NO HTML IN TITLES**: You MUST NEVER use HTML tags (like `<br/>`, `<strong>`, `<em>`) inside any `title` field across ANY block in the JSON. The React UI components render `title` props as plain text (`{title}`), so HTML tags will break the UI and display as raw text. Only use HTML in `description` or `tip` fields.
 2. **Keyword Density & Placement**:
    - Do NOT keyword stuff. Maintain a natural density (~1-2%).
    - The target keyword MUST appear in the first 100 words of the `hero` description.
@@ -49,17 +50,19 @@ When generating content for the JSON blocks, you MUST adhere to the following te
    - This `metadata` object MUST contain `title` (max 60 chars) and `description` (max 160 chars) properties. If you omit this, the page will inherit the website's generic SEO title, destroying the PSEO keyword strategy.
 
 ## 5. Multi-Language Output & URL Siloing (Topic Clusters)
-To build a strong SEO structure, encourage the user to place related pages into nested directories (e.g., `pages/alternatives/calm.json`, `pages/glossary/hrv.json`). This creates powerful URL silos.
+To build a strong SEO structure, encourage the user to place related pages into nested directories (e.g., `pages/alternatives/calm.json`, `pages/sleep/4-7-8.json`). This creates powerful URL silos.
 
-**CRITICAL RULE: The Hub & Spoke Model**
-If you suggest creating a new nested directory (e.g., `pages/alternatives/`), you MUST also generate the "Hub" page for that directory: `pages/alternatives/index.json`. 
-- The `index.json` should act as a directory/pillar page (using `hero` and `showcases` blocks to link out to all the child isolated pages like `calm.json` and `oura.json`).
-- Without this `index.json`, the user will hit a 404 if they navigate to `/alternatives`, destroying the SEO silo.
-- LIKE ALL OTHER PAGES, this `index.json` MUST ALSO contain the root `metadata` object with a unique `<title>` and `description` to ensure the directory itself ranks.
+**CRITICAL RULE: Smart Hub Detection & The Spoke Model**
+1. **Detect Existing Hubs First:** Before creating a new directory, check if a relevant one already exists (e.g., if the user asks for a "Box Breathing" page, check if `pages/sleep` already exists).
+2. **Append if Exists:** If the hub (`index.json`) already exists, DO NOT overwrite it. Instead, **read** the existing `index.json`, add the new spoke page to its `showcases` items array, and **update** the file.
+3. **Create if Missing:** If you must create a new nested directory (e.g., `pages/anxiety/`), you MUST also generate the "Hub" page for that directory: `pages/anxiety/index.json`. 
+   - The `index.json` should act as a directory/pillar page (using `hero` and `showcases` blocks to link out to all the child isolated pages).
+   - Without this `index.json`, the user will hit a 404 if they navigate to `/anxiety`, destroying the SEO silo.
+   - LIKE ALL OTHER PAGES, this `index.json` MUST ALSO contain the root `metadata` object with a unique `<title>` and `description`.
 
 You MUST output the JSON structure for multiple supported locales (English and Chinese):
-1. Output English to `src/config/locale/messages/en/pages/{cluster-dir}/{slug}.json` (And the `index.json` if new).
-2. Output Chinese to `src/config/locale/messages/zh/pages/{cluster-dir}/{slug}.json` (And the `index.json` if new).
-3. Register BOTH the exact nested string (e.g., `pages/alternatives/calm`) AND the hub (`pages/alternatives/index`) in `src/config/locale/index.ts`.
+1. Output English to `src/config/locale/messages/en/pages/{cluster-dir}/{slug}.json` (And update/create the `index.json`).
+2. Output Chinese to `src/config/locale/messages/zh/pages/{cluster-dir}/{slug}.json` (And update/create the `index.json`).
+3. Register BOTH the exact nested string (e.g., `pages/alternatives/calm`) AND the hub (`pages/alternatives/index`, if new) in `src/config/locale/index.ts`.
 
 **CRITICAL**: Never use generic SaaS lorem ipsum. Match the project's exact voice.

@@ -44,9 +44,10 @@ export function HeroPseo({
           </div>
         )}
 
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 text-balance leading-tight drop-shadow-sm">
-          {title}
-        </h1>
+        <h1 
+          className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 text-balance leading-tight drop-shadow-sm"
+          dangerouslySetInnerHTML={{ __html: title || '' }}
+        />
 
         {description && (
           <p 
