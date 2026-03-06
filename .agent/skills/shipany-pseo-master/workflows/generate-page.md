@@ -55,8 +55,14 @@ When generating content for the JSON blocks, you MUST adhere to the following te
    - YOU MUST generate a `metadata` object at the very root of the JSON file (sibling to `page`).
    - This `metadata` object MUST contain `title` (max 60 chars) and `description` (max 160 chars) properties. If you omit this, the page will inherit the website's generic SEO title, destroying the PSEO keyword strategy.
 
-## 5. Multi-Language Output & URL Siloing (Topic Clusters)
+## 5. Multi-Language Output, URL Siloing & Internal Linking Matrix
 To build a strong SEO structure, encourage the user to place related pages into nested directories (e.g., `pages/alternatives/calm.json`, `pages/sleep/4-7-8.json`). This creates powerful URL silos.
+
+**CRITICAL RULE: Internal Linking Matrix (Topic Clusters)**
+When generating a new PSEO page within an existing cluster (e.g., `/anxiety/`), you MUST inject an internal linking block (typically using the `showcases` block) right before the `faq` section.
+- This block (e.g., `"related-scenarios"`) should link out to 2-3 other PSEO pages within the same cluster.
+- Provide a thumbnail image, description, and the exact relative URL (`url: "/anxiety/other-page"`).
+- This prevents orphan pages and ensures SEO link juice flows across the cluster.
 
 **CRITICAL RULE: Smart Hub Detection & The Spoke Model**
 1. **Detect Existing Hubs First:** Before creating a new directory, check if a relevant one already exists (e.g., if the user asks for a "Box Breathing" page, check if `pages/sleep` already exists).
