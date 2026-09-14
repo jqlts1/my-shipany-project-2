@@ -28,7 +28,6 @@
           "url": "/#testimonials",
           "icon": "MessageCircleHeart"
         },
-        
         {
           "title": "FAQ",
           "url": "/#faq",
@@ -85,7 +84,7 @@
     "id": "footer",
     "brand": {
       "title": "Breathwave",
-      "description": "Master scientific breathing techniques like Wim Hof and 4-7-8. Tracks Heart Rate and HRV. Available on iPhone and Apple Watch.",
+      "description": "Guided breathing on iPhone and Apple Watch, with adjustable practice sessions and immersive Deep Dive audio.",
       "logo": {
         "src": "/imgs/logo.png",
         "alt": "Breathwave",

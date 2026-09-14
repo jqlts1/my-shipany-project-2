@@ -28,7 +28,6 @@
           "url": "/#testimonials",
           "icon": "MessageCircleHeart"
         },
-        
         {
           "title": "常见问题",
           "url": "/#faq",
@@ -85,7 +84,7 @@
     "id": "footer",
     "brand": {
       "title": "呼吸波",
-      "description": "掌握科学呼吸技巧，支持冰人呼吸法和 4-7-8 呼吸法。适用于 iPhone 和 Apple Watch，实时监测心率和 HRV。",
+      "description": "在 iPhone 与 Apple Watch 上跟随引导练习呼吸，自定义练习节奏，探索沉浸式深潜音频。",
       "logo": {
         "src": "/imgs/logo.png",
         "alt": "呼吸波",
@@ -173,6 +172,5 @@
     "show_built_with": false,
     "show_theme": true,
     "show_locale": true
-
   }
 }
